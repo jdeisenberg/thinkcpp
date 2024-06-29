@@ -1,0 +1,367 @@
+<section xml:id="chapter10_coding-practice">
+        <title>Coding Practice</title>
+        <exercise xml:id=""><TabNode tabname="Activecode" tabnode_options="{'subchapter': 'activeCode_sq', 'chapter': 'Chapter10', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Activecode'}">
+
+<exercise label="vectors_a2">
+    <statement>
+                <p>Fix the function below so that it returns how many even numbers are in <c>nums</c>.
+                    Select the Parsonsprob tab for hints for the construction of the code.</p>
+
+    </statement>
+    <program xml:id="vectors_a2_editor" interactive="activecode" language="cpp">
+
+        <input>
+#include &lt;iostream&gt;
+#include &lt;vector&gt;
+using namespace std;
+
+int evenCount (const vector&lt;int&gt; &amp;vec) {
+    for (int i = 0; i &lt; vec.size(); i++) {
+        if (i % 2 == 0) {
+            count++;
+        }
+    }
+    return count;
+}
+
+int main() {
+    vector&lt;int&gt; vec{1,2,3,4};
+    cout &lt;&lt; evenCount(vec) &lt;&lt; endl;
+}
+        </input>
+<tests>
+
+
+</tests>
+
+    </program>
+</exercise>
+            </TabNode><TabNode tabname="Parsonsprob" tabnode_options="{'subchapter': 'activeCode_sq', 'chapter': 'Chapter10', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Parsonsprob'}">
+<exercise label="vectors_a2_pp" numbered="yes" adaptive="yes" indentation="hide" language="python"><statement>
+                <p>Fix the function below so that it returns how many even numbers are in <c>nums</c>.
+                    Use the lines to construct the code, then go back to complete the Activecode tab.</p>
+</statement>
+<blocks><block order="7">
+<cline>int evenCount (const vector&lt;int&gt; &amp;vec) {</cline>
+</block><block order="11">
+<cline>    int count = 0;</cline>
+</block><block order="1" correct="no">
+<cline>    int count; </cline>
+</block><block order="5">
+<cline>    for (int i = 0; i &lt; vec.size(); i++) {</cline>
+</block><block order="8">
+<choice correct="yes"><cline>        if (vec[i] % 2 == 0) {</cline>
+</choice><choice><cline>        if (vec[i] % 2 != 0) { </cline>
+</choice></block><block order="4">
+<cline>            count++;</cline>
+</block><block order="6">
+<cline>        }</cline>
+</block><block order="3">
+<cline>    }</cline>
+</block><block order="2">
+<cline>    return count;</cline>
+</block><block order="10">
+<cline>}</cline>
+</block></blocks></exercise>            </TabNode></exercise>
+        <exercise xml:id=""><TabNode tabname="Activecode" tabnode_options="{'subchapter': 'activeCode_sq', 'chapter': 'Chapter10', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Activecode'}">
+
+<exercise label="vectors_a4">
+    <statement>
+                <p>Someone could have COVID-19 if their temperature is above 99.9 degrees Fahrenheit.  Finish
+                    the code below so that it counts and prints how many students in the class may have been exposed.
+                    Select the Parsonsprob tab for hints for the construction of the code.</p>
+
+    </statement>
+    <program xml:id="vectors_a4_editor" interactive="activecode" language="cpp">
+
+        <input>
+#include &lt;iostream&gt;
+
+
+using namespace std;
+
+int main () {
+    vector&lt;double&gt; temps = {98.6, 97.8, 100.3, 97.2, 98.7, 97.8, 99.8, 96.9, 98.2, 99.1, 99.9};
+
+    int covid_count = 0;
+    for (int i = 0; i &lt; temps.size(); i++) {
+
+
+    }
+}
+        </input>
+<tests>
+
+
+</tests>
+
+    </program>
+</exercise>
+            </TabNode><TabNode tabname="Parsonsprob" tabnode_options="{'subchapter': 'activeCode_sq', 'chapter': 'Chapter10', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Parsonsprob'}">
+<exercise label="vectors_a4_pp" numbered="yes" adaptive="yes" indentation="hide" language="python"><statement>
+                <p>Someone could have COVID-19 if their temperature is above 99.9 degrees Fahrenheit.  Finish
+                    the code below so that it counts and prints how many students in the class may have been exposed.
+                    Use the lines to construct the code, then go back to complete the Activecode tab.</p>
+</statement>
+<blocks><block order="10">
+<cline>#include &lt;iostream&gt;</cline>
+<cline>#include &lt;vector&gt;</cline>
+<cline>using namespace std;</cline>
+</block><block order="4">
+<cline>int main() {</cline>
+</block><block order="9">
+<cline>    vector&lt;double&gt; temps = {98.6, 97.8, 100.3, 97.2, 98.7, 97.8, 99.8, 96.9, 98.2, 99.1, 99.9};</cline>
+</block><block order="3">
+<cline>    int covid_count = 0;</cline>
+</block><block order="8">
+<cline>    for (int i = 0; i &lt; temps.size(); i++) {</cline>
+</block><block order="2">
+<cline>        if (temps[i] &gt; 99.9) {</cline>
+</block><block order="1">
+<cline>            covid_count++;</cline>
+</block><block order="7">
+<cline>        }</cline>
+</block><block order="11">
+<cline>    }</cline>
+</block><block order="5">
+<cline>    cout &lt;&lt; covid_count &lt;&lt; endl;</cline>
+</block><block order="6">
+<cline>}</cline>
+</block></blocks></exercise>            </TabNode></exercise>
+        <exercise xml:id=""><TabNode tabname="Activecode" tabnode_options="{'subchapter': 'activeCode_sq', 'chapter': 'Chapter10', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Activecode'}">
+
+<exercise label="vectors_a6">
+    <statement>
+                <p>Write the function <c>endsEven</c> that takes a vector and removes elements from the end of the vector until
+                    it ends with an even number. Select the Parsonsprob tab for hints for the construction of the code.</p>
+
+    </statement>
+    <program xml:id="vectors_a6_editor" interactive="activecode" language="cpp">
+
+        <input>
+#include &lt;iostream&gt;
+#include &lt;vector&gt;
+using namespace std;
+
+// Write the endsEven function here
+
+
+int main() {
+    vector&lt;int&gt; vec{1,2,3,4,5,6,7,7,9};
+    endsEven(vec);
+    for(int unsigned i = 0; i &lt; vec.size(); i++) {
+        cout &lt;&lt; vec[i] &lt;&lt; endl;
+    }
+}
+        </input>
+<tests>
+
+
+</tests>
+
+    </program>
+</exercise>
+            </TabNode><TabNode tabname="Parsonsprob" tabnode_options="{'subchapter': 'activeCode_sq', 'chapter': 'Chapter10', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Parsonsprob'}">
+<exercise label="vectors_a6_pp" numbered="yes" adaptive="yes" indentation="hide" language="python"><statement>
+                <p>Write the function <c>endsEven</c> that takes a vector and removes elements from the end of the vector until
+                    it ends with an even number. Use the lines to construct the code, then go back to complete the Activecode tab.</p>
+</statement>
+<blocks><block order="3">
+<cline>void endsEven (vector&lt;int&gt; &amp;vec) {</cline>
+</block><block order="1" correct="no">
+<cline>vector endsEven (vector&lt;int&gt; &amp;vec) { </cline>
+</block><block order="6">
+<choice correct="yes"><cline>    while (vec.back() % 2 != 0) {</cline>
+</choice><choice><cline>    for (int i = 0; i &lt; vec.size(); i++) { </cline>
+</choice></block><block order="7">
+<cline>        vec.pop_back();</cline>
+</block><block order="2">
+<cline>    }</cline>
+</block><block order="5">
+<cline>}</cline>
+</block></blocks></exercise>            </TabNode></exercise>
+        <exercise xml:id=""><TabNode tabname="Activecode" tabnode_options="{'subchapter': 'activeCode_sq', 'chapter': 'Chapter10', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Activecode'}">
+
+<exercise label="vectors_a8">
+    <statement>
+                <p>Write the function <c>randomNums</c> that takes two integers: <c>num</c> which is the number of random numbers
+                    you wish to generate, and <c>max</c>, which is the maximum value of random number you wish to generate.  Your
+                    function should return a vector of <c>num</c> integers that are between 1 and <c>max</c>, inclusive.
+                    Select the Parsonsprob tab for hints for the construction of the code.</p>
+
+    </statement>
+    <program xml:id="vectors_a8_editor" interactive="activecode" language="cpp">
+
+        <input>
+#include &lt;iostream&gt;
+#include &lt;cstdlib&gt;
+#include &lt;vector&gt;
+using namespace std;
+
+// Write the randomNums function here
+
+
+int main() {
+    int num = 10;
+    int max = 100;
+    randomNums(num,max);
+    for (int i = 0; i &lt; randomNums(num,max).size(); i++) {
+        cout &lt;&lt; randomNums(num,max)[i] &lt;&lt; endl;
+    }
+}
+        </input>
+<tests>
+
+
+</tests>
+
+    </program>
+</exercise>
+            </TabNode><TabNode tabname="Parsonsprob" tabnode_options="{'subchapter': 'activeCode_sq', 'chapter': 'Chapter10', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Parsonsprob'}">
+<exercise label="vectors_a8_pp" numbered="yes" adaptive="yes" indentation="hide" language="python"><statement>
+                <p>Write the function <c>randomNums</c> that takes two integers: <c>num</c> which is the number of random numbers
+                    you wish to generate, and <c>max</c>, which is the maximum value of random number you wish to generate.  Your
+                    function should return a vector of <c>num</c> integers that are between 1 and <c>max</c>, inclusive.
+                    Use the lines to construct the code, then go back to complete the Activecode tab.</p>
+</statement>
+<blocks><block order="6">
+<cline>vector&lt;int&gt; randomNums (int num, int max) {</cline>
+</block><block order="7">
+<cline>    vector&lt;int&gt; randomVec(num);</cline>
+</block><block order="3">
+<choice correct="yes"><cline>    for (int i = 0; i &lt; num; i++) {</cline>
+</choice><choice><cline>    for (int i = 0; i &lt;= randomVec.size(); i++) { </cline>
+</choice></block><block order="5">
+<cline>        randomVec[i] = rand() % max + 1;</cline>
+</block><block order="2">
+<cline>    }</cline>
+</block><block order="4">
+<cline>    return randomVec;</cline>
+</block><block order="9" correct="no">
+<cline>    return randomVec[i]; </cline>
+</block><block order="8">
+<cline>}</cline>
+</block></blocks></exercise>            </TabNode></exercise>
+        <exercise xml:id=""><TabNode tabname="Activecode" tabnode_options="{'subchapter': 'activeCode_sq', 'chapter': 'Chapter10', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Activecode'}">
+
+<exercise label="vectors_a10">
+    <statement>
+                <p>Write the function <c>hundyBundy</c> that returns a count of all numbers in the passed vector
+                    <c>vec</c> that are divisible by 100. Select the Parsonsprob tab for hints for the construction of the code.</p>
+
+    </statement>
+    <program xml:id="vectors_a10_editor" interactive="activecode" language="cpp">
+
+        <input>
+#include &lt;iostream&gt;
+#include &lt;vector&gt;
+using namespace std;
+
+// Write the hundyBundy function here
+
+
+int main() {
+    vector&lt;int&gt; vec{ 100,10,300,400,21,1000 };
+    cout &lt;&lt; hundyBundy(vec) &lt;&lt; endl;
+}
+        </input>
+<tests>
+
+
+</tests>
+
+    </program>
+</exercise>
+            </TabNode><TabNode tabname="Parsonsprob" tabnode_options="{'subchapter': 'activeCode_sq', 'chapter': 'Chapter10', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Parsonsprob'}">
+<exercise label="vectors_a10_pp" numbered="yes" adaptive="yes" indentation="hide" language="python"><statement>
+                <p>Write the function <c>hundyBundy</c> that returns a count of all numbers in the passed vector
+                    <c>vec</c> that are divisible by 100. Use the lines to construct the code, then go back to complete the Activecode tab.</p>
+</statement>
+<blocks><block order="1">
+<choice correct="yes"><cline>int hundyBundy (const vector&lt;int&gt; vec) {</cline>
+</choice><choice><cline>vector&lt;int&gt; hundyBundy (const vector&lt;int&gt; vec) { </cline>
+</choice></block><block order="9">
+<cline>    int count = 0;</cline>
+</block><block order="11">
+<cline>    for (int i = 0; i &lt; vec.size(); i++) {</cline>
+</block><block order="2" correct="no">
+<cline>    for (int i = 0; i &lt; count(); i++) { </cline>
+</block><block order="6">
+<cline>        if (vec[i] % 100 == 0) {</cline>
+</block><block order="4">
+<cline>            count++;</cline>
+</block><block order="10">
+<cline>        }</cline>
+</block><block order="7">
+<cline>    }</cline>
+</block><block order="8">
+<cline>    return count;</cline>
+</block><block order="5">
+<cline>}</cline>
+</block></blocks></exercise>            </TabNode></exercise>
+        <exercise xml:id=""><TabNode tabname="Activecode" tabnode_options="{'subchapter': 'activeCode_sq', 'chapter': 'Chapter10', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Activecode'}">
+
+<exercise label="vectors_a12">
+    <statement>
+                <p>Write the function <c>weird_print</c> that prints the first half of a vector of integers in reverse order
+                    and then prints the second half in the order present in the vector.
+                    If we had <c>vec = {1,2,3,4,5,6}</c>
+                    we would print <c>3 2 1 4 5 6</c>.
+                    You can assume the size of the vector will always be even.
+                    Select the Parsonsprob tab for hints for the construction of the code.</p>
+
+    </statement>
+    <program xml:id="vectors_a12_editor" interactive="activecode" language="cpp">
+
+        <input>
+#include &lt;iostream&gt;
+#include &lt;vector&gt;
+using namespace std;
+
+// Write the weird_print function here
+
+
+int main() {
+    vector&lt;int&gt; vec{1,2,3,4,5,6};
+    weird_print(vec);
+}
+        </input>
+<tests>
+
+
+</tests>
+
+    </program>
+</exercise>
+            </TabNode><TabNode tabname="Parsonsprob" tabnode_options="{'subchapter': 'activeCode_sq', 'chapter': 'Chapter10', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Parsonsprob'}">
+<exercise label="vectors_a12_pp" numbered="yes" adaptive="yes" indentation="hide" language="python"><statement>
+                <p>Write the function <c>weird_print</c> that prints the first half of a vector of integers in reverse order
+                    and then prints the second half in the order present in the vector.
+                    If we had <c>vec = {1,2,3,4,5,6}</c>
+                    we would print <c>3 2 1 4 5 6</c>.
+                    You can assume the size of the vector will always be even.
+                    Use the lines to construct the code, then go back to complete the Activecode tab.</p>
+</statement>
+<blocks><block order="6">
+<cline>void weird_print (vector&lt;int&gt; vec) {</cline>
+</block><block order="2">
+<cline>    int half = vec.size() / 2;</cline>
+</block><block order="4">
+<cline>    for (int i = vec.size() - 1; i &gt;= half; i--){</cline>
+</block><block order="5">
+<cline>        cout &lt;&lt; vec[i-half] &lt;&lt; ' ';</cline>
+</block><block order="9">
+<cline>    }</cline>
+</block><block order="10">
+<cline>    for (int h = 0; h &lt; half; h++) {</cline>
+</block><block order="7">
+<cline>        cout &lt;&lt; vec[h + half] &lt;&lt; ' ';</cline>
+</block><block order="3">
+<cline>    }</cline>
+</block><block order="8">
+<cline>    cout &lt;&lt; endl;</cline>
+</block><block order="1">
+<cline>}</cline>
+</block></blocks></exercise>            </TabNode></exercise>
+    </section>
+

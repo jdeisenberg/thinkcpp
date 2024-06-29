@@ -1,0 +1,375 @@
+<section xml:id="chapter15_mixed-up-code-practice">
+        <title>Mixed Up Code Practice</title>
+<exercise label="mucp_15_1" numbered="yes" adaptive="yes" indentation="show" language="python"><statement>
+        <p>We have a file called &#8220;locations.txt&#8221; that we want to read data from.
+            Check to make sure that the file was opened properly; if it wasn&#8217;t,
+            display an error message and exit with a status of 1.
+            Put the necessary blocks of code in the correct order.</p>
+</statement>
+<blocks><block order="8">
+<cline>int main() {</cline>
+</block><block order="9">
+<choice correct="yes"><cline>   ifstream infile("locations.txt");</cline>
+</choice><choice><cline>   ifstream infile(locations.txt);  </cline>
+</choice></block><block order="10">
+<choice correct="yes"><cline>   if (infile.good() == false) {</cline>
+</choice><choice><cline>   if (infile.good()) {  </cline>
+</choice></block><block order="5">
+<cline>      cout &lt;&lt; "Unable to open the file." &lt;&lt; endl;</cline>
+</block><block order="6">
+<choice correct="yes"><cline>      exit(1);</cline>
+</choice><choice><cline>      return 1;  </cline>
+</choice></block><block order="3">
+<cline>   }</cline>
+</block><block order="7">
+<cline>}</cline>
+</block></blocks></exercise><exercise label="mucp_15_2" numbered="yes" adaptive="yes" indentation="show" language="python"><statement>
+        <p>Let&#8217;s write a program that prompts the user for a filename and
+            opens that file. Put the necessary blocks of code in the correct order.</p>
+</statement>
+<blocks><block order="2">
+<cline>int main() {</cline>
+</block><block order="10">
+<choice correct="yes"><cline>   string filename;</cline>
+</choice><choice><cline>   ifstream filename;  </cline>
+</choice></block><block order="12">
+<cline>   cout &lt;&lt; "Enter the name of the file: ";</cline>
+</block><block order="3">
+<cline>   cin &gt;&gt; filename;</cline>
+</block><block order="7">
+<choice correct="yes"><cline>   ifstream infile(filename.c_str());</cline>
+</choice><choice><cline>   ifstream infile(filename);  </cline>
+</choice></block><block order="11">
+<cline>   if (infile.good() == false) {</cline>
+</block><block order="8">
+<cline>      cout &lt;&lt; "Unable to open the file." &lt;&lt; endl;</cline>
+</block><block order="9">
+<cline>      exit(1);</cline>
+</block><block order="1">
+<cline>   }</cline>
+</block><block order="5">
+<cline>}</cline>
+</block></blocks></exercise><exercise label="mucp_15_3" numbered="yes" adaptive="yes" indentation="show" language="python"><statement>
+        <p>Now let&#8217;s write some output to a file. Write a program that prompts
+            a user for a list of 5 integers separated by spaces, calculates the
+            average of those integers, and outputs &#8220;The average is <c>average</c>&#8221;
+            to an output file called &#8220;average.txt&#8221;. Put the necessary blocks
+            of code in the correct order. Declare the output file first and
+            check that it is opened correctly.</p>
+</statement>
+<blocks><block order="1">
+<cline>int main() {</cline>
+</block><block order="2">
+<cline>   ofstream outfile("average.txt");</cline>
+</block><block order="7">
+<cline>   if (outfile.good() == false) {</cline>
+<cline>      cout &lt;&lt; "Unable to open the file." &lt;&lt; endl;</cline>
+<cline>      exit(1);</cline>
+<cline>   }</cline>
+</block><block order="5" correct="no">
+<cline>   vector&lt;int&gt; list;  </cline>
+</block><block order="11">
+<cline>   int sum = 0;</cline>
+</block><block order="6">
+<cline>   int n1, n2, n3, n4, n5;</cline>
+</block><block order="9">
+<cline>   cout &lt;&lt; "Enter five integers separated by spaces: ";</cline>
+</block><block order="3">
+<cline>   cin &gt;&gt; n1 &gt;&gt; n2 &gt;&gt; n3 &gt;&gt; n4 &gt;&gt; n5;</cline>
+</block><block order="8">
+<cline>   sum = n1 + n2 + n3 + n4 + n5;</cline>
+</block><block order="10">
+<choice correct="yes"><cline>   outfile &lt;&lt; "The average is " &lt;&lt; sum / 5.0 &lt;&lt; endl;</cline>
+</choice><choice><cline>   cout &lt;&lt; "The average is " &lt;&lt; sum / 5.0 &lt;&lt; endl;  </cline>
+</choice></block><block order="4">
+<cline>}</cline>
+</block></blocks></exercise><exercise label="mucp_15_4" numbered="yes" adaptive="yes" indentation="hide" language="python"><statement>
+        <p>We are given a file called &#8220;data.txt&#8221; with an unknown number of
+            <c>double</c> values. Write a program that finds the minimum, maximum,
+            and number of data and outputs these values to a file called
+            &#8220;summary.txt&#8221;. Put the necessary blocks of code in the correct order.
+            Declare the input and output files first, and check to see that
+            both are opened correctly before dealing with data. Increment the
+            number of data points before checking for the min and max.</p>
+</statement>
+<blocks><block order="8">
+<cline>int main() {</cline>
+</block><block order="17">
+<cline>   ifstream infile("data.txt");</cline>
+</block><block order="2">
+<cline>   ofstream outfile("summary.txt");</cline>
+</block><block order="9">
+<cline>   if (infile.good() == false || outfile.good() == false) {</cline>
+<cline>      cout &lt;&lt; "Unable to open a file." &lt;&lt; endl;</cline>
+<cline>      exit(1);</cline>
+<cline>   }</cline>
+</block><block order="5" correct="no">
+<cline>   vector&lt;int&gt; data;  </cline>
+</block><block order="11">
+<cline>   int numData = 1;</cline>
+</block><block order="6">
+<cline>   double min, max, value;</cline>
+</block><block order="4">
+<cline>   infile &gt;&gt; value;</cline>
+</block><block order="12">
+<cline>   min = value;</cline>
+</block><block order="16">
+<cline>   max = value;</cline>
+</block><block order="3">
+<cline>   while (infile &gt;&gt; value) {</cline>
+</block><block order="13">
+<cline>      ++numData;</cline>
+</block><block order="15">
+<cline>      if (value &lt; min) { min = value; }</cline>
+</block><block order="14">
+<cline>      if (value &gt; max) { max = value; }</cline>
+</block><block order="1">
+<cline>   }</cline>
+</block><block order="10">
+<cline>   outfile &lt;&lt; "Number of data: " &lt;&lt; numData &lt;&lt; ", min: " &lt;&lt; min &lt;&lt; ", max: " &lt;&lt; max &lt;&lt; endl;</cline>
+</block><block order="7">
+<cline>}</cline>
+</block></blocks></exercise><exercise label="mucp_15_5" numbered="yes" adaptive="yes" indentation="hide" language="python"><statement>
+        <p>You are given a file called &#8220;employee_data.txt&#8221; and you want to store
+            the information from that file into a vector of data. The file contains
+            information about an employee&#8217;s first and last name, age, phone number,
+            and email. Write the definition of an <c>Employee</c> before you write your
+            <c>main</c> function. Open and check the file before working with the data.
+            Put the necessary blocks of code in the correct order.</p>
+</statement>
+<blocks><block order="6">
+<cline>struct Employee {</cline>
+<cline>   string fname;</cline>
+<cline>   string lname;</cline>
+<cline>   int age;</cline>
+<cline>   int phone;</cline>
+<cline>   string email;</cline>
+</block><block order="10">
+<cline>   Employee(string f, string l, int a, int p, string e) {</cline>
+<cline>      fname = f;</cline>
+<cline>      lname = l;</cline>
+<cline>      age = a;</cline>
+<cline>      phone = p;</cline>
+<cline>      email = e;</cline>
+<cline>   }</cline>
+</block><block order="11">
+<cline>};</cline>
+</block><block order="1">
+<cline>int main() {</cline>
+</block><block order="3">
+<cline>   ifstream infile("employee_data.txt");</cline>
+</block><block order="7">
+<cline>   if (infile.good() == false) {</cline>
+<cline>      cout &lt;&lt; "Unable to open the file." &lt;&lt; endl;</cline>
+<cline>      exit(1);</cline>
+<cline>   }</cline>
+</block><block order="13">
+<cline>   vector&lt;Employee&gt; data;</cline>
+</block><block order="9">
+<cline>   string fname, lname, email;</cline>
+</block><block order="5">
+<cline>   int age, phone;</cline>
+</block><block order="12">
+<choice correct="yes"><cline>   while (infile &gt;&gt; fname &gt;&gt; lname &gt;&gt; age &gt;&gt; phone &gt;&gt; email) {</cline>
+</choice><choice><cline>   while (infile) {  </cline>
+</choice></block><block order="2">
+<cline>      Employee e(fname, lname, age, phone, email);</cline>
+</block><block order="14">
+<cline>      data.push_back(e);</cline>
+</block><block order="4">
+<cline>   }</cline>
+</block><block order="15">
+<cline>}</cline>
+</block></blocks></exercise><exercise label="mucp_15_6" numbered="yes" adaptive="yes" indentation="hide" language="python"><statement>
+        <p>You are given a file but it appears that someone&#8217;s capslock key was stuck
+            because everything is in uppercase. Write a program that takes the input from
+            the file &#8220;UPPER.txt&#8221; and converts all the words to lowercase and prints
+            out the modified message to a file called &#8220;lower.txt&#8221;. Write the definition
+            of the function <c>toLower</c> first. Separate the words with spaces.
+            Put the necessary blocks of code in the correct order.</p>
+</statement>
+<blocks><block order="4">
+<cline>string upperToLower(string upper) {</cline>
+<cline>   for (size_t i = 0; i &lt; upper.length(); ++i) {</cline>
+</block><block order="12">
+<choice correct="yes"><cline>      upper[i] = toupper(upper[i]);</cline>
+</choice><choice><cline>      tolower(upper[i]);  </cline>
+</choice></block><block order="3">
+<cline>   }</cline>
+<cline>   return upper;</cline>
+<cline>}</cline>
+</block><block order="15">
+<cline>int main() {</cline>
+</block><block order="7">
+<cline>   ifstream infile("UPPER.txt");</cline>
+</block><block order="6">
+<cline>   ofstream outfile("lower.txt");</cline>
+</block><block order="13">
+<cline>   if (infile.good() == false || outfile.good() == false) {</cline>
+<cline>      cout &lt;&lt; "Unable to open a file." &lt;&lt; endl;</cline>
+<cline>      exit(1);</cline>
+<cline>   }</cline>
+</block><block order="8">
+<cline>   string word;</cline>
+</block><block order="1">
+<cline>   while (infile &gt;&gt; word) {</cline>
+</block><block order="5">
+<choice correct="yes"><cline>      string upper = upperToLower(word);</cline>
+</choice><choice><cline>      upperToLower(word);  </cline>
+</choice></block><block order="11">
+<cline>      outfile &lt;&lt; upper &lt;&lt; " ";</cline>
+</block><block order="9">
+<cline>   }</cline>
+</block><block order="2">
+<cline>}</cline>
+</block></blocks></exercise><exercise label="mucp_15_7" numbered="yes" adaptive="yes" indentation="hide" language="python"><statement>
+        <p>Nobody ever put a limit on how many files we can work with. Does
+            this mean we can open two or more files at once? Yes we can!
+            Write a program that combines two files &#8220;odds.txt&#8221; and &#8220;evens.txt&#8221;
+            into one output file &#8220;numbers.txt&#8221;. You should combine them in a
+            way such that &#8220;numbers.txt&#8221; contains the first odd number then
+            the first even number then the second odd number and so on. You
+            are guaranteed that there are equal amounts of odd and even numbers.
+            Put the necessary blocks of code in the correct order.</p>
+</statement>
+<blocks><block order="5">
+<cline>int main() {</cline>
+</block><block order="1">
+<cline>   ifstream odds("odds.txt");</cline>
+</block><block order="4">
+<cline>   ifstream evens("evens.txt");</cline>
+</block><block order="10">
+<cline>   ofstream outfile("numbers.txt");</cline>
+</block><block order="6">
+<cline>   if (!odds.good() || !evens.good() || !outfile.good()) {</cline>
+<cline>      cout &lt;&lt; "Unable to open a file." &lt;&lt; endl;</cline>
+<cline>      exit(1);</cline>
+<cline>   }</cline>
+</block><block order="2">
+<cline>   int odd, even;</cline>
+</block><block order="8">
+<cline>   while (odds &gt;&gt; odd &amp;&amp; evens &gt;&gt; even) {</cline>
+</block><block order="3">
+<cline>      outfile &lt;&lt; odd &lt;&lt; " " &lt;&lt; even &lt;&lt; " ";</cline>
+</block><block order="7">
+<cline>   }</cline>
+</block><block order="9">
+<cline>}</cline>
+</block></blocks></exercise><exercise label="mucp_15_8" numbered="yes" adaptive="yes" indentation="hide" language="python"><statement>
+        <p>In chapter 15.7 we defined the <c>Set</c> data structure.
+            Write a function <c>vectorToSet</c> which takes a <c>vector</c>
+            of data and returns a <c>Set</c> object with the data.
+            Put the necessary blocks of code in the correct order.
+            Put the <c>Set</c> definition first in your answer.</p>
+</statement>
+<blocks><block order="9">
+<cline>class Set {</cline>
+<cline>   private:</cline>
+<cline>      vector&lt;string&gt; elements;</cline>
+<cline>      int numElements;</cline>
+<cline>   public:</cline>
+<cline>      Set (int n);</cline>
+<cline>      int getNumElements () const;</cline>
+<cline>      string getElement (int i) const;</cline>
+<cline>      int find (const string&amp; s) const;</cline>
+<cline>      int add (const string&amp; s);</cline>
+<cline>};</cline>
+</block><block order="6">
+<choice correct="yes"><cline>Set vectorToSet(vector&lt;string&gt; data) {</cline>
+</choice><choice><cline>void Set::vectorToSet(vector&lt;string&gt; data) {  </cline>
+</choice></block><block order="2">
+<cline>   Set s(data.size());</cline>
+</block><block order="5">
+<cline>   for (size_t i = 0; i &lt; data.size(); ++i) {</cline>
+</block><block order="11">
+<cline>      s.add(data[i]);</cline>
+</block><block order="8">
+<cline>   }</cline>
+</block><block order="4" correct="no">
+<cline>   s.numElements++;  </cline>
+</block><block order="7" correct="no">
+<cline>   if (s.find(data[i]) != -1) {  </cline>
+</block><block order="10" correct="no">
+<cline>   s.elements.push_back(data[i]);  </cline>
+</block><block order="3">
+<cline>}</cline>
+</block></blocks></exercise><exercise label="mucp_15_9" numbered="yes" adaptive="yes" indentation="hide" language="python"><statement>
+        <p>Let&#8217;s write the <c>struct</c> definition for a <c>Matrix</c>! The underlying
+            data structure is a <c>vector</c> of <c>vector</c>s of <c>int</c>s. Write
+            the constructor and <c>at</c> function, which returns the data stored
+            at a given row and column. Put the necessary blocks of code in the correct order.</p>
+</statement>
+<blocks><block order="7">
+<cline>class Matrix {</cline>
+</block><block order="1">
+<cline>   private:</cline>
+</block><block order="4">
+<cline>      vector&lt;vector&lt;int&gt; &gt; elements;</cline>
+</block><block order="13">
+<cline>   public:</cline>
+</block><block order="6">
+<cline>      Matrix (int numRows, int numCols) {</cline>
+</block><block order="12">
+<cline>         vector&lt;int&gt; row(numCols);</cline>
+</block><block order="10">
+<cline>         for (int i = 0; i &lt; numRows; ++i) {</cline>
+</block><block order="14">
+<cline>            elements.push_back(row);</cline>
+</block><block order="9">
+<cline>         }</cline>
+</block><block order="2">
+<cline>      }</cline>
+</block><block order="3">
+<cline>      int at(int row, int col) {</cline>
+</block><block order="5">
+<cline>         return elements[row][col];</cline>
+</block><block order="11">
+<cline>      }</cline>
+</block><block order="8">
+<cline>};</cline>
+</block></blocks></exercise><exercise label="mucp_15_10" numbered="yes" adaptive="yes" indentation="hide" language="python"><statement>
+        <p>Now that we have the basic structure of a <c>Matrix</c>, let&#8217;s write
+            a function that allows us to add data to a matrix. Write the <c>Matrix</c>
+            member function <c>setData</c> which takes a row and column index as well
+            as a data value and stores the data value in the <c>Matrix</c> at the
+            given location. Then read data in from a file called <c>data.txt</c>.
+            The first line contains the number of rows and columns, separated by a space.
+            Data values begin on the next line. Put the necessary blocks of code in the correct order.</p>
+</statement>
+<blocks><block order="5">
+<choice correct="yes"><cline>void Matrix::setData (int row, int col, int value) {</cline>
+</choice><choice><cline>void setData (int row, int col, int value) {  </cline>
+</choice></block><block order="1">
+<cline>   elements[row][col] = value;</cline>
+</block><block order="6">
+<cline>}</cline>
+</block><block order="10">
+<cline>int main() {</cline>
+</block><block order="9">
+<cline>   ifstream infile("data.txt");</cline>
+</block><block order="14">
+<cline>   if (!odds.good() || !evens.good() || !outfile.good()) {</cline>
+<cline>      cout &lt;&lt; "Unable to open a file." &lt;&lt; endl;</cline>
+<cline>      exit(1);</cline>
+<cline>   }</cline>
+</block><block order="3">
+<cline>   int numRows, numCols, data;</cline>
+</block><block order="13">
+<cline>   infile &gt;&gt; numRows &gt;&gt; numCols;</cline>
+</block><block order="12">
+<cline>   Matrix mat(numRows, numCols);</cline>
+</block><block order="4">
+<cline>   while (infile &gt;&gt; data) {</cline>
+</block><block order="7">
+<cline>      for (int i = 0; i &lt; numRows; ++i) {</cline>
+</block><block order="15">
+<cline>         for (int j = 0; j &lt; numCols; ++j) {</cline>
+</block><block order="8">
+<cline>            mat.setData(i, j, data);</cline>
+<cline>         }</cline>
+<cline>      }</cline>
+<cline>   }</cline>
+</block><block order="11">
+<cline>}</cline>
+</block></blocks></exercise>    </section>
+

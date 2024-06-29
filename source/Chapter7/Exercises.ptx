@@ -1,0 +1,429 @@
+<exercises xml:id="chapter7_multiple-choice-exercises">
+        <title>Multiple Choice Exercises</title>
+
+    <exercise label="mce_7_1">
+        <statement>
+
+        <p>Q-1: Which variables below is declared as a <c>string</c> type?</p>
+        <program language="cpp"><input>
+int main() {
+  int x = 0;
+  double y = 4.5;
+  string word = "hello";
+  string letter = "a";
+  char c = 'c';
+  bool isPrime = 1;
+}
+</input></program>
+</statement><choices><choice><statement id="mce_7_1_opt_a">        <p><c>x</c></p>
+</statement><feedback id="mce_7_1_opt_a">
+        <p><c>x</c> is an <c>int</c>.</p>
+</feedback></choice><choice><statement id="mce_7_1_opt_b">        <p><c>y</c></p>
+</statement><feedback id="mce_7_1_opt_b">
+        <p><c>y</c> is a <c>double</c>.</p>
+</feedback></choice><choice correct="yes"><statement id="mce_7_1_opt_c">        <p><c>word</c></p>
+</statement><feedback id="mce_7_1_opt_c">
+        <p><c>word</c> is a <c>string</c>.</p>
+</feedback></choice><choice><statement id="mce_7_1_opt_d">        <p><c>"hello"</c></p>
+</statement><feedback id="mce_7_1_opt_d">
+        <p>&#8220;hello&#8221; is not a variable.</p>
+</feedback></choice><choice correct="yes"><statement id="mce_7_1_opt_e">        <p><c>letter</c></p>
+</statement><feedback id="mce_7_1_opt_e">
+        <p><c>letter</c> is a <c>string</c>.</p>
+</feedback></choice><choice><statement id="mce_7_1_opt_f">        <p><c>c</c></p>
+</statement><feedback id="mce_7_1_opt_f">
+        <p><c>c</c> is a <c>char</c>.</p>
+</feedback></choice><choice><statement id="mce_7_1_opt_g">        <p><c>isPrime</c></p>
+</statement><feedback id="mce_7_1_opt_g">
+        <p><c>isPrime</c> is a <c>bool</c>.</p>
+</feedback></choice></choices>
+    </exercise>
+
+    <exercise label="mce_7_2">
+        <statement>
+
+        <p>Q-2: What value should replace the question mark to output the character &#8216;p&#8217;?</p>
+        <program language="cpp"><input>
+int main() {
+  string quote = "Not my tempo.";
+  cout &lt;&lt; quote[?];
+}
+</input></program>
+</statement><choices><choice><statement id="mce_7_2_opt_a">        <p>11</p>
+</statement><feedback id="mce_7_2_opt_a">
+        <p>Remember that indexing begins at 0 in C++.</p>
+</feedback></choice><choice correct="yes"><statement id="mce_7_2_opt_b">        <p>10</p>
+</statement><feedback id="mce_7_2_opt_b">
+        <p>&#8216;p&#8217; is located at index 10 in quote.</p>
+</feedback></choice><choice><statement id="mce_7_2_opt_c">        <p>4</p>
+</statement><feedback id="mce_7_2_opt_c">
+        <p>The character &#8216;m&#8217; is located at index 4.</p>
+</feedback></choice><choice><statement id="mce_7_2_opt_d">        <p>0</p>
+</statement><feedback id="mce_7_2_opt_d">
+        <p>The character &#8220;N&#8221; is located at index 0.</p>
+</feedback></choice></choices>
+    </exercise>
+
+    <exercise label="mce_7_3">
+        <statement>
+
+        <p>Q-3: What is the output of the code below?</p>
+        <program language="cpp"><input>
+int main() {
+  string quote = "I love you 3000.";
+  int x = 3;
+  int y = 3 * x;
+  int z = 1;
+  if (y &gt; 12) {
+    z = z + x + y;
+  }
+  else {
+    z = z + y - x;
+  }
+  cout &lt;&lt; quote[z];
+}
+</input></program>
+</statement><choices><choice><statement id="mce_7_3_opt_a">        <p>I</p>
+</statement><feedback id="mce_7_3_opt_a">
+        <p>The value of <c>z</c> is not 0.</p>
+</feedback></choice><choice><statement id="mce_7_3_opt_b">        <p>0</p>
+</statement><feedback id="mce_7_3_opt_b">
+        <p>The value of <c>z</c> is not greater than 11.</p>
+</feedback></choice><choice><statement id="mce_7_3_opt_c">        <p>o</p>
+</statement><feedback id="mce_7_3_opt_c">
+        <p>The value of <c>z</c> is not 3.</p>
+</feedback></choice><choice correct="yes"><statement id="mce_7_3_opt_d">        <p>y</p>
+</statement><feedback id="mce_7_3_opt_d">
+        <p>The final value of <c>z</c> is 7, and &#8216;y&#8217; is at index 7 of <c>quote</c>.</p>
+</feedback></choice></choices>
+    </exercise>
+
+    <exercise label="mce_7_4">
+        <statement>
+
+        <p>Q-4: What is the output of the code below?</p>
+        <program language="cpp"><input>
+int main() {
+  string quote = "Look at me. I'm the captain now.";
+  int x = quote.length();
+  cout &lt;&lt; quote[x];
+}
+</input></program>
+</statement><choices><choice><statement id="mce_7_4_opt_a">        <p>-1</p>
+</statement><feedback id="mce_7_4_opt_a">
+        <p>-1 is not in <c>quote</c>.</p>
+</feedback></choice><choice><statement id="mce_7_4_opt_b">        <p>w</p>
+</statement><feedback id="mce_7_4_opt_b">
+        <p><c>x</c> is not the index value of the character &#8216;w&#8217;.</p>
+</feedback></choice><choice><statement id="mce_7_4_opt_c">        <p>.</p>
+</statement><feedback id="mce_7_4_opt_c">
+        <p><c>x</c> is not the index value of the last period.</p>
+</feedback></choice><choice><statement id="mce_7_4_opt_d">        <p>&#8216; &#8216;</p>
+</statement><feedback id="mce_7_4_opt_d">
+        <p>It might be logical to think that memory outside of the <c>string</c> is empty space, but there could be leftover junk values.</p>
+</feedback></choice><choice correct="yes"><statement id="mce_7_4_opt_e">        <p>Error, we are indexing out of bounds.</p>
+</statement><feedback id="mce_7_4_opt_e">
+        <p><c>x</c> has a value of 32 and there is no index 32 in <c>quote</c>.</p>
+</feedback></choice></choices>
+    </exercise>
+
+    <exercise label="mce_7_5">
+        <statement>
+
+        <p>Q-5: What is the output of the code below?</p>
+        <program language="cpp"><input>
+int main() {
+  string quote = "With great power comes great responsiblity.";
+  int n = 0;
+  while (n &lt; quote.length()) {
+    if (n % 5 == 0) {
+      cout &lt;&lt; quote[n];
+    }
+    n++;
+  }
+}
+</input></program>
+</statement><choices><choice><statement id="mce_7_5_opt_a">        <p>teeest</p>
+</statement><feedback id="mce_7_5_opt_a">
+        <p>Remember that indexing begins at 0 in C++.</p>
+</feedback></choice><choice correct="yes"><statement id="mce_7_5_opt_b">        <p>Wg reeest</p>
+</statement><feedback id="mce_7_5_opt_b">
+        <p>If we print out every fifth character, including the first, this is the answer.</p>
+</feedback></choice><choice><statement id="mce_7_5_opt_c">        <p>ith reatpowe coms grat rsponibliy.</p>
+</statement><feedback id="mce_7_5_opt_c">
+        <p>This is what we would get if we removed every fifth character.</p>
+</feedback></choice><choice><statement id="mce_7_5_opt_d">        <p>With great power comes great responsiblity.</p>
+</statement><feedback id="mce_7_5_opt_d">
+        <p>Take a look at the conditional in the while loop.</p>
+</feedback></choice></choices>
+    </exercise>
+
+    <exercise label="mce_7_6">
+        <statement>
+
+        <p>Q-6: What is the output of the code below?</p>
+        <program language="cpp"><input>
+int main() {
+  string quote = "Why so serious?";
+  int index = quote.find("a");
+  cout &lt;&lt; index;
+}
+</input></program>
+</statement><choices><choice correct="yes"><statement id="mce_7_6_opt_a">        <p>-1</p>
+</statement><feedback id="mce_7_6_opt_a">
+        <p>Since &#8216;a&#8217; is not found in <c>quote</c>, the <c>find</c> function returns -1.</p>
+</feedback></choice><choice><statement id="mce_7_6_opt_b">        <p>0</p>
+</statement><feedback id="mce_7_6_opt_b">
+        <p>The character at index 0 is &#8216;W&#8217;.</p>
+</feedback></choice><choice><statement id="mce_7_6_opt_c">        <p>8</p>
+</statement><feedback id="mce_7_6_opt_c">
+        <p>The character at index 8 is &#8216;e&#8217;.</p>
+</feedback></choice><choice><statement id="mce_7_6_opt_d">        <p>15</p>
+</statement><feedback id="mce_7_6_opt_d">
+        <p>There is no index <c>15</c> in quote.</p>
+</feedback></choice></choices>
+    </exercise>
+
+    <exercise label="mce_7_7">
+        <statement>
+
+        <p>Q-7: What is the output of the code below?</p>
+        <program language="cpp"><input>
+int main() {
+  string tongue_twister = "How much wood could a woodchuck chuck if a woodchuck could chuck wood?";
+  int index = quote.find("wood");
+  cout &lt;&lt; index;
+}
+</input></program>
+</statement><choices><choice><statement id="mce_7_7_opt_a">        <p>4</p>
+</statement><feedback id="mce_7_7_opt_a">
+        <p>Although &#8220;wood&#8221; appears four times in the <c>string</c>, that is not what the <c>find</c> function returns.</p>
+</feedback></choice><choice correct="yes"><statement id="mce_7_7_opt_b">        <p>9</p>
+</statement><feedback id="mce_7_7_opt_b">
+        <p>The index of &#8216;w&#8217; in the first &#8220;wood&#8221; is at index 9.</p>
+</feedback></choice><choice><statement id="mce_7_7_opt_c">        <p>10</p>
+</statement><feedback id="mce_7_7_opt_c">
+        <p>Remember indexing begins at 0 in C++.</p>
+</feedback></choice><choice><statement id="mce_7_7_opt_d">        <p>12</p>
+</statement><feedback id="mce_7_7_opt_d">
+        <p>The <c>find</c> function returns the index of the first character of the found string.</p>
+</feedback></choice><choice><statement id="mce_7_7_opt_e">        <p>22</p>
+</statement><feedback id="mce_7_7_opt_e">
+        <p>The <c>find</c> function returns the index of the first character of the found string.</p>
+</feedback></choice></choices>
+    </exercise>
+
+    <exercise label="mce_7_8">
+        <statement>
+
+        <p>Q-8: What is the output of the code below?</p>
+        <program language="cpp"><input>
+int main() {
+  string tongue_twister = "How much wood could a woodchuck chuck if a woodchuck could chuck wood?";
+  int index = find (quote, 'w', quote.find("wood") + 1);
+  cout &lt;&lt; index;
+}
+</input></program>
+</statement><choices><choice><statement id="mce_7_8_opt_a">        <p>9</p>
+</statement><feedback id="mce_7_8_opt_a">
+        <p>Take a closer look at the starting index for where we should start looking.</p>
+</feedback></choice><choice correct="yes"><statement id="mce_7_8_opt_b">        <p>22</p>
+</statement><feedback id="mce_7_8_opt_b">
+        <p>After the first &#8216;w&#8217;, the second &#8216;w&#8217; appears at index 22.</p>
+</feedback></choice><choice><statement id="mce_7_8_opt_c">        <p>43</p>
+</statement><feedback id="mce_7_8_opt_c">
+        <p>Take a closer look at the <c>find</c> function and its arguments.</p>
+</feedback></choice><choice><statement id="mce_7_8_opt_d">        <p>65</p>
+</statement><feedback id="mce_7_8_opt_d">
+        <p>Take a closer look at the <c>find</c> function and its arguments.</p>
+</feedback></choice></choices>
+    </exercise>
+
+    <exercise label="mce_7_9">
+        <statement>
+
+        <p>Q-9: What is the output of the code below?</p>
+        <program language="cpp"><input>
+int main() {
+  string quote = "Life is like a box of chocolates. You never know what you&#8217;re gonna get.";
+  int i = 0;
+  int count = 0;
+  while (i &lt; quote.length()) {
+    if (quote[i] == 'e') {
+      count++;
+    }
+    i++;
+  }
+  cout &lt;&lt; count;
+}
+</input></program>
+</statement><choices><choice><statement id="mce_7_9_opt_a">        <p>0</p>
+</statement><feedback id="mce_7_9_opt_a">
+        <p>Are there any occurences of the letter &#8216;e&#8217; in <c>quote</c>?</p>
+</feedback></choice><choice><statement id="mce_7_9_opt_b">        <p>6</p>
+</statement><feedback id="mce_7_9_opt_b">
+        <p>Count the number of &#8216;e&#8217;s in <c>quote</c>.</p>
+</feedback></choice><choice correct="yes"><statement id="mce_7_9_opt_c">        <p>7</p>
+</statement><feedback id="mce_7_9_opt_c">
+        <p>There are 7 occurences of the letter &#8216;e&#8217; in <c>quote</c>.</p>
+</feedback></choice><choice><statement id="mce_7_9_opt_d">        <p>12</p>
+</statement><feedback id="mce_7_9_opt_d">
+        <p>Count the number of &#8216;e&#8217;s in <c>quote</c>.</p>
+</feedback></choice></choices>
+    </exercise>
+
+    <exercise label="mce_7_10">
+        <statement>
+
+        <p>Q-10: What is the output of the code below?</p>
+        <program language="cpp"><input>
+int main() {
+  string call = "Marco!";
+  string response = "Polo!";
+  string output = "call" + "response";
+  cout &lt;&lt; output;
+}
+</input></program>
+</statement><choices><choice><statement id="mce_7_10_opt_a">        <p>Marco! Polo!</p>
+</statement><feedback id="mce_7_10_opt_a">
+        <p>Take a closer look at the initialization of <c>output</c>.</p>
+</feedback></choice><choice><statement id="mce_7_10_opt_b">        <p>Marco!Polo!</p>
+</statement><feedback id="mce_7_10_opt_b">
+        <p>Take a closer look at the initialization of <c>output</c>.</p>
+</feedback></choice><choice><statement id="mce_7_10_opt_c">        <p>call response</p>
+</statement><feedback id="mce_7_10_opt_c">
+        <p>Can we concatenate &#8220;call&#8221; and &#8220;response&#8221;?</p>
+</feedback></choice><choice><statement id="mce_7_10_opt_d">        <p>callresponse</p>
+</statement><feedback id="mce_7_10_opt_d">
+        <p>Can we concatenate &#8220;call&#8221; and &#8220;response&#8221;?</p>
+</feedback></choice><choice correct="yes"><statement id="mce_7_10_opt_e">        <p>Error!</p>
+</statement><feedback id="mce_7_10_opt_e">
+        <p>We cannot concatenate native C strings like &#8220;call&#8221; and &#8220;response&#8221;, so this code results in an error.</p>
+</feedback></choice></choices>
+    </exercise>
+
+    <exercise label="mce_7_11">
+        <statement>
+
+        <p>Q-11: An error occured while delivering a message. All instances of the letter &#8216;s&#8217;
+            got replaced by &#8216;X&#8217;s. Can you complete the code below to fix this error by selecting
+            the correct line of code to replace the question marks?</p>
+        <program language="cpp"><input>
+int main() {
+  string question = "Honey? Where'X my Xuper Xuit?";
+  int i = 0;
+  while (i &lt; question.length()) {
+    if (question[i] == 'X') {
+      ?????
+    }
+    i++;
+  }
+  cout &lt;&lt; question;
+}
+</input></program>
+</statement><choices><choice><statement id="mce_7_11_opt_a">        <p><c>question['X'] = 's';</c></p>
+</statement><feedback id="mce_7_11_opt_a">
+        <p>The argument in the <c>[]</c> operator should be a position in the string.</p>
+</feedback></choice><choice><statement id="mce_7_11_opt_b">        <p><c>'s' = question[i];</c></p>
+</statement><feedback id="mce_7_11_opt_b">
+        <p>Check the order of your assignment.</p>
+</feedback></choice><choice><statement id="mce_7_11_opt_c">        <p><c>'X' = 's';</c></p>
+</statement><feedback id="mce_7_11_opt_c">
+        <p>We cannot assign the value of &#8216;s&#8217; to &#8216;X&#8217;.</p>
+</feedback></choice><choice correct="yes"><statement id="mce_7_11_opt_d">        <p><c>question[i] = 's';</c></p>
+</statement><feedback id="mce_7_11_opt_d">
+        <p>This will successfully replace all instances of &#8216;X&#8217; with &#8216;s&#8217;.</p>
+</feedback></choice></choices>
+    </exercise>
+
+    <exercise label="mce_7_12">
+        <statement>
+
+        <p>Q-12: What is the output of the code below?</p>
+        <program language="cpp"><input>
+int main() {
+  cout &lt;&lt; "butter" &lt; "butterfly";
+}
+</input></program>
+</statement><choices><choice><statement id="mce_7_12_opt_a">        <p>butterbutterfly</p>
+</statement><feedback id="mce_7_12_opt_a">
+        <p>The operator between &#8220;butter&#8221; and &#8220;butterfly&#8221; is the <c>&lt;</c> operator, not <c>&lt;&lt;</c>.</p>
+</feedback></choice><choice><statement id="mce_7_12_opt_b">        <p>0</p>
+</statement><feedback id="mce_7_12_opt_b">
+        <p>Does &#8220;butter&#8221; come before or after &#8220;butterfly&#8221;?</p>
+</feedback></choice><choice correct="yes"><statement id="mce_7_12_opt_c">        <p>1</p>
+</statement><feedback id="mce_7_12_opt_c">
+        <p>&#8220;butter&#8221; comes before &#8220;butterfly&#8221; in the dictionary.</p>
+</feedback></choice><choice><statement id="mce_7_12_opt_d">        <p>False</p>
+</statement><feedback id="mce_7_12_opt_d">
+        <p>In C++, boolean values are outputted as either a 0 or 1.</p>
+</feedback></choice><choice><statement id="mce_7_12_opt_e">        <p>True</p>
+</statement><feedback id="mce_7_12_opt_e">
+        <p>In C++, boolean values are outputted as either a 0 or 1.</p>
+</feedback></choice></choices>
+    </exercise>
+
+    <exercise label="mce_7_13">
+        <statement>
+
+        <p>Q-13: What is the output of the code below?</p>
+        <program language="cpp"><input>
+int main() {
+   string quote = "Suffering builds character";
+   int count = 0;
+   int index = 17;
+   while ( index != quote.length() ){
+     if ( quote[index] == 'a' || quote[index] == 'e' ){
+       count = count + index;
+     }
+     index = index + 1;
+   }
+   cout &lt;&lt; count &lt;&lt; endl;
+}
+</input></program>
+</statement><choices><choice><statement id="mce_7_13_opt_a">        <p>3</p>
+</statement><feedback id="mce_7_13_opt_a">
+        <p>The code is not counting the number of a&#8217;s or e&#8217;s after position 17. Rather adding up their indices.</p>
+</feedback></choice><choice><statement id="mce_7_13_opt_b">        <p>4</p>
+</statement><feedback id="mce_7_13_opt_b">
+        <p>The code is not counting the number of a&#8217;s or e&#8217;s. Rather adding up their indices.</p>
+</feedback></choice><choice correct="yes"><statement id="mce_7_13_opt_c">        <p>64</p>
+</statement><feedback id="mce_7_13_opt_c">
+        <p>Correct! the occurences of &#8216;a&#8217; are 19  and 21, while that of &#8216;e&#8217; is 24 (after <c>index</c> 17). The total is 64.</p>
+</feedback></choice><choice><statement id="mce_7_13_opt_d">        <p>68</p>
+</statement><feedback id="mce_7_13_opt_d">
+        <p>The first occurence of &#8216;e&#8217; is at index 4 so it is not counted.</p>
+</feedback></choice></choices>
+    </exercise>
+
+    <exercise label="mce_7_14">
+        <statement>
+
+        <p>Q-14: What is the output of the code below?</p>
+        <program language="cpp"><input>
+int main() {
+   string quote = "Its Bond, James Bond";
+   int index = 1;
+   while( index &lt; quote.length() ){
+     quote[index] = 'M';
+     index = index * 2;
+   }
+   cout &lt;&lt; quote &lt;&lt; endl;
+}
+</input></program>
+</statement><choices><choice correct="yes"><statement id="mce_7_14_opt_a">        <p>&#8220;IMM MondM James Mond&#8221;</p>
+</statement><feedback id="mce_7_14_opt_a">
+        <p>Correct! We change indices 1,2,4,8,16 to M before <c>index</c> becomes <c>&gt;</c> <c>quote.length()</c>.</p>
+</feedback></choice><choice><statement id="mce_7_14_opt_b">        <p>&#8220;IMMMMMMMMMMMMMMMMMMM&#8221;</p>
+</statement><feedback id="mce_7_14_opt_b">
+        <p>We are not increasing <c>index</c> by 1, instead we are doubling it.</p>
+</feedback></choice><choice><statement id="mce_7_14_opt_c">        <p>&#8220;MMM MondM James Mond&#8221;</p>
+</statement><feedback id="mce_7_14_opt_c">
+        <p>We don&#8217;t start at position 0 this time.</p>
+</feedback></choice><choice><statement id="mce_7_14_opt_d">        <p>&#8220;IMsMBMnM,MJMmMsMBMnM&#8221;</p>
+</statement><feedback id="mce_7_14_opt_d">
+        <p>we are not increasing <c>index</c> by 2, instead we are doubling it.</p>
+</feedback></choice></choices>
+    </exercise>
+    </exercises>
+

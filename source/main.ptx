@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pretext xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
+  <xi:include href="./bookinfo.ptx"/>
+  <book xml:id="thinkcpp" permid="tcp">
+    <title>How to Think Like a Computer Scientist</title>
+    <subtitle>Interactive C++ Edition</subtitle>
+    <frontmatter>
+    <titlepage>
+    <author>
+     <personname>Allen B. Downey</personname>
+     </author>
+     <author>
+     <personname>Barbara Ericson</personname>
+     <institution>University of Michigan</institution>
+     </author>
+    </titlepage>
+    <!--<xi:include href="./FrontMatter/preface.ptx"/>
+    <xi:include href="./FrontMatter/older_preface.ptx"/>-->
+    <colophon>
+     <minilicense>
+      The online version of this work is made available under the Creative Commons Attribution, Share Alike, Non-Commercial license.<image source="by-nc-sa.png" width="20%" description="CC-BY-NC_SA" />
+      </minilicense>
+
+    </colophon>
+    <acknowledgement>
+      <p>We thank Brad Miller for all of his tremendous work on Runestone including getting C++ to work, adding unit tests for C++, and adding a visualizer for C++.</p>
+      <p>
+        Thanks to the following people who helped build the interactive version:
+      </p>
+
+      <p>
+        <ul>
+          <li>Ewelina Papiez - Added interactive questions to the ebook</li>
+          <li>Mariah Zeweke - Added interactive questions to the ebook</li>
+          <li>Richard Wang - Added interactive questions to the ebook</li>
+          <li>Sravani Battula - Added interactive questions to the ebook</li>
+          <li>Haochen Yu - Added interactive questions to the ebook</li>
+          <li>Charles Alford IV - Added interactive questions to the ebook</li>
+        </ul>
+    </p>
+
+
+    <p>The PreTeXt version of this book was constructed by J. David Eisenberg for the Computer Science 76 course at
+      Evergreen Valley College in San Jose, CA. Any mistakes in the book are entirely his.</p>
+
+    </acknowledgement>
+
+    </frontmatter>
+
+    <xi:include href="./Chapter1/toctree.ptx"/>
+    <xi:include href="./Chapter2/toctree.ptx"/>
+    <xi:include href="./Chapter3/toctree.ptx"/>
+    <xi:include href="./Chapter4/toctree.ptx"/>
+
+    <backmatter>
+      <index>
+        <index-list/>
+      </index>
+    </backmatter>
+  </book>
+</pretext>

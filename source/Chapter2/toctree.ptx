@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<chapter xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US" xml:id="variables_and_types_chapter">
+  <title>Variables and Types</title>
+  <xi:include href="./Values.ptx"/>
+  <xi:include href="./Variables.ptx"/>
+  <xi:include href="./Assignment.ptx"/>
+  <xi:include href="./OutputtingVariables.ptx"/>
+  <xi:include href="./Keywords.ptx"/>
+  <xi:include href="./Operators.ptx"/>
+  <xi:include href="./OrderofOperations.ptx"/>
+  <xi:include href="./OperatorsforCharacters.ptx"/>
+  <xi:include href="./Composition.ptx"/>
+  <xi:include href="./Glossary.ptx"/>
+  <xi:include href="./Exercises.ptx"/>
+  <xi:include href="./mixedUpCode_orig.ptx"/>
+  <xi:include href="./activeCode_selectq.ptx"/>
+</chapter>
+
+<!--
+2.1. More Output
+        2.2. Values
+        2.3. Variables
+        2.4. Assignment
+        2.5. Outputting Variables
+        2.6. Keywords
+        2.7. Operators
+        2.8. Order of Operations
+        2.9. Operators for Characters
+        2.10. Composition
+        2.11. Glossary
+        2.12. Multiple Choice Exercises
+        2.13. Mixed-Up Code Exercises
+        2.14. Activecode Exercises
+-->

@@ -1,0 +1,218 @@
+<section xml:id="chapter7_looping-and-counting loopcount">
+        <title>Looping and counting</title>
+
+<exercise label="looping_and_counting_AC_1">
+    <statement>
+        <p>The active code below counts the number of times the letter <c>'a'</c>
+            appears in a string <c>fruit</c>.</p>
+
+    </statement>
+    <program xml:id="looping_and_counting_AC_1_editor" interactive="activecode" language="cpp">
+
+        <input>
+#include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+    string fruit = "banana";
+    int length = fruit.length();
+    int count = 0;
+
+    int index = 0;
+    while (index &lt; length) {
+        if (fruit[index] == 'a') {
+            count = count + 1;
+        }
+        index = index + 1;
+    }
+    cout &lt;&lt; count &lt;&lt; endl;
+}
+        </input>
+<tests>
+
+
+</tests>
+
+    </program>
+</exercise>
+        
+        
+        <p xml:id="chapter7_index-0">This program demonstrates a common idiom, called a <term>counter</term>. The
+            variable <c>count</c> is initialized to zero and then incremented each time
+            we find an <c>&#8217;a&#8217;</c>. (To <term>increment</term> is to increase by one; it is the
+            opposite of <term>decrement</term>, and unrelated to <term>excrement</term>, which is a
+            noun.) When we exit the loop, <c>count</c> contains the result: the total
+            number of a&#8217;s.</p>
+
+    <exercise label="looping_counting_1">
+        <statement>
+
+        <p>Q-2: What does the following code print?</p>
+        <program language="cpp"><input>
+int x = -5;
+while (x &lt; 0) {
+  x = x + 1;
+  cout &lt;&lt; x &lt;&lt; " ";
+}
+</input></program>
+
+        </statement>
+<choices>
+
+            <choice>
+                <statement>
+                    <p>5 4 3 2 1</p>
+                </statement>
+                <feedback>
+                    <p>Notice that x is negative.</p>
+                </feedback>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>-5 -4 -3 -2 -1</p>
+                </statement>
+                <feedback>
+                    <p>Notice that the value of x is incremented before it is printed.</p>
+                </feedback>
+            </choice>
+
+            <choice correct="yes">
+                <statement>
+                    <p>-4 -3 -2 -1 0</p>
+                </statement>
+                <feedback>
+                    <p>The value of x is incremented before it is printed so the first value printed is -4.</p>
+                </feedback>
+            </choice>
+</choices>
+
+    </exercise>
+<exercise label="looping_counting_2" numbered="yes" adaptive="yes" indentation="hide" language="python"><statement>
+        <p>As an exercise, encapsulate this code in a function named
+            <c>countLetters</c>, and generalize it so that it accepts the string and
+            the letter as arguments. In the function, declare <c>length</c>, <c>count</c>, and <c>index</c> in that order.
+            Within the main function, declare <c>city</c> and <c>letter</c> in that order.</p>
+</statement>
+<blocks><block order="8">
+<cline>int countLetters(string s, char letter) {</cline>
+</block><block order="3">
+<cline>   int length = s.length();</cline>
+</block><block order="13">
+<cline>   int count = 0;</cline>
+</block><block order="9">
+<cline>   int index = 0;</cline>
+</block><block order="6">
+<cline>   while (index &lt; length) {</cline>
+</block><block order="12">
+<cline>     if (s[index] == letter) {</cline>
+</block><block order="4">
+<cline>       count = count + 1;</cline>
+<cline>     }</cline>
+</block><block order="11">
+<cline>     index = index + 1;</cline>
+<cline>   }</cline>
+</block><block order="7">
+<cline>   return count;</cline>
+<cline>}</cline>
+</block><block order="1">
+<cline>int main() {</cline>
+</block><block order="10">
+<cline>   string city = "New Baltimore";</cline>
+</block><block order="2">
+<cline>   char letter = "e";</cline>
+</block><block order="5">
+<cline>   cout &lt;&lt; countLetters(city, letter);</cline>
+<cline>}</cline>
+</block></blocks></exercise><exercise label="looping_counting_3" numbered="yes" adaptive="yes" indentation="hide" language="python"><statement>
+        <p>The following is the correct code for printing the even numbers from 0 to 10, but it also includes some extra code that you won&#8217;t need. Drag the needed blocks from the left and put them in the correct order on the right.</p>
+</statement>
+<blocks><block order="2" correct="no">
+<cline>x = x + 1; </cline>
+</block><block order="4">
+<cline>x = 0;</cline>
+</block><block order="6">
+<cline>while (x &lt;= 10) {</cline>
+</block><block order="5" correct="no">
+<cline>while (x &lt; 10) { </cline>
+</block><block order="3">
+<cline>   cout &lt;&lt; x &lt;&lt; endl;</cline>
+</block><block order="1">
+<cline>   x = x + 2;</cline>
+<cline>}</cline>
+</block></blocks></exercise>
+    <exercise label="looping_counting_4">
+        <statement>
+
+        <p>Q-5: What is the value of <c>counter</c> right before main returns 0?</p>
+        <program language="cpp"><input>
+string word_1 = "understand";
+string word_2 = "underwaa";
+
+int end_1 = word_1.length();
+int end_2 = word_2.length();
+
+if ( end_2 &lt; end_1 ){
+   end_1 = end_2;
+}
+
+int index = 0;
+int counter = 0;
+
+while ( index &lt; end_1 ) {
+  if ( word_1[index] == word_2[index] ){
+     counter = counter + 1;
+  }
+
+  else {
+     counter = counter - 1;
+  }
+  index = index + 1;
+}
+
+return 0;
+</input></program>
+
+        </statement>
+<choices>
+
+            <choice>
+                <statement>
+                    <p>The code dosen't reach <code>return 0</code> because we index out of bounds in <code>word_2</code>.</p>
+                </statement>
+                <feedback>
+                    <p>We set <code>end_1</code> to be the smaller of the two lengths so we don't index out of bounds.</p>
+                </feedback>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>2</p>
+                </statement>
+                <feedback>
+                    <p>Not all the letters after index 4 differ in the two words.</p>
+                </feedback>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>3</p>
+                </statement>
+                <feedback>
+                    <p>We decrement the value of counter when we don't have matching letters.</p>
+                </feedback>
+            </choice>
+
+            <choice correct="yes">
+                <statement>
+                    <p>4</p>
+                </statement>
+                <feedback>
+                    <p>Correct! we have 6 matching letters and 2 differing letters upto the length of <code>word_2</code>.</p>
+                </feedback>
+            </choice>
+</choices>
+
+    </exercise>
+    </section>
+

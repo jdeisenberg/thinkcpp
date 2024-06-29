@@ -1,0 +1,722 @@
+<section xml:id="chapter2_activecode-exercises">
+        <title>Activecode Exercises</title>
+        <p>Answer the following <term>Activecode</term> questions to assess what you have learned in this chapter.</p>
+        <exercise xml:id=""><statement>
+                <p>Construct a block of code that prints: &#8220;Lions &amp;&#8221; one the first line, &#8220;Tigers &amp; Bears!&#8221; on the second line, and &#8220;Oh my!&#8221; on the FOURTH line.</p>
+
+    </statement><program interactive="activecode" language="cpp" xml:id="VARS_p1_ac_q_editor">
+
+        <input>
+#include &lt;iostream&gt;
+using namespace std;
+// YOUR CODE HERE
+        </input>
+<tests>
+
+
+</tests>
+
+    </program><solution>
+
+
+    
+                Below is one way to write the code to print one separate lines.
+
+    
+    <program xml:id="VARS_p1_ac_a_editor" language="cpp">
+
+        <input>
+#include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+    cout &lt;&lt; "Lions &amp;" &lt;&lt; endl;
+    cout &lt;&lt; "Tigers &amp;";
+    cout &lt;&lt; " Bears!" &lt;&lt; endl;
+    cout &lt;&lt; endl;
+    cout &lt;&lt; "Oh my!";
+}
+        </input>
+<tests>
+
+
+</tests>
+
+    </program>
+
+            
+
+<exercise label="VARS_p1_ac_a">
+    <statement>
+                <p>Below is one way to write the code to print one separate lines.</p>
+
+    </statement>
+    <program xml:id="VARS_p1_ac_a_editor" interactive="activecode" language="cpp">
+
+        <input>
+#include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+    cout &lt;&lt; "Lions &amp;" &lt;&lt; endl;
+    cout &lt;&lt; "Tigers &amp;";
+    cout &lt;&lt; " Bears!" &lt;&lt; endl;
+    cout &lt;&lt; endl;
+    cout &lt;&lt; "Oh my!";
+}
+        </input>
+<tests>
+
+
+</tests>
+
+    </program>
+</exercise>
+            </solution></exercise>
+        <exercise xml:id=""><statement>
+                <p>Construct a block of code that swaps the value of integers x and y, which have values 3 and 6, respectively.</p>
+
+    </statement><program interactive="activecode" language="cpp" xml:id="VARS_p2_ac_q_editor">
+
+        <input>
+#include &lt;iostream&gt;
+using namespace std;
+// YOUR CODE HERE
+        </input>
+<tests>
+
+
+</tests>
+
+    </program><solution>
+
+
+    
+                Below is one way to write the code to declare and swap these variables.
+
+    
+    <program xml:id="VARS_p2_ac_a_editor" language="cpp">
+
+        <input>
+#include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+    int x;
+    int y;
+    x = 3;
+    y = 6;
+    int temp = x;
+    x = y;
+    y = temp;
+}
+        </input>
+<tests>
+
+
+</tests>
+
+    </program>
+
+            
+
+<exercise label="VARS_p2_ac_a">
+    <statement>
+                <p>Below is one way to write the code to declare and swap these variables.</p>
+
+    </statement>
+    <program xml:id="VARS_p2_ac_a_editor" interactive="activecode" language="cpp">
+
+        <input>
+#include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+    int x;
+    int y;
+    x = 3;
+    y = 6;
+    int temp = x;
+    x = y;
+    y = temp;
+}
+        </input>
+<tests>
+
+
+</tests>
+
+    </program>
+</exercise>
+            </solution></exercise>
+        <exercise xml:id=""><statement>
+                <p>Dan Humphrey is a 3.98 student at Constance High School. His crush&#8217;s first initial is S. Construct a program that assigns the variables name, GPA, and crush, in that order. Output the variables to the terminal to check your code.</p>
+
+    </statement><program interactive="activecode" language="cpp" xml:id="VARS_p3_ac_q_editor">
+
+        <input>
+#include &lt;iostream&gt;
+using namespace std;
+// YOUR CODE HERE
+        </input>
+<tests>
+
+
+</tests>
+
+    </program><solution>
+
+
+    
+                Below is one way to write the code to assign the variables.
+
+    
+    <program xml:id="VARS_p3_ac_a_editor" language="cpp">
+
+        <input>
+#include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+    string name = "Dan Humphrey";
+    double GPA;
+    GPA = 3.98;
+    char crush = 'S';
+}
+        </input>
+<tests>
+
+
+</tests>
+
+    </program>
+
+            
+
+<exercise label="VARS_p3_ac_a">
+    <statement>
+                <p>Below is one way to write the code to assign the variables.</p>
+
+    </statement>
+    <program xml:id="VARS_p3_ac_a_editor" interactive="activecode" language="cpp">
+
+        <input>
+#include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+    string name = "Dan Humphrey";
+    double GPA;
+    GPA = 3.98;
+    char crush = 'S';
+}
+        </input>
+<tests>
+
+
+</tests>
+
+    </program>
+</exercise>
+            </solution></exercise>
+        <exercise xml:id=""><statement>
+                <p>You decide to make homemade Mac &#8216;n&#8217; Cheese for you and your roomates.  Whoever wrote the recipe wanted to make things hard for you by stating that it calls for 1% of a gallon of milk.  Construct a block of code that converts this to tablespoons.
+                    Use the variable name &#8216;tbsp&#8217; for the final tablespoons conversion.</p>
+
+    </statement><program interactive="activecode" language="cpp" xml:id="VARS_p4_ac_q_editor">
+
+        <input>
+#include &lt;iostream&gt;
+using namespace std;
+// YOUR CODE HERE
+        </input>
+<tests>
+
+
+</tests>
+
+    </program><solution>
+
+
+    
+                Below is one way to write the code to convert units to tablespoons.
+
+    
+    <program xml:id="VARS_p4_ac_a_editor" language="cpp">
+
+        <input>
+#include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+    double gallons = 0.01;
+    double cups = 16 * gallons;
+    double tbsp;
+    tbsp = 16 * cups;
+}
+        </input>
+<tests>
+
+
+</tests>
+
+    </program>
+
+            
+
+<exercise label="VARS_p4_ac_a">
+    <statement>
+                <p>Below is one way to write the code to convert units to tablespoons.</p>
+
+    </statement>
+    <program xml:id="VARS_p4_ac_a_editor" interactive="activecode" language="cpp">
+
+        <input>
+#include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+    double gallons = 0.01;
+    double cups = 16 * gallons;
+    double tbsp;
+    tbsp = 16 * cups;
+}
+        </input>
+<tests>
+
+
+</tests>
+
+    </program>
+</exercise>
+            </solution></exercise>
+        <exercise xml:id=""><statement>
+                <p>Construct a block of code that takes the &#8216;volume&#8217; of the rectangular prism defined by length, width, and height and prints the result to the terminal. The volume of a rectangular prism is given by <c>Volume = length * width * height</c>.
+                    Use a length of 2, width of 3, and height of 4.</p>
+
+    </statement><program interactive="activecode" language="cpp" xml:id="VARS_p5_ac_q_editor">
+
+        <input>
+#include &lt;iostream&gt;
+using namespace std;
+// YOUR CODE HERE
+        </input>
+<tests>
+
+
+</tests>
+
+    </program><solution>
+
+
+    
+                Below is one way to write the code to define variables, find volume and print results to the terminal.
+
+    
+    <program xml:id="VARS_p5_ac_a_editor" language="cpp">
+
+        <input>
+#include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+    int length = 2;
+    int width = 3;
+    int height = 4;
+    int volume;
+    volume = height * width * length;
+    cout &lt;&lt; volume;
+}
+        </input>
+<tests>
+
+
+</tests>
+
+    </program>
+
+            
+
+<exercise label="VARS_p5_ac_a">
+    <statement>
+                <p>Below is one way to write the code to define variables, find volume and print results to the terminal.</p>
+
+    </statement>
+    <program xml:id="VARS_p5_ac_a_editor" interactive="activecode" language="cpp">
+
+        <input>
+#include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+    int length = 2;
+    int width = 3;
+    int height = 4;
+    int volume;
+    volume = height * width * length;
+    cout &lt;&lt; volume;
+}
+        </input>
+<tests>
+
+
+</tests>
+
+    </program>
+</exercise>
+            </solution></exercise>
+        <exercise xml:id=""><statement>
+                <p>Construct a block of code that changes the value of the variable a from the character &#8216;a&#8217; to the character &#8216;z&#8217;. Remember that number values can be used with characters and operations.</p>
+
+    </statement><program interactive="activecode" language="cpp" xml:id="VARS_p6_ac_q_editor">
+
+        <input>
+#include &lt;iostream&gt;
+using namespace std;
+// YOUR CODE HERE
+        </input>
+<tests>
+
+
+</tests>
+
+    </program><solution>
+
+
+    
+                Below is one way to write the code to change the value of the character variable.
+
+    
+    <program xml:id="VARS_p6_ac_a_editor" language="cpp">
+
+        <input>
+#include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+    char a = 'a';
+    a = a + 25;
+}
+        </input>
+<tests>
+
+
+</tests>
+
+    </program>
+
+            
+
+<exercise label="VARS_p6_ac_a">
+    <statement>
+                <p>Below is one way to write the code to change the value of the character variable.</p>
+
+    </statement>
+    <program xml:id="VARS_p6_ac_a_editor" interactive="activecode" language="cpp">
+
+        <input>
+#include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+    char a = 'a';
+    a = a + 25;
+}
+        </input>
+<tests>
+
+
+</tests>
+
+    </program>
+</exercise>
+            </solution></exercise>
+        <exercise xml:id=""><statement>
+                <p>Construct a block of code that outputs the <c>volume</c> of a cylinder with a radius of 3 and a height of 4. The formula for volume of a cylinder is V = (pi)(r^2)(h). Use 3.14 for pi.</p>
+
+    </statement><program interactive="activecode" language="cpp" xml:id="VARS_p7_ac_q_editor">
+
+        <input>
+#include &lt;iostream&gt;
+using namespace std;
+// YOUR CODE HERE
+        </input>
+<tests>
+
+
+</tests>
+
+    </program><solution>
+
+
+    
+                Below is one way to write the code to output the volume of the cylinder.
+
+    
+    <program xml:id="VARS_p7_ac_a_editor" language="cpp">
+
+        <input>
+#include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+    double radius = 3.00;
+    double height = 4.00;
+    double pi = 3.14;
+    double volume = pi * radius * radius * height;
+    cout &lt;&lt; volume &lt;&lt; endl;
+}
+        </input>
+<tests>
+
+
+</tests>
+
+    </program>
+
+            
+
+<exercise label="VARS_p7_ac_a">
+    <statement>
+                <p>Below is one way to write the code to output the volume of the cylinder.</p>
+
+    </statement>
+    <program xml:id="VARS_p7_ac_a_editor" interactive="activecode" language="cpp">
+
+        <input>
+#include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+    double radius = 3.00;
+    double height = 4.00;
+    double pi = 3.14;
+    double volume = pi * radius * radius * height;
+    cout &lt;&lt; volume &lt;&lt; endl;
+}
+        </input>
+<tests>
+
+
+</tests>
+
+    </program>
+</exercise>
+            </solution></exercise>
+        <exercise xml:id=""><statement>
+                <p>Construct a block of code that assigns the string &#8220;MATH&#8221; to a variable and prints &#8220;My favorite class is MATH&#8221; on the same line.</p>
+
+    </statement><program interactive="activecode" language="cpp" xml:id="VARS_p8_ac_q_editor">
+
+        <input>
+#include &lt;iostream&gt;
+using namespace std;
+// YOUR CODE HERE
+        </input>
+<tests>
+
+
+</tests>
+
+    </program><solution>
+
+
+    
+                Below is one way to write the code to output the string.
+
+    
+    <program xml:id="VARS_p8_ac_a_editor" language="cpp">
+
+        <input>
+#include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+    string favClass = "MATH";
+    cout &lt;&lt; "My favorite class is ";
+    cout &lt;&lt; favClass;
+}
+        </input>
+<tests>
+
+
+</tests>
+
+    </program>
+
+            
+
+<exercise label="VARS_p8_ac_a">
+    <statement>
+                <p>Below is one way to write the code to output the string.</p>
+
+    </statement>
+    <program xml:id="VARS_p8_ac_a_editor" interactive="activecode" language="cpp">
+
+        <input>
+#include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+    string favClass = "MATH";
+    cout &lt;&lt; "My favorite class is ";
+    cout &lt;&lt; favClass;
+}
+        </input>
+<tests>
+
+
+</tests>
+
+    </program>
+</exercise>
+            </solution></exercise>
+        <exercise xml:id=""><statement>
+                <p>It&#8217;s Black Friday and the Nintendo Switch you&#8217;be been saving up for is marked down to 60% of its original price!  Construct a block of code that calculates and outputs the variable <c>moneySaved</c>, which is how much money you&#8217;d be saving if the system originally costed $359.99?</p>
+
+    </statement><program interactive="activecode" language="cpp" xml:id="VARS_p9_ac_q_editor">
+
+        <input>
+#include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+// YOUR CODE HERE
+
+
+    cout &lt;&lt; moneySaved &lt;&lt; endl;
+    cout &lt;&lt; "moneySaved should be $143.99." &lt;&lt; endl;
+}
+        </input>
+<tests>
+
+
+</tests>
+
+    </program><solution>
+
+
+    
+                Below is one way to write the code to calculate your savings.
+
+    
+    <program xml:id="VARS_p9_ac_a_editor" language="cpp">
+
+        <input>
+#include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+    double game = 359.99;
+    double discount = game * 0.60;
+    double moneySaved = game - discount;
+}
+        </input>
+<tests>
+
+
+</tests>
+
+    </program>
+
+            
+
+<exercise label="VARS_p9_ac_a">
+    <statement>
+                <p>Below is one way to write the code to calculate your savings.</p>
+
+    </statement>
+    <program xml:id="VARS_p9_ac_a_editor" interactive="activecode" language="cpp">
+
+        <input>
+#include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+    double game = 359.99;
+    double discount = game * 0.60;
+    double moneySaved = game - discount;
+}
+        </input>
+<tests>
+
+
+</tests>
+
+    </program>
+</exercise>
+            </solution></exercise>
+        <exercise xml:id=""><statement>
+                <p>Your family just bought a dog and everyone has been fighting over what to name it.  It went from Champ to Copper to Higgins, and after a few days of being Higgins, everyone agreed on Buddy.  Construct a block of code that illustrates this concept.</p>
+
+    </statement><program interactive="activecode" language="cpp" xml:id="VARS_p10_ac_q_editor">
+
+        <input>
+#include &lt;iostream&gt;
+using namespace std;
+// YOUR CODE HERE
+        </input>
+<tests>
+
+
+</tests>
+
+    </program><solution>
+
+
+    
+                Below is one way to write the code to illustrate the dog&#8217;s name change process.
+
+    
+    <program xml:id="VARS_p10_ac_a_editor" language="cpp">
+
+        <input>
+#include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+    string name = "Champ";
+    name = "Copper";
+    string newName = "Higgins";
+    name = newName;
+    name = "Buddy";
+}
+        </input>
+<tests>
+
+
+</tests>
+
+    </program>
+
+            
+
+<exercise label="VARS_p10_ac_a">
+    <statement>
+                <p>Below is one way to write the code to illustrate the dog&#8217;s name change process.</p>
+
+    </statement>
+    <program xml:id="VARS_p10_ac_a_editor" interactive="activecode" language="cpp">
+
+        <input>
+#include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+    string name = "Champ";
+    name = "Copper";
+    string newName = "Higgins";
+    name = newName;
+    name = "Buddy";
+}
+        </input>
+<tests>
+
+
+</tests>
+
+    </program>
+</exercise>
+            </solution></exercise>
+    </section>
+
