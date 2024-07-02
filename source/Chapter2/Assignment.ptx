@@ -44,8 +44,8 @@ hour = "Hello.";       // WRONG !!</pre>
             that as a general rule variables and values have the same type, and
             we&#8217;ll talk about special cases later.</p>
         <p>Another source of confusion is that some strings <em>look</em> like integers,
-            but they are not. For example, the string &#8220;123&#8221;, which is made up of the
-            characters 1, 2 and 3, is not the same thing as the <em>number</em> 123. This
+            but they are not. For example, the string <c>"123"</c>, which is made up of the
+            characters 1, 2 and 3, is not the same thing as the <em>number</em> <c>123</c>. This
             assignment is illegal:</p>
         <pre>int minute = "59";         // WRONG!</pre>
 

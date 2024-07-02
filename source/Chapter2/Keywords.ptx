@@ -17,14 +17,14 @@
             in different colors. For example, keywords might be blue, strings red,
             and other code black.</p>
         <warning>
-            <p>If you type a variable name and it turns blue, watch out! You might get
+            <p>If you type a variable name and it turns the same color as a keyword, watch out! You might get
                 some strange behavior from the compiler.</p>
         </warning>
         <note>
             <p>Case matters!  You can name a <c>string</c> variable <c>String</c> without an issue
                 because C++ does not consider <c>String</c> to be the same as keyword <c>string</c>.
                 Also, a anything written in quotes, for example <c>"string"</c> is not considered
-                a keyword in C++, even if it is spelt the same.</p>
+                a keyword in C++, even if it is spelled the same.</p>
         </note>
 
         <exercise label="keywords_1">

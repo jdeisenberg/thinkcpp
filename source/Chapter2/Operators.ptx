@@ -88,32 +88,97 @@ cout &lt;&lt; minute * 100 / 60 &lt;&lt; endl;</pre>
 <matches><match order="1"><premise>x*10</premise><response>100</response></match><match order="2"><premise>x-10</premise><response>0</response></match><match order="3"><premise>100/x</premise><response>10</response></match><match order="4"><premise>(x+x+x+x+x)*20</premise><response>1000</response></match></matches></exercise>
         <exercise label="operators_3">
             <statement>
-    <p>Q-3: Integer division always rounds <BlankNode/> to the nearest <BlankNode/>. <var/>  <var/>  </p></statement><setup><var><condition string="^\s*[Dd][Oo][Ww][Nn]\s*$"><feedback><p>Correct!</p></feedback></condition><condition string="^\s*x\s*$"><feedback><p>Try again!</p></feedback></condition></var><var><condition string="^\s*[Ii][Nn][Tt][Ee][Gg][Ee][Rr]\s*$"><feedback><p>Correct!</p></feedback></condition><condition string="^\s*.*\s*$"><feedback><p>Try again!</p></feedback></condition></var></setup></exercise>
-        <exercise label="operators_3.1">
+    <p>Q-3: Integer division always rounds <var/> to the nearest <var/>.</p></statement>
+    <setup>
+        <var>
+            <condition string="^\s*[Dd][Oo][Ww][Nn]\s*$"><feedback><p>Correct!</p></feedback></condition>
+            <condition string="^\s*x\s*$"><feedback><p>Try again!</p></feedback></condition>
+        </var>
+        <var>
+            <condition string="^\s*[Ii][Nn][Tt][Ee][Gg][Ee][Rr]\s*$"><feedback><p>Correct!</p></feedback></condition>
+            <condition string="^\s*.*\s*$"><feedback><p>Try again!</p></feedback></condition>
+        </var>
+    </setup>
+</exercise>
+
+<exercise label="operators_3.1">
             <statement>
-    <p>Q-4: <var/>  </p></statement><setup><var><pre>int num1 = 12;
+    <p>Q-4: In this code: </p><pre>int num1 = 12;
 int num2 = 5;
-cout &lt;&lt; num1 / num2;</pre><p>What is printed to the terminal?</p><condition number="[2, 2]"><feedback><p>Correct!</p></feedback></condition></var></setup></exercise>
-        <exercise label="operators_3.2">
+cout &lt;&lt; num1 / num2;</pre><p>What is printed to the terminal? <var/></p>
+</statement>
+    <setup>
+        <var>
+            <condition number="[2]"><feedback><p>Correct!</p></feedback></condition>
+            <condition number="2.4"><feedback><p>This is *integer* division!</p></feedback></condition>
+            <condition string=".*"><feedback><p>Remember that integers divided by integers give integer results.</p></feedback></condition>
+        </var>
+    </setup>
+</exercise>
+
+<exercise label="operators_3.2">
             <statement>
-    <p>Q-5: <var/>  </p></statement><setup><var><pre>int num1 = 10;
+    <p>Q-5: In this code: </p><pre>int num1 = 10;
 int num2 = 48;
-cout &lt;&lt; num2 / num1;</pre><p>What is printed to the terminal?</p><condition number="[4, 4]"><feedback><p>Correct!</p></feedback></condition></var></setup></exercise>
-        <exercise label="operators_3.3">
+cout &lt;&lt; num2 / num1;</pre><p>What is printed to the terminal? <var /></p>
+    </statement>
+    <setup>
+        <var>
+            <condition number="4"><feedback><p>Correct!</p></feedback></condition>
+            <condition number="4.8"><feedback><p>This is <em>integer</em> division!</p></feedback></condition>
+            <condition string=".*"><feedback><p>Remember that integers divided by integers give integer results.</p></feedback></condition>
+        </var>
+    </setup>
+</exercise>
+
+<exercise label="operators_3.3">
             <statement>
-    <p>Q-6: <var/>  </p></statement><setup><var><pre>int num1 = 10;
+    <p>Q-6: In this code: </p><pre>int num1 = 10;
 int num2 = 40.1;
-cout &lt;&lt; num2 / num1;</pre><p>What is printed to the terminal?</p><condition number="[4, 4]"><feedback><p>Correct!</p></feedback></condition></var></setup></exercise>
-        <exercise label="operators_3.4">
+cout &lt;&lt; num2 / num1;</pre><p>What is printed to the terminal? <var /></p>
+</statement>
+<setup>
+    <var>
+        <condition number="4"><feedback><p>Correct!</p></feedback></condition>
+        <condition number="4.01"><feedback><p>The 40.1 was assigned to an <c>int</c>.</p></feedback></condition>
+        <condition string=".*"><feedback><p>Hint: the 40.1 is assigned to an <c>int</c>.</p></feedback></condition>
+    </var>
+</setup>
+</exercise>
+
+<exercise label="operators_3.4">
             <statement>
-    <p>Q-7: <var/>  </p></statement><setup><var><pre>int num1 = 10;
+    <p>Q-7: In this code: </p>
+    <pre>int num1 = 10;
 int num2 = 39.9;
-cout &lt;&lt; num2 / num1;</pre><p>What is printed to the terminal?</p><condition number="[3, 3]"><feedback><p>Correct!</p></feedback></condition></var></setup></exercise>
+cout &lt;&lt; num2 / num1;</pre><p>What is printed to the terminal? <var/></p>
+</statement>
+<setup>
+    <var>
+        <condition number="3"><feedback><p>Correct!</p></feedback></condition>
+        <condition number="4"><feedback><p>Integer division does not round up.</p></feedback></condition>
+        <condition number="3.99"><feedback><p>This is integer division!</p></feedback></condition>
+        <condition string=".*"><feedback><p>The 39.9 is asisgned to an <c>int</c>.</p></feedback></condition>
+    </var>
+</setup>
+</exercise>
+
         <exercise label="operators_3.5">
             <statement>
-    <p>Q-8: <var/>  </p></statement><setup><var><pre>int num1 = 7;
+    <p>Q-8: In this code:  </p><pre>int num1 = 7;
 int num2 = 8;
-cout &lt;&lt; "Decimal:" &lt;&lt; num1 / num2;</pre><p>What is printed after <c>Decimal:</c>?</p><condition number="[0, 0]"><feedback><p>Correct!</p></feedback></condition></var></setup></exercise><exercise label="operators_4" numbered="yes" adaptive="yes" indentation="hide" language="python"><statement>
+cout &lt;&lt; "Decimal:" &lt;&lt; num1 / num2;</pre><p>What is printed after <c>Decimal:</c> <var />?</p>
+</statement>
+
+<setup>
+    <var>
+        <condition number="0"><feedback><p>Correct!</p></feedback></condition>
+        <condition string=".*"><feedback><p>This is <em>integer</em> division!</p></feedback></condition>
+    </var>
+</setup>
+</exercise>
+
+<exercise label="operators_4" numbered="yes" adaptive="yes" indentation="hide" language="python"><statement>
         <p>Construct a code block that prints the total cost of your meal, including the 6.0% sales tax, after you purchase two orders of fries, three burgers, and a milkshake.  Start by initializing the value of sales tax, then the prices of the food.  Once you have initialized the variables, you can perform your calculations and save the result in the price variable.  At the very end, you will print out the total price.</p>
 </statement>
 <blocks><block order="5">
@@ -139,5 +204,7 @@ cout &lt;&lt; "Decimal:" &lt;&lt; num1 / num2;</pre><p>What is printed after <c>
 <cline> cout &lt;&lt; price &lt;&lt; "." &lt;&lt; endl;</cline>
 </choice></block><block order="6">
 <cline>}</cline>
-</block></blocks></exercise>    </section>
+</block></blocks></exercise>
+
+</section>
 

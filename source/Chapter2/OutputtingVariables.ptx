@@ -85,7 +85,7 @@ int main () {
     </program>
 </exercise>
         <p>On one line, this program outputs a string, two integers, a character,
-            and the special value <c>endl</c>. Very impressive!</p>
+            and the special value <c>endl</c>. Very convenient!</p>
 
     <exercise label="output_vars_1">
         <statement>

@@ -18,11 +18,11 @@
         
         
         <p>A <term>character</term> value is a letter or digit or punctuation mark enclosed in
-            single quotes, like &#8217;a&#8217; or &#8217;5&#8217;. You can output character values the same
+            single quotes, like <c>'a'</c> or <c>'5'</c>. You can output character values the same
             way:</p>
         <pre>cout &lt;&lt; '}' &lt;&lt; endl;</pre>
         <p>This example outputs a single close squiggly-brace on a line by itself.</p>
-        <p>It is easy to confuse different types of values, like &#8220;5&#8221;, &#8217;5&#8217; and 5,
+        <p>It is easy to confuse different types of values, like <c>"5"</c>, <c>'5'</c>, and <c>5</c>,
             but if you pay attention to the punctuation, it should be clear that the
             first is a string, the second is a character and the third is an
             integer. The reason this distinction is important should become clear
