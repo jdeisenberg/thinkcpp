@@ -87,7 +87,7 @@ int main () {
 
         <exercise label="char_operations_1">
             <statement>
-    <p>Q-3: What is the value of letter if <c>letter = 'c' + 3</c>? <var/>  </p></statement><setup><var><condition string="^\s*f\s*$"><feedback><p>Correct!</p></feedback></condition><condition string="^\s*.*\s*$"><feedback><p>Try again!</p></feedback></condition></var></setup></exercise><exercise label="char_operations_2" numbered="yes" adaptive="yes" indentation="hide" language="python"><statement>
+    <p>Q-3: What is the value of the character variable <c>letter</c> if <c>letter = 'c' + 3</c>? (Omit the quote marks in your answer.) <var/>  </p></statement><setup><var><condition string="^\s*f\s*$"><feedback><p>Correct!</p></feedback></condition><condition string="^\s*.*\s*$"><feedback><p>Try again!</p></feedback></condition></var></setup></exercise><exercise label="char_operations_2" numbered="yes" adaptive="yes" indentation="hide" language="python"><statement>
         <p>Construct a main function that uses character operations to generate the output &#8216;r&#8217;.</p>
 </statement>
 <blocks><block order="3">
@@ -108,5 +108,6 @@ int main () {
 <cline> cout &lt;&lt; "r"; </cline>
 </block><block order="9">
 <cline>}</cline>
-</block></blocks></exercise>    </section>
+</block></blocks></exercise>
+</section>
 

@@ -167,10 +167,27 @@ int main () {
 
         <exercise label="compos_2">
             <statement>
-    <p>Q-5: The left-hand side of an assignment statement has to be a <BlankNode/> name, not an expression. <var/>  </p></statement><setup><var><condition string="^\s*[Vv][Aa][Rr][Ii][Aa][Bb][Ll][Ee]\s*$"><feedback><p>Correct!</p></feedback></condition><condition string="^\s*.*\s*$"><feedback><p>Try again!</p></feedback></condition></var></setup></exercise>
-        <exercise label="compos_3">
+    <p>Q-5: The left-hand side of an assignment statement has to be a <var/> name, not an expression.</p></statement>
+
+    <setup>
+       <var>
+          <condition string="^\s*[Vv][Aa][Rr][Ii][Aa][Bb][Ll][Ee]\s*$"><feedback><p>Correct!</p></feedback></condition>
+          <condition string="^\s*.*\s*$"><feedback><p>Hint: Begins with "v".</p></feedback></condition>
+        </var>
+    </setup>
+</exercise>
+
+<exercise label="compos_3">
             <statement>
-    <p>Q-6: In programming, another word for <term>combine</term> is <BlankNode/>. <var/>  </p></statement><setup><var><condition string="^\s*[Cc][Oo][Mm][Pp][Oo][Ss][Ee]\s*$"><feedback><p>Correct!</p></feedback></condition><condition string="^\s*.*\s*$"><feedback><p>Try again!</p></feedback></condition></var></setup></exercise>
+    <p>Q-6: In programming, another word for <term>combine</term> is <var/>. </p></statement>
+    <setup>
+        <var>
+            <condition string="^\s*([Cc][Oo][Mm][Pp][Oo][Ss]([Ee]|([Ii][Tt][Ii][Oo][Nn])))\s*$"><feedback><p>Correct!</p></feedback></condition>
+            <condition string="^\s*.*\s*$"><feedback><p>Hint: Begins with "c".</p></feedback></condition>
+        </var>
+    </setup>
+</exercise>
+
 <exercise label="compos_4">
     <statement>
         <p>Finish the code below so that the velocity is calculated completely on a single line.  Hint: the current velocity results from 1) the initial velocity and 2) the acceleration over a window of time.  Use <c>v0</c> for initial velocity, <c>a</c> for acceleration, and <c>t</c> for time.</p>
