@@ -2,7 +2,7 @@
         <title>More recursion</title>
         
         
-        <p xml:id="chapter5_index-0">So far we have only learned a small subset of C++, but you might be
+        <p>So far we have only learned a small subset of C++, but you might be
             interested to know that this subset is now a <term>complete</term> programming
             language, by which I mean that anything that can be computed can be
             expressed in this language. Any program ever written could be rewritten
@@ -33,18 +33,18 @@
         <p xml:id="chapter5_index-1">If you saw that definition in the dictionary, you might be annoyed. On
             the other hand, if you looked up the definition of the mathematical
             function <term>factorial</term>, you might get something like:</p>
-        <math_block docname="Chapter5/morerecursion" label="True" nowrap="False" number="True" xml:space="preserve">\begin{aligned}
+        <me>\begin{aligned}
 &amp;&amp;  0! = 1 \\
-&amp;&amp;  n! = n \cdot (n-1)!\end{aligned}</math_block>
+&amp;&amp;  n! = n \cdot (n-1)!\end{aligned}</me>
         <note>
-            <p>Factorial is usually denoted with the symbol <math>!</math>, which is not to
+            <p>Factorial is usually denoted with the symbol <m>!</m>, which is not to
                 be confused with the C++ logical operator ! which means NOT.</p>
         </note>
         <p>This definition says that the factorial of 0 is 1, and the factorial of any
-            other value, <math>n</math>, is <math>n</math> multiplied by the factorial of
-            <math>n-1</math>. So <math>3!</math> is 3 times <math>2!</math>, which is 2 times
-            <math>1!</math>, which is 1 times 0!. Putting it all together, we get
-            <math>3!</math> equal to 3 times 2 times 1 times 1, which is 6.</p>
+            other value, <m>n</m>, is <m>n</m> multiplied by the factorial of
+            <m>n-1</m>. So <m>3!</m> is 3 times <m>2!</m>, which is 2 times
+            <m>1!</m>, which is 1 times 0!. Putting it all together, we get
+            <m>3!</m> equal to 3 times 2 times 1 times 1, which is 6.</p>
         <p>If you can write a recursive definition of something, you can usually
             write a C++ program to evaluate it. The first step is to decide what the
             parameters are for this function, and what the return type is. With a
@@ -59,8 +59,8 @@
   }
 }</pre>
         <p>Otherwise, and this is the interesting part, we have to make a recursive
-            call to find the factorial of <math>n-1</math>, and then multiply it by
-            <math>n</math>.</p>
+            call to find the factorial of <m>n-1</m>, and then multiply it by
+            <m>n</m>.</p>
 
 <exercise label="more_recursion_AC_1">
     <statement>
@@ -99,13 +99,13 @@ int main () {
         <p>If we look at the flow of execution for this program, it is similar to
             nLines from the previous chapter. If we call factorial with the value 3:</p>
         <p>Since 3 is not zero, we take the second branch and calculate the
-            factorial of <math>n-1</math>&#8230;</p>
+            factorial of <m>n-1</m>&#8230;</p>
         <blockquote>
             <p>Since 2 is not zero, we take the second branch and calculate the
-                factorial of <math>n-1</math>&#8230;</p>
+                factorial of <m>n-1</m>&#8230;</p>
             <blockquote>
                 <p>Since 1 is not zero, we take the second branch and calculate the
-                    factorial of <math>n-1</math>&#8230;</p>
+                    factorial of <m>n-1</m>&#8230;</p>
                 <blockquote>
                     <p>Since 0 <em>is</em> zero, we take the first branch and return the
                         value 1 immediately without making any more recursive calls.</p>
@@ -120,7 +120,7 @@ int main () {
             6, is returned to main, or whoever called factorial (3).</p>
         <p>Here is what the stack diagram looks like for this sequence of function
             calls:</p>
-        <figure align="center" xml:id=""><image source="Chapter5/Images/5.10stackdiagram.png" width="50%" alt="image"/></figure>
+        <figure align="center" xml:id="img_5_10_stackdiagram"><image source="Chapter5/Images/5.10stackdiagram.png" width="50%" alt="image"/></figure>
         <p>The return values are shown being passed back up the stack.</p>
         <p>Notice that in the last instance of factorial, the local variables
             recurse and result do not exist because when n=0 the branch that creates

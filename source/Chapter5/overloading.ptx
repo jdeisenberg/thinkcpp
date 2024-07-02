@@ -1,4 +1,4 @@
-<section xml:id="chapter5_overloading id1">
+<section xml:id="chapter5_overloading">
         <title>Overloading</title>
         <p>In the previous section you might have noticed that <c>fred</c> and <c>area</c>
             perform similar functions&#8212;finding the area of a circle&#8212;but take
@@ -8,7 +8,7 @@
             name. In other words, it would make more sense if <c>fred</c> were called <c>area</c>.</p>
         
         
-        <p xml:id="chapter5_index-0">Having more than one function with the same name, which is called
+        <p>Having more than one function with the same name, which is called
             <term>overloading</term>, is legal in C++ <em>as long as each version takes
                 different parameters</em>. So we can go ahead and rename <c>fred</c>:</p>
         <pre>double area (double xc, double yc, double xp, double yp) {

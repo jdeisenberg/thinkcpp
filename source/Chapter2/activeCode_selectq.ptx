@@ -58,11 +58,10 @@ int main () {
 </block><block order="4">
 <cline>}</cline>
 </block></blocks></exercise>            </TabNode></exercise>-->
-        <exercise xml:id="ch2_act1"><TabNode tabname="Activecode" tabnode_options="{'subchapter': 'activeCode_selectq', 'chapter': 'Chapter2', 'basecourse': 'thinkcpp', 'optional': '', 'optclass': '', 'tabname': 'Activecode'}">
 
 <exercise label="VARS_a4">
     <statement>
-                <p>Finish the code below so that it returns the correct volume of a sphere. Select the Parsonsprob tab for hints for the construction of the code. Hint: think about what happens when you use integer division. The volume of a sphere is given by V = (4/3)(pi)(r^3).</p>
+                <p>Finish the code below so that it returns the correct volume of a sphere.  Hint: think about what happens when you use integer division. The volume of a sphere is given by V = (4/3)(pi)(r^3).</p>
 
     </statement>
     <program xml:id="VARS_a4_editor" interactive="activecode" language="cpp">

@@ -2,7 +2,7 @@
         <title>Activecode Exercises</title>
         <p>Answer the following <term>Activecode</term> questions to
             assess what you have learned in this chapter.</p>
-        <exercise xml:id=""><statement>
+        <exercise xml:id="ch4_ex1"><statement>
                 <p>Fix the code below so that it prints &#8220;THE TEAM&#8221; &#8220;THE TEAM&#8221;
                     &#8220;THE TEAM&#8221; on three separate lines.</p>
 
@@ -34,11 +34,9 @@ int main() {
 
     </program><solution>
 
-
-    
-                Below is one way to fix the program.  Since we want &#8220;THE TEAM&#8221;
+                <p>Below is one way to fix the program.  Since we want &#8220;THE TEAM&#8221;
                     to print three times, we must check all three conditons.  this
-                    means changing the else if statements to if statements.
+                    means changing the <c>else if</c> statements to <c>if</c> statements.</p>
 
     
     <program xml:id="cond_rec_a1_a_editor" language="cpp">
@@ -61,58 +59,13 @@ int main(){
    }
 }
         </input>
-<tests>
-
-
-</tests>
 
     </program>
 
-            
-
-<exercise label="cond_rec_a1_a">
-    <statement>
-                <p>Below is one way to fix the program.  Since we want &#8220;THE TEAM&#8221;
-                    to print three times, we must check all three conditons.  this
-                    means changing the <c>else if</c> statements to <c>if</c> statements.</p>
-
-    </statement>
-    <program xml:id="cond_rec_a1_a_editor" interactive="activecode" language="cpp">
-
-        <input>
-#include &lt;iostream&gt;
-using namespace std;
-int main(){
-   int x = 8;
-   int y = 8;
-
-   if (x % 2 == 0) {
-       cout &lt;&lt; "THE TEAM" &lt;&lt; endl;
-   }
-   if (x &gt;= y) {
-       cout &lt;&lt; "THE TEAM" &lt;&lt; endl;
-   }
-   if (y &gt;= x) {
-       cout &lt;&lt;&lt; "THE TEAM" &lt;&lt; endl;
-   }
-}
-        </input>
-<tests>
-
-
-</tests>
-
-    </program>
-</exercise>
             </solution></exercise>
-        <raw format="html" xml:space="preserve">
-&lt;div class="runestone sqcontainer %(optclass)s"&gt;
-&lt;div data-component="selectquestion" id=cond_rec_a2_sq data-questionlist='cond_rec_a2, cond_rec_a2_pp'         data-toggleoptions="toggle, lock" data-togglelabels="togglelabels:" data-limit-basecourse=true&gt;
-    &lt;p&gt;Loading a dynamic question ...&lt;br/&gt;Selecting from: cond_rec_a2, cond_rec_a2_pp&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-</raw>
-        <exercise xml:id=""><statement>
+
+
+        <exercise xml:id="ch4_ex2"><statement>
                 <p>Fix the infinite recursion in the code below.  The function
                     should not count any numbers after 10 (the highest numbers
                     that should print are 9 or 10).  When it is done counting,
@@ -139,20 +92,16 @@ int main () {
     countBy2(6);
 }
         </input>
-<tests>
-
-
-</tests>
 
     </program><solution>
 
 
     
-                Below is one way to fix the program.  The infinite recursion
+                <p>Below is one way to fix the program.  The infinite recursion
                     happens when we use an odd number as an argument.  By checking
                     that a number is less than 99, the highest numbers to recurse
                     are 98 and 97.  98 + 2 == 100 and 97 + 2 == 99, so we
-                    never count past 100.
+                    never count past 100.</p>
 
     
     <program xml:id="cond_rec_a3_a_editor" language="cpp">
@@ -176,61 +125,12 @@ int main () {
     countBy2(6);
 }
         </input>
-<tests>
-
-
-</tests>
 
     </program>
 
-            
+</solution></exercise>
 
-<exercise label="cond_rec_a3_a">
-    <statement>
-                <p>Below is one way to fix the program.  The infinite recursion
-                    happens when we use an odd number as an argument.  By checking
-                    that a number is less than 99, the highest numbers to recurse
-                    are 98 and 97.  <c>98 + 2 == 100</c> and <c>97 + 2 == 99</c>, so we
-                    never count past 100.</p>
-
-    </statement>
-    <program xml:id="cond_rec_a3_a_editor" interactive="activecode" language="cpp">
-
-        <input>
-#include &lt;iostream&gt;
-using namespace std;
-
-void countBy2 (int num) {
-    if (num &lt; 9) {
-        cout &lt;&lt; num;
-        countBy2 (num + 2);
-    }
-    else {
-        cout &lt;&lt; num &lt;&lt; endl;
-        cout &lt;&lt; "Done counting!";
-    }
-}
-
-int main () {
-    countBy2(6);
-}
-        </input>
-<tests>
-
-
-</tests>
-
-    </program>
-</exercise>
-            </solution></exercise>
-        <raw format="html" xml:space="preserve">
-&lt;div class="runestone sqcontainer %(optclass)s"&gt;
-&lt;div data-component="selectquestion" id=cond_rec_a4_sq data-questionlist='cond_rec_a4, cond_rec_a4_pp'         data-toggleoptions="toggle, lock" data-togglelabels="togglelabels:" data-limit-basecourse=true&gt;
-    &lt;p&gt;Loading a dynamic question ...&lt;br/&gt;Selecting from: cond_rec_a4, cond_rec_a4_pp&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-</raw>
-        <exercise xml:id=""><statement>
+        <exercise xml:id="ch4_ex3"><statement>
                 <p>Finish the code below so that the function will continue to
                     ask for input until the user guesses the word correctly.</p>
 
@@ -249,16 +149,11 @@ bool guessTheWord (string correct) {
     }
 }
         </input>
-<tests>
-
-
-</tests>
-
     </program><solution>
 
 
     
-                Below is one way to complete the program.
+                <p>Below is one way to complete the program.</p>
 
     
     <program xml:id="cond_rec_a5a_editor" language="cpp">
@@ -279,54 +174,14 @@ bool guessTheWord (string correct) {
     }
 }
         </input>
-<tests>
-
-
-</tests>
 
     </program>
 
-            
 
-<exercise label="cond_rec_a5a">
-    <statement>
-                <p>Below is one way to complete the program.</p>
-
-    </statement>
-    <program xml:id="cond_rec_a5a_editor" interactive="activecode" language="cpp">
-
-        <input>
-#include &lt;iostream&gt;
-using namespace std;
-
-bool guessTheWord (string correct) {
-    cout &lt;&lt; "Guess the word!";
-    string guess;
-    cin &gt;&gt; guess;
-    if (guess == correct) {
-        cout &lt;&lt; "That's it!";
-    }
-    else {
-        guessTheWord(correct);
-    }
-}
-        </input>
-<tests>
-
-
-</tests>
-
-    </program>
-</exercise>
             </solution></exercise>
-        <raw format="html" xml:space="preserve">
-&lt;div class="runestone sqcontainer %(optclass)s"&gt;
-&lt;div data-component="selectquestion" id=cond_rec_a6_sq data-questionlist='cond_rec_a6, cond_rec_a6_pp'         data-toggleoptions="toggle, lock" data-togglelabels="togglelabels:" data-limit-basecourse=true&gt;
-    &lt;p&gt;Loading a dynamic question ...&lt;br/&gt;Selecting from: cond_rec_a6, cond_rec_a6_pp&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-</raw>
-        <exercise xml:id=""><statement>
+
+
+        <exercise xml:id="ch4_ex4"><statement>
                 <p>Write the function <c>goodVibes</c> that prints &#8220;I&#8217;m having a <c>mood</c> day!&#8221;
                     depending on the value of <c>mood</c>.  If <c>mood</c> is &#8220;bad&#8221;, then the function
                     should not do anything since it&#8217;s good vibes only.  Be sure to
@@ -348,12 +203,9 @@ void goodVibes (string mood) {
 </tests>
 
     </program><solution>
-
-
-    
-                Below is one way to write the program.  The return allows the
+    <p>Below is one way to write the program.  The <c>return</c> allows the
                     function to exit if there are bad vibes in the room.  Otherise,
-                    the function prints as directed.
+                    the function prints as directed.</p>
 
     
     <program xml:id="cond_rec_a7a_editor" language="cpp">
@@ -369,51 +221,12 @@ void goodVibes (string mood) {
     cout &lt;&lt; "I'm having a " &lt;&lt; mood &lt;&lt; " day";
 }
         </input>
-<tests>
-
-
-</tests>
 
     </program>
 
-            
-
-<exercise label="cond_rec_a7a">
-    <statement>
-                <p>Below is one way to write the program.  The return allows the
-                    function to exit if there are bad vibes in the room.  Otherise,
-                    the function prints as directed.</p>
-
-    </statement>
-    <program xml:id="cond_rec_a7a_editor" interactive="activecode" language="cpp">
-
-        <input>
-#include &lt;iostream&gt;
-using namespace std;
-
-void goodVibes (string mood) {
-    if (mood == "bad") {
-        return;
-    }
-    cout &lt;&lt; "I'm having a " &lt;&lt; mood &lt;&lt; " day";
-}
-        </input>
-<tests>
-
-
-</tests>
-
-    </program>
-</exercise>
             </solution></exercise>
-        <raw format="html" xml:space="preserve">
-&lt;div class="runestone sqcontainer %(optclass)s"&gt;
-&lt;div data-component="selectquestion" id=cond_rec_a8_sq data-questionlist='cond_rec_a8, cond_rec_a8_pp'         data-toggleoptions="toggle, lock" data-togglelabels="togglelabels:" data-limit-basecourse=true&gt;
-    &lt;p&gt;Loading a dynamic question ...&lt;br/&gt;Selecting from: cond_rec_a8, cond_rec_a8_pp&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-</raw>
-        <exercise xml:id=""><statement>
+
+        <exercise xml:id="ch4_ex5"><statement>
                 <p>Write the function <c>countdown</c> that takes a positive integer
                     and decrements it until eaching zero, printing the number at each
                     step of the way.  Once it reaches zero, it should print &#8220;Blastoff!&#8221;</p>
@@ -437,7 +250,7 @@ void countdown (int num) {
 
 
     
-                Below is one way to write the program.
+                <p>Below is one way to write the program.</p>
 
     
     <program xml:id="cond_rec_a9a_editor" language="cpp">
@@ -457,51 +270,11 @@ void countdown (int num) {
     }
 }
         </input>
-<tests>
-
-
-</tests>
 
     </program>
 
             
 
-<exercise label="cond_rec_a9a">
-    <statement>
-                <p>Below is one way to write the program.</p>
-
-    </statement>
-    <program xml:id="cond_rec_a9a_editor" interactive="activecode" language="cpp">
-
-        <input>
-#include &lt;iostream&gt;
-using namespace std;
-
-void countdown (int num) {
-    if (num != 0){
-        cout &lt;&lt; num &lt;&lt; endl;
-        num -= 1;
-        countdown (num);
-    }
-    else {
-        cout &lt;&lt; "Blastoff!";
-    }
-}
-        </input>
-<tests>
-
-
-</tests>
-
-    </program>
-</exercise>
             </solution></exercise>
-        <raw format="html" xml:space="preserve">
-&lt;div class="runestone sqcontainer %(optclass)s"&gt;
-&lt;div data-component="selectquestion" id=cond_rec_a10_sq data-questionlist='cond_rec_a10, cond_rec_a10_pp'         data-toggleoptions="toggle, lock" data-togglelabels="togglelabels:" data-limit-basecourse=true&gt;
-    &lt;p&gt;Loading a dynamic question ...&lt;br/&gt;Selecting from: cond_rec_a10, cond_rec_a10_pp&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-</raw>
     </section>
 

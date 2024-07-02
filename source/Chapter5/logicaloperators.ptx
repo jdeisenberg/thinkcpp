@@ -2,7 +2,7 @@
         <title>Logical operators</title>
         
         
-        <p xml:id="chapter5_index-0">There are three <term>logical operators</term> in C++: AND, OR and NOT, which are
+        <p>There are three <term>logical operators</term> in C++: AND, OR and NOT, which are
             denoted by the symbols &#8216;&#8217;&amp;&amp;&#8217;&#8217;, &#8216;&#8217;||&#8217;&#8217; and &#8216;&#8217;!&#8217;&#8217;. The semantics (meaning) of these
             operators is similar to their meaning in English. For example &#8216;&#8217;x &gt; 0 &amp;&amp; x
             &lt; 10&#8217;&#8217; is true only if x is greater than zero AND less than 10.</p>

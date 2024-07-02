@@ -1,30 +1,17 @@
 <section xml:id="chapter5_coding-practice">
         <title>Coding Practice</title>
-        <exercise xml:id=""><statement/><program interactive="" language="" xml:id=""/><solution>
-                Below is one way to implement the calculator function. Using conditionals,
-                    we return the correct result depending on which operation was given.
+        <exercise xml:id="cp_5_AC_1q">
+        <statement><p>Write a function called <c>calculator</c> which takes two <c>double</c>s, named <c>first</c> and <c>second</c>, and a <c>char</c> operation as parameters. <c>calculator</c> performs addition, subtraction, multiplication, or division with the two <c>double</c>s depending on what operation is passed in ('+', '-', '*', '/'). It then returns the result. Run and test your code!</p></statement>
 
-    <program xml:id="cp_5_AC_1a" language="cpp">
-    
+        <program interactive="activecode" language="cpp" xml:id="c5_prog1">
         <input>
 #include &lt;iostream&gt;
 using namespace std;
 
 double calculator (double first, double second, char operation) {
-    if (operation == '+') {
-        return first + second;
-    }
-    else if (operation == '-') {
-        return first - second;
-    }
-    else if (operation == '*') {
-        return first * second;
-    }
-    else {
-        return first / second;
-    }
+    // Write your implementation here.
 }
-        </input>
+</input>
 <tests>
 #define CATCH_CONFIG_MAIN
 #include &lt;catch.hpp&gt;
@@ -49,22 +36,67 @@ TEST_CASE("calculator function: division") {
     REQUIRE(calculator(3, 8, '/') == 0.375);
 }
 </tests>
+</program>
+
+        <solution>
+                Below is one way to implement the calculator function. Using conditionals,
+                    we return the correct result depending on which operation was given.
+
+    <program xml:id="cp_5_AC_1a" language="cpp">
+    
+        <input>
+#include &lt;iostream&gt;
+using namespace std;
+
+double calculator (double first, double second, char operation) {
+    if (operation == '+') {
+        return first + second;
+    }
+    else if (operation == '-') {
+        return first - second;
+    }
+    else if (operation == '*') {
+        return first * second;
+    }
+    else {
+        return first / second;
+    }
+}
+        </input>
+
 
     </program>
-            
-                <p>Below is one way to implement the <c>calculator</c> function. Using conditionals,
-                    we return the correct result depending on which operation was given.</p>
 
-    
             </solution></exercise>
-        <raw format="html" xml:space="preserve">
-&lt;div class="runestone sqcontainer %(optclass)s"&gt;
-&lt;div data-component="selectquestion" id=cp_5_AC_2q_sq data-questionlist='cp_5_AC_2q, cp_5_AC_2q_pp'         data-toggleoptions="toggle, lock" data-togglelabels="togglelabels:" data-limit-basecourse=true&gt;
-    &lt;p&gt;Loading a dynamic question ...&lt;br/&gt;Selecting from: cp_5_AC_2q, cp_5_AC_2q_pp&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-</raw>
-        <exercise xml:id=""><statement/><program interactive="" language="" xml:id=""/><solution>
+
+
+        <exercise xml:id="cp_5_AC_eq"><statement>
+        <p>An interior angle of a polygon is the angle between two adjacent sides of the polygon. Each interior angle in an equilateral triangle measures 60 degrees, each interior angle in a square measures 90 degrees, and in a regular pentagon, each interior angle measures 108 degrees. Write the function <c>calculateIntAngle</c>, which takes an integer <c>numSides</c> as a parameter and returns a <c>double</c>. <c>calculateIntAngle</c> finds the interior angle of a regular polygon with <c>numSides</c> sides. The formula to find the interior angle of a regular ngon is (n - 2) x 180 / n. Run and test your code!
+        </p></statement>
+        <program interactive="activecode" language="cpp" xml:id="ch5_prog2">
+
+        <input>
+#include &lt;iostream&gt;
+using namespace std;
+
+double calculateIntAngle (int numSides) {
+    // Write your implementation here.
+}
+        </input>
+        <tests>
+#define CATCH_CONFIG_MAIN
+#include &lt;catch.hpp&gt;
+
+TEST_CASE("calculateIntAngle function") {
+    REQUIRE(calculateIntAngle (3) == 60);
+    REQUIRE(calculateIntAngle (4) == 90);
+    REQUIRE(calculateIntAngle (5) == 108);
+    REQUIRE(calculateIntAngle (8) == 135);
+}
+</tests>
+    </program>
+
+        <solution>
                 Below is one way to implement the program. Using the formula given,
                     we can find the interior angle and return it. Notice how we use 180.0
                     instead of 180 to avoid integer division.
@@ -79,34 +111,12 @@ double calculateIntAngle (int numSides) {
     return (numSides - 2) * 180.0 / numSides;
 }
         </input>
-<tests>
-#define CATCH_CONFIG_MAIN
-#include &lt;catch.hpp&gt;
-
-TEST_CASE("calculateIntAngle function") {
-    REQUIRE(calculateIntAngle (3) == 60);
-    REQUIRE(calculateIntAngle (4) == 90);
-    REQUIRE(calculateIntAngle (5) == 108);
-    REQUIRE(calculateIntAngle (8) == 135);
-}
-</tests>
 
     </program>
-            
-                <p>Below is one way to implement the program. Using the formula given,
-                    we can find the interior angle and return it. Notice how we use 180.0
-                    instead of 180 to avoid integer division.</p>
 
-    
             </solution></exercise>
-        <raw format="html" xml:space="preserve">
-&lt;div class="runestone sqcontainer %(optclass)s"&gt;
-&lt;div data-component="selectquestion" id=cp_5_AC_4q_sq data-questionlist='cp_5_AC_4q, cp_5_AC_4q_pp'         data-toggleoptions="toggle, lock" data-togglelabels="togglelabels:" data-limit-basecourse=true&gt;
-    &lt;p&gt;Loading a dynamic question ...&lt;br/&gt;Selecting from: cp_5_AC_4q, cp_5_AC_4q_pp&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-</raw>
-        <exercise xml:id=""><statement/><program interactive="" language="" xml:id=""/><solution>
+
+        <exercise xml:id="cp_5_AC_5q"><statement/><program interactive="" language="" xml:id="ch5_prog5"/><solution>
                 Below is one way to implement the program. We can use a conditional to
                     check to see if the dog is one year old. If it is older than one, then
                     we can use the formula to return the correct age in human years.
@@ -154,7 +164,7 @@ TEST_CASE("dogToHumanYears function for &gt;1") {
 &lt;/div&gt;
 &lt;/div&gt;
 </raw>
-        <exercise xml:id=""><statement/><program interactive="" language="" xml:id=""/><solution>
+        <exercise xml:id="cp_5_AC_7q"><statement/><program interactive="" language="" xml:id="ch5_prog7"/><solution>
                 Below is one way to implement the program. We can use conditionals in this
                     order to efficiently determine whether or not a given year is a leap year.
 
@@ -218,7 +228,7 @@ TEST_CASE("isLeapYear divisible by 400") {
 &lt;/div&gt;
 &lt;/div&gt;
 </raw>
-        <exercise xml:id=""><statement/><program interactive="" language="" xml:id=""/><solution>
+        <exercise xml:id="cp_5_AC_9q"><statement/><program interactive="" language="cpp" xml:id="ch5_prog9"/><solution>
                 Below is one way to implement the program. We can use conditionals to
                     separate the base case and recursive cases. Our base case is when n
                     is 1, and in that case we return 1. Otherwise, we recursively

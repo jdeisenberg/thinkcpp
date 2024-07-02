@@ -51,6 +51,7 @@
     <xi:include href="./Chapter2/toctree.ptx"/>
     <xi:include href="./Chapter3/toctree.ptx"/>
     <xi:include href="./Chapter4/toctree.ptx"/>
+    <xi:include href="./Chapter5/toctree.ptx"/>
 
     <backmatter>
       <index>

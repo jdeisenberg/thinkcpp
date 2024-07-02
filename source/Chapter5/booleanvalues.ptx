@@ -2,7 +2,7 @@
         <title>Boolean Values</title>
         
         
-        <p xml:id="chapter5_index-0">The types we have seen so far are pretty big. There are a lot of
+        <p>The types we have seen so far are pretty big. There are a lot of
             integers in the world, and even more floating-point numbers. By
             comparison, the set of characters is pretty small. Well, there is
             another type in C++ that is even smaller. It is called <term>boolean</term>, and

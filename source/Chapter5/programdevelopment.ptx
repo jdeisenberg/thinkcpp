@@ -1,17 +1,15 @@
-<section xml:id="chapter5_program-development distance">
+<section xml:id="chapter5_program-development">
         <title>Program Development</title>
         
         
-        <p xml:id="chapter5_index-0">At this point you should be able to look at complete C++ functions and
+        <p>At this point you should be able to look at complete C++ functions and
             tell what they do. But it may not be clear yet how to go about writing
             them. I am going to suggest one technique that I call <term>incremental
                 development</term>.</p>
         <p>As an example, imagine you want to find the distance between two points,
             given by the coordinates <math>(x_1, y_1)</math> and <math>(x_2, y_2)</math>. By
             the usual definition,</p>
-        <math_block docname="Chapter5/programdevelopment" label="True" nowrap="False" number="True" xml:space="preserve">distance = \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}
-
-</math_block>
+        <me>distance = \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}</me>
         <p>The first step is to consider what a distance function should look like
             in C++. In other words, what are the inputs (parameters) and what is the
             output (return value).</p>
@@ -59,7 +57,7 @@ cout &lt;&lt; dist &lt;&lt; endl;</pre>
         </note>
         
         
-        <p xml:id="chapter5_index-1">When the function is finished I will remove the output statements. Code
+        <p>When the function is finished I will remove the output statements. Code
             like that is called <term>scaffolding</term>, because it is helpful for building
             the program, but it is not part of the final product. Sometimes it is a
             good idea to keep the scaffolding around, but comment it out, just in

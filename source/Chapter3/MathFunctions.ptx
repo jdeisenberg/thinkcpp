@@ -1,17 +1,17 @@
 <section xml:id="chapter3_math-functions">
         <title>Math Functions</title>
-        <p>In mathematics, you have probably seen functions like <math>\sin</math> and
-            <math>\log</math>, and you have learned to evaluate expressions like
-            <math>\sin(\pi/2)</math> and <math>\log(1/x)</math>. First, you evaluate the
+        <p>In mathematics, you have probably seen functions like <m>\sin</m> and
+            <m>\log</m>, and you have learned to evaluate expressions like
+            <m>\sin(\pi/2)</m> and <m>\log(1/x)</m>. First, you evaluate the
             expression in parentheses, which is called the argument of the
-            function. For example, <math>\pi/2</math> is approximately 1.571, and
-            <math>1/x</math> is 0.1 (if <math>x</math> happens to be 10).</p>
+            function. For example, <m>\pi/2</m> is approximately 1.571, and
+            <m>1/x</m> is 0.1 (if <m>x</m> happens to be 10).</p>
         <p>Then you can evaluate the function itself, either by looking it up in a
-            table or by performing various computations. The <math>\sin</math> of 1.571
-            is 1, and the <math>\log</math> of 0.1 is -1 (assuming that <math>\log</math>
+            table or by performing various computations. The <m>\sin</m> of 1.571
+            is 1, and the <m>\log</m> of 0.1 is -1 (assuming that <m>\log</m>
             indicates the logarithm base 10).</p>
         <p>This process can be applied repeatedly to evaluate more complicated
-            expressions like <math>\log(1/\sin(\pi/2))</math>. First we evaluate the
+            expressions like <m>\log(1/\sin(\pi/2))</m>. First we evaluate the
             argument of the innermost function, then evaluate the function, and so
             on.</p>
         <p>C++ provides a set of built-in functions that includes most of the
@@ -48,7 +48,7 @@ int main () {
 
     </program>
 </exercise>
-        <p>The first example sets log to the logarithm of 17, base <math>e</math>. There
+        <p>The first example sets log to the logarithm of 17, base <m>e</m>. There
             is also a function called <c>log10</c> that takes logarithms base 10.</p>
         <p>The second example finds the sine of the value of the variable angle.
             C++ assumes that the values you use with <c>sin</c> and the other trigonometric
@@ -57,9 +57,9 @@ int main () {
             <p>To convert from degrees to radians, you can divide by 360 and multiply
                 by 2 * pi.</p>
         </note>
-        <p>If you don&#8217;t happen to know <math>\pi</math> to 15 digits, you can calculate
+        <p>If you don&#8217;t happen to know <m>\pi</m> to 15 digits, you can calculate
             it using the <c>acos</c> function. The arccosine (or inverse cosine) of -1 is
-            <math>\pi</math>, because the cosine of <math>\pi</math> is -1.</p>
+            <m>\pi</m>, because the cosine of <m>\pi</m> is -1.</p>
 
 <exercise label="math_functions_AC_2">
     <statement>

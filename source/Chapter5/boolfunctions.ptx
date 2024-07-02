@@ -1,8 +1,8 @@
-<section xml:id="chapter5_bool-functions bool">
+<section xml:id="chapter5_bool-functions">
         <title>Bool Functions</title>
         
         
-        <p xml:id="chapter5_index-0">Functions can return bool values just like any other type, which is
+        <p>Functions can return bool values just like any other type, which is
             often convenient for hiding complicated tests inside functions. For
             example:</p>
         <pre>bool isSingleDigit (int x) {

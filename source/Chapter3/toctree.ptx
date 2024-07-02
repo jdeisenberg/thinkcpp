@@ -3,6 +3,7 @@
   <title>Functions</title>
   <xi:include href="./Floating-point.ptx"/>
   <xi:include href="./ConvertingFromDoubleToInt.ptx"/>
+  <xi:include href="./MathFunctions.ptx"/>
   <xi:include href="./Composition.ptx"/>
   <xi:include href="./AddingNewFunctions.ptx"/>
   <xi:include href="./DefinitionsAndUses.ptx"/>
@@ -14,6 +15,7 @@
   <xi:include href="./Glossary.ptx"/>
   <xi:include href="./Exercises.ptx"/>
   <xi:include href="./mixedUpCode_orig.ptx"/>
+  <xi:include href="./activeCode.ptx"/>
 
 </chapter>
 

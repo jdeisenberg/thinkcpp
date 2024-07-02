@@ -13,7 +13,7 @@ double height = radius * sin (angle);</pre>
 countdown (n-1);</pre>
         
         
-        <p xml:id="chapter5_index-0">In this chapter, we are going to write functions that return things,
+        <p>In this chapter, we are going to write functions that return things,
             which I will refer to as <term>fruitful</term> functions, for want of a better
             name. The first example is area, which takes a double as a parameter,
             and returns the area of a circle with the given radius:</p>
@@ -40,7 +40,7 @@ countdown (n-1);</pre>
 }</pre>
         
         
-        <p xml:id="chapter5_index-1">On the other hand, <term>temporary</term> variables like area often make
+        <p>On the other hand, <term>temporary</term> variables like area often make
             debugging easier. In either case, the type of the expression in the
             return statement must match the return type of the function. In other
             words, when you declare that the return type is <c>double</c>, you are making a
@@ -69,7 +69,7 @@ countdown (n-1);</pre>
         </warning>
         
         
-        <p xml:id="chapter5_index-2">Code that appears after a return statement, or any place else where it
+        <p>Code that appears after a return statement, or any place else where it
             can never be executed, is called <term>dead code</term>. Some compilers warn you
             if part of your code is dead.</p>
 
