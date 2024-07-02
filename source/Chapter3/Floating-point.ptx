@@ -66,20 +66,47 @@ double pi = 3.14159;</pre>
 
         <exercise label="floating_point_1">
             <statement>
-    <p>Q-1: A(n) <BlankNode/> statment consists of a declaration statement and an
-assignment statement, which are combined. <var/>  </p></statement><setup><var><condition string="^\s*[Ii][Nn][Ii][Tt][Ii][Aa][Ll][Ii][Zz][Aa][Tt][Ii][Oo][Nn]\s*$"><feedback><p>Correct!</p></feedback></condition><condition string="^\s*.*\s*$"><feedback><p>Try again!</p></feedback></condition></var></setup></exercise>
+    <p>Q-1: A(n) <var/> statment consists of a declaration statement and an
+assignment statement, which are combined. </p></statement>
+    <setup>
+        <var>
+            <condition string="^\s*[Ii][Nn][Ii][Tt][Ii][Aa][Ll][Ii][Zz][Aa][Tt][Ii][Oo][Nn]\s*$">
+                <feedback><p>Correct!</p></feedback></condition>
+            <condition string="^\s*.*\s*$"><feedback><p>Hint: it is the first (intial) thing that happens...</p></feedback></condition>
+        </var>
+    </setup>
+</exercise>
+
         <exercise label="floating_point_2">
             <statement>
     <p>Q-2: It&#8217;s your birthday and your cake can serve 12.  You want to slice it
 evenly so that you and each of your 4 friends receive an equal amount.
 One of your friends is on a diet and, and wants to know the serving size
-of her slice.  You write the following code in C++ to answer her question. <var/>  <var/>  </p></statement><setup><var><pre>int servings = 12;
+of her slice.  You write the following code in C++ to answer her question. </p>
+<pre>int servings = 12;
 int people = 5;
 
-double servingSize = servings / people;</pre><p>Based on the value of <c>servingSize</c>, you tell your friend that each
-slice is <BlankNode/> servings.  This is <BlankNode/> (more, less, the same) than/as
-the actual serving size of her slice.</p></var><var><condition number="[2, 2]"><feedback><p>Correct! C++ performs integer division.</p></feedback></condition><condition string="^\s*.*\s*$"><feedback><p>servingSize and people are integer variables!</p></feedback></condition><condition string="^\s*[Ll][Ee][Ss][Ss]\s*$"><feedback><p>Correct! You just unintentionally messed up your friend&#8217;s diet.</p></feedback></condition></var></setup></exercise>
-    <exercise label="floating_point_3">
+double servingSize = servings / people;</pre>
+
+<p>Based on the value of <c>servingSize</c>, you tell your friend that each
+slice is <var/> servings.  This is <var/> (more, less, the same) than/as
+the actual serving size of her slice.</p></statement>
+
+<setup>
+    <var>
+    <condition number="2"><feedback><p>Correct! C++ performs integer division.</p></feedback></condition>
+    <condition string="^\s*.*\s*$"><feedback><p>servingSize and people are integer variables!</p></feedback></condition>
+    </var>
+
+    <var>
+    <condition string="^\s*[Ll][Ee][Ss][Ss]\s*$"><feedback><p>Correct! You just unintentionally messed up your friend&#8217;s diet.</p></feedback></condition>
+    <condition string="^\s*[Mm][Oo][Rr][Ee]\s*$"><feedback><p>Integer division rounds down.</p></feedback></condition>
+    <condition string=".*"><feedback><p>Hint: do an integer division.</p></feedback></condition>
+    </var>
+</setup>
+</exercise>
+
+<exercise label="floating_point_3">
         <statement>
 
         <p>Q-3: In the lab, we measured a temperature of 7.99999999 degrees C, using
