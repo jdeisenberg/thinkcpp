@@ -104,14 +104,36 @@
 
         <exercise label="debugging_1">
             <statement>
-    <p>Q-1: Another word for an error is a(n) <BlankNode/>.  The process of finding
-and fixing errors is called <BlankNode/>. <var/>  <var/>  </p></statement><setup><var><condition string="^\s*[Bb][Uu][Gg]\s*$"><feedback><p>Correct!</p></feedback></condition><condition string="^\s*.*\s*$"><feedback><p>Try again!</p></feedback></condition></var><var><condition string="^\s*[Dd][Ee][Bb][Uu][Gg][Gg][Ii][Nn][Gg]\s*$"><feedback><p>Correct!</p></feedback></condition><condition string="^\s*.*\s*$"><feedback><p>Try again!</p></feedback></condition></var></setup></exercise>
+    <p>Q-1: Another word for an error is a(n) <var/>.  The process of finding
+and fixing errors is called <var />. </p></statement>
+
+<setup>
+    <var case="insensitive">
+    <condition string="bug"><feedback><p>Correct!</p></feedback></condition>
+    <condition string=".*"><feedback><p>Hint: it’s another word for an insect. Try again!</p></feedback></condition>
+    </var>
+
+    <var case="insensitive">
+    <condition string="debugging"><feedback><p>Correct!</p></feedback></condition>
+    <condition string=".*"><feedback><p>Hint: the prefix “de” means to get rid of. Try again!</p></feedback></condition>
+    </var>
+</setup>
+</exercise>
 <exercise label="debugging_2">
     <statement><p>Match each term to its definition!</p></statement>
     <feedback><p>Try again!</p></feedback>
 <matches><match order="1"><premise>syntax (compile-time) error</premise><response>an error that surfaces when something is wrong with the structure of your program</response></match><match order="2"><premise>run-time error</premise><response>an error that comes up when your program is executed</response></match><match order="3"><premise>semantic error</premise><response>your program does what you told it to do, not what you intended for it to do</response></match></matches></exercise>
         <exercise label="debugging_4">
             <statement>
-    <p>Q-3: The structure of your program and the rules it must follow are called the <BlankNode/>. <var/>  </p></statement><setup><var><condition string="^\s*[Ss][Yy][Nn][Tt][Aa][Xx]\s*$"><feedback><p>Correct!</p></feedback></condition><condition string="^\s*.*\s*$"><feedback><p>Try again!</p></feedback></condition></var></setup></exercise>        </subsection>
-    </section>
+    <p>Q-3: The structure of your program and the rules it must follow are called the <var/>.</p></statement>
+
+    <setup>
+        <var case="insensitive">
+            <condition string="syntax"><feedback><p>Correct!</p></feedback></condition>
+            <condition string=".*"><feedback><p>Try again!</p></feedback></condition>
+        </var>
+    </setup>
+</exercise>
+    </subsection>
+</section>
 

@@ -69,10 +69,10 @@ double pi = 3.14159;</pre>
     <p>Q-1: A(n) <var/> statment consists of a declaration statement and an
 assignment statement, which are combined. </p></statement>
     <setup>
-        <var>
-            <condition string="^\s*[Ii][Nn][Ii][Tt][Ii][Aa][Ll][Ii][Zz][Aa][Tt][Ii][Oo][Nn]\s*$">
+        <var case="insensitive">
+            <condition string="initialization">
                 <feedback><p>Correct!</p></feedback></condition>
-            <condition string="^\s*.*\s*$"><feedback><p>Hint: it is the first (intial) thing that happens...</p></feedback></condition>
+            <condition string=".*"><feedback><p>Hint: it is the first (intial) thing that happens...</p></feedback></condition>
         </var>
     </setup>
 </exercise>
@@ -95,12 +95,12 @@ the actual serving size of her slice.</p></statement>
 <setup>
     <var>
     <condition number="2"><feedback><p>Correct! C++ performs integer division.</p></feedback></condition>
-    <condition string="^\s*.*\s*$"><feedback><p>servingSize and people are integer variables!</p></feedback></condition>
+    <condition string=".*"><feedback><p>servingSize and people are integer variables!</p></feedback></condition>
     </var>
 
-    <var>
-    <condition string="^\s*[Ll][Ee][Ss][Ss]\s*$"><feedback><p>Correct! You just unintentionally messed up your friend&#8217;s diet.</p></feedback></condition>
-    <condition string="^\s*[Mm][Oo][Rr][Ee]\s*$"><feedback><p>Integer division rounds down.</p></feedback></condition>
+    <var case="insensitive">
+    <condition string="less"><feedback><p>Correct! You just unintentionally messed up your friend&#8217;s diet.</p></feedback></condition>
+    <condition string="more"><feedback><p>Integer division rounds down.</p></feedback></condition>
     <condition string=".*"><feedback><p>Hint: do an integer division.</p></feedback></condition>
     </var>
 </setup>

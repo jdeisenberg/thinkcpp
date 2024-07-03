@@ -245,8 +245,71 @@ double volume = 3.14 * r * r * height;</pre>
     </exercise>
 
         <exercise label="programming_11">
-            <statement>
-    <p>Q-11: Fill in the missing pieces. <var/>  <var/>  <var/>  <var/>  <var/>  </p></statement><setup><var><line_block><line><c>#include &lt;</c> <BlankNode/> <c>&gt;</c></line><line><c>using namespace</c> <BlankNode/></line><line><c>int</c> <BlankNode/> <c>() {</c></line><line><c>cout &lt;&lt; "Hello, World!" &lt;&lt; endl</c> <BlankNode/></line><line><c>return</c> <BlankNode/> <c>;</c></line><line><c>}</c></line></line_block><condition string="^\s*(iostream)\s*$"><feedback><p>Correct!</p></feedback></condition></var><var><condition string="^\s*.*\s*$"><feedback><p>Try again!</p></feedback></condition><condition string="^\s*(std;)\s*$"><feedback><p>Correct!</p></feedback></condition></var><var><condition string="^\s*.*\s*$"><feedback><p>Try again!</p></feedback></condition><condition string="^\s*(main)\s*$"><feedback><p>Correct!</p></feedback></condition></var><var><condition string="^\s*.*\s*$"><feedback><p>Try again!</p></feedback></condition><condition string="^\s*(;)\s*$"><feedback><p>Correct!</p></feedback></condition></var><var><condition string="^\s*.*\s*$"><feedback><p>Try again!</p></feedback></condition><condition number="[0, 0]"><feedback><p>Correct!</p></feedback></condition><condition string="^\s*[+-]?\b[0-9]+\b\s*$"><feedback><p>Try again! 0 is the normal convention</p></feedback></condition></var></setup></exercise>
+   <statement>
+      <p>
+         Q-11: Fill in the missing pieces.
+        </p>
+<p>
+<line><c>#include &lt;</c><var /><c>&gt;</c></line>
+<line><c>using namespace </c><var /><c>;</c></line>
+<line><c>int </c><var/><c>() {</c></line>
+<line><c>    cout &lt;&lt; "Hello, World!" &lt;&lt; endl;</c></line>
+<line><c>    return </c><var /><c>;</c></line>
+<line><c>}</c></line>
+</p>
+   </statement>
+
+   <setup>
+      <var>
+        <condition string="iostream">
+                <feedback><p>Correct!</p></feedback></condition>
+        <condition string=".*">
+                <feedback><p>Hint: it is a stream for input and output.</p></feedback>
+        </condition>
+      </var>
+      <var>
+         <condition string="std">
+            <feedback>
+               <p>Correct!</p>
+            </feedback>
+         </condition>
+         <condition string=".*">
+                <feedback><p>Hint: we want the standard namespace.</p></feedback>
+        </condition>
+      </var>
+      <var>
+         <condition string="main">
+            <feedback>
+               <p>Correct!</p>
+            </feedback>
+         </condition>
+         <condition string=".*">
+            <feedback>
+               <p>Hint: this is the main event for our program.</p>
+            </feedback>
+         </condition>
+      </var>
+      <var>
+
+         <condition number="0">
+            <feedback>
+               <p>Correct!</p>
+            </feedback>
+         </condition>
+         <condition string="[+-]?\b[0-9]+\b">
+            <feedback>
+               <p>Try again! 0 is the normal convention</p>
+            </feedback>
+         </condition>
+         <condition string="^\s*.*\s*$">
+            <feedback>
+               <p>Hint: we want a specific number here.</p>
+            </feedback>
+         </condition>
+      </var>
+   </setup>
+</exercise>
+
 <exercise label="debugging_3">
     <statement><p>Match each term to its type!</p></statement>
     <feedback><p>Try again!</p></feedback>

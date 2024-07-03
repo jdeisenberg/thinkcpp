@@ -92,7 +92,15 @@ int main () {
 
         <exercise label="first_program_1">
             <statement>
-    <p>Q-2: How do you indicate a comment in C++? <var/>  </p></statement><setup><var><condition string="^\s*[//][//]\s*$"><feedback><p>Correct!</p></feedback></condition><condition string="^\s*.*\s*$"><feedback><p>Try again!</p></feedback></condition></var></setup></exercise>
+    <p>Q-2: How do you indicate a comment in C++? <var/>  </p></statement>
+    <setup>
+        <var>
+            <condition string="[/][/]"><feedback><p>Correct!</p></feedback></condition>
+            <condition string=".*"><feedback><p>Try again!</p></feedback></condition>
+        </var>
+    </setup>
+    </exercise>
+
     <exercise label="first_program_2">
         <statement>
 
@@ -151,6 +159,19 @@ int main () {
 
         <exercise label="first_program_3">
             <statement>
-    <p>Q-4: <BlankNode/> is an object that allows you to send output to the terminal.
-It requires you to use the <BlankNode/> operator. <var/>  <var/>  </p></statement><setup><var><condition string="^\s*(cout)\s*$"><feedback><p>Correct!</p></feedback></condition><condition string="^\s*.*\s*$"><feedback><p>Try again!</p></feedback></condition></var><var><condition string="^\s*(\&lt;\&lt;)\s*$"><feedback><p>Correct!</p></feedback></condition><condition string="^\s*.*\s*$"><feedback><p>Try again!</p></feedback></condition></var></setup></exercise>    </section>
+    <p>Q-4: <var/> is an object that allows you to send output to the terminal.
+It requires you to use the <var/> operator. </p></statement>
+
+<setup>
+    <var>
+        <condition string="cout"><feedback><p>Correct!</p></feedback></condition>
+        <condition string=".*"><feedback><p>Try again!</p></feedback></condition>
+    </var>
+    <var>
+        <condition string="\&lt;\&lt;"><feedback><p>Correct!</p></feedback></condition>
+        <condition string=".*"><feedback><p>Try again!</p></feedback></condition>
+    </var>
+</setup>
+</exercise>
+</section>
 

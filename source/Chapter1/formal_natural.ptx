@@ -173,7 +173,15 @@
 
         <exercise label="formal_natural_2">
             <statement>
-    <p>Q-2: Analyzing the structure of a sentence or a program is called <BlankNode/>. <var/>  </p></statement><setup><var><condition string="^\s*[Pp][Aa][Rr][Ss][Ii][Nn][Gg]\s*$"><feedback><p>Correct!</p></feedback></condition><condition string="^\s*.*\s*$"><feedback><p>Try again!</p></feedback></condition></var></setup></exercise>
+    <p>Q-2: Analyzing the structure of a sentence or a program is called <var/></p></statement>
+    <setup>
+        <var case="insensitive">
+        <condition string="parsing"><feedback><p>Correct!</p></feedback></condition>
+        <condition string=".*"><feedback><p>Hint: p__s__g</p></feedback></condition>
+        </var>
+    </setup>
+</exercise>
+
 <exercise label="formal_natural_3">
     <statement><p>Match each term to an example of it!</p></statement>
     <feedback><p>Try again!</p></feedback>
@@ -181,7 +189,12 @@
 <exercise label="formal_natural_4">
     <statement><p>Match each term to an example of it!</p></statement>
     <feedback><p>Try again!</p></feedback>
-<matches><match order="1"><premise>ambiguity</premise><response> I rode a black horse in red jacket.</response></match><match order="2"><premise>redundancy</premise><response>I rode a black horse and I wore a red jacket.</response></match><match order="3"><premise>literalness</premise><response> Give me a cup of water.</response></match></matches></exercise>
+<matches>
+    <match order="1"><premise>ambiguity</premise><response> I rode a black horse in red jacket.</response></match>
+    <match order="2"><premise>redundancy</premise><response>I rode a black horse and I wore a red jacket.</response></match>
+    <match order="3"><premise>literalness</premise><response> Give me a cup of water.</response></match>
+</matches>
+</exercise>
     <exercise label="formal_natural_5">
         <statement>
 

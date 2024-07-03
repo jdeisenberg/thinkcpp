@@ -55,7 +55,7 @@ int main () {
             functions (<c>cos</c>, <c>tan</c>) are in <em>radians</em>.</p>
         <note>
             <p>To convert from degrees to radians, you can divide by 360 and multiply
-                by 2 * pi.</p>
+                by 2<m>\pi</m>.</p>
         </note>
         <p>If you don&#8217;t happen to know <m>\pi</m> to 15 digits, you can calculate
             it using the <c>acos</c> function. The arccosine (or inverse cosine) of -1 is
@@ -127,7 +127,16 @@ using namespace std;</pre>
 <matches><match order="1"><premise>cmath</premise><response>allows the use of functions like log and sin</response></match><match order="2"><premise>iostream</premise><response>contains information about input and output streams</response></match><match order="3"><premise>namespace std</premise><response>the standard implementation of cout</response></match></matches></exercise>
         <exercise label="math_functions_2">
             <statement>
-    <p>Q-4: What are the units used by sinusoidal functions (sin, asin, e.t.c.) in C++? <var/>  </p></statement><setup><var><condition string="^\s*[Rr][Aa][Dd][Ii][Aa][Nn][Ss]?\s*$"><feedback><p>If you need to convert to degrees, just multiply by 360 and divide by 2pi.</p></feedback></condition><condition string="^\s*[Dd][Ee][Gg][Rr][Ee][Ee][Ss]?\s*$"><feedback><p>This is a unit sometimes used for sinusoidal functions, but not the one used by C++.</p></feedback></condition><condition string="^\s*.*\s*$"><feedback><p>Try again!</p></feedback></condition></var></setup></exercise>
+    <p>Q-4: What are the units used by trigonometric functions (<c>sin</c>, <c>asin</c>, etc.) in C++? <var/>  </p></statement>
+    <setup>
+        <var case="insensitive">
+            <condition string="radians">
+                <feedback><p>Correct! If you need to convert from degrees to radians, multiply by 2<m>\pi</m> and divide by 360.</p></feedback></condition>
+            <condition string="degrees"><feedback><p>This is a unit sometimes used for trigonometric functions, but not the one used by C++.</p></feedback></condition>
+            <condition string=".*"><feedback><p>Hint: circles have a <em>rad</em>ius.</p></feedback></condition>
+        </var>
+    </setup>
+</exercise>
     <exercise label="math_functions_3">
         <statement>
 
