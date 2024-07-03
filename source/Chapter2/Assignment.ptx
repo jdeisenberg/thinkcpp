@@ -51,7 +51,14 @@ hour = "Hello.";       // WRONG !!</pre>
 
         <exercise label="assignment_1">
             <statement>
-    <p>Q-1: A(n) <BlankNode/> statement gives a value to a variable. <var/>  </p></statement><setup><var><condition string="^\s*[Aa][Ss][Ss][Ii][Gg][Nn][Mm][Ee][Nn][Tt]\s*$"><feedback><p>Correct!</p></feedback></condition><condition string="^\s*.*\s*$"><feedback><p>Try again!</p></feedback></condition></var></setup></exercise>
+    <p>Q-1: A(n) <var/> statement gives a value to a variable. </p></statement>
+<setup>
+    <var case="insensitive">
+        <condition string="assignment"><feedback><p>Correct!</p></feedback></condition>
+        <condition string=".*"><feedback><p>Try again!</p></feedback></condition>
+    </var>
+</setup>
+</exercise>
     <exercise label="assignment_2">
         <statement>
 

@@ -38,11 +38,27 @@ int hour, minute;</pre>
 
         <exercise label="variables_3">
             <statement>
-    <p>Q-1: A(n) <BlankNode/> is a name given to a location in memory used to keep
-track of a value. <var/>  </p></statement><setup><var><condition string="^\s*[Vv][Aa][Rr][Ii][Aa][Bb][Ll][Ee]\s*$"><feedback><p>Correct!</p></feedback></condition><condition string="^\s*.*\s*$"><feedback><p>Try again!</p></feedback></condition></var></setup></exercise>
+    <p>Q-1: A(n) <var/> is a name given to a location in memory used to keep
+track of a value. </p></statement>
+<setup>
+    <var case="insensitive">
+        <condition string="variable"><feedback><p>Correct!</p></feedback></condition>
+        <condition string=".*"><feedback><p>Try again!</p></feedback></condition>
+    </var>
+</setup>
+</exercise>
         <exercise label="variables_1">
             <statement>
-    <p>Q-2: Take a look at the code block below: <var/>  </p></statement><setup><var><pre>char tom;</pre><p>It&#8217;s an example of a(n) <BlankNode/> statement.</p></var></setup></exercise>
+    <p>Q-2: Take a look at the code block below. </p>
+    <pre>char tom;</pre>
+    <p>It’s an example of a(n) <var/> statement.</p>
+    </statement>
+        <setup><var case="insensitive">
+            <condition string="declaration"><feedback><p>Correct!</p></feedback></condition>
+            <condition string=".*"><feedback><p>Hint: this statement declares that <c>tom</c> is a <c>char</c> variable.</p></feedback></condition>
+            </var></setup>
+</exercise>
+
 <exercise label="variables2.0">
     <statement><p>Click on all instances of integer VARIABLES.</p></statement>
 <feedback><p>Try again!</p></feedback>

@@ -30,7 +30,15 @@
 
         <exercise label="values_1">
             <statement>
-    <p>Q-1: A <BlankNode/> value is a single letter, number, or punctuation enclosed in single quotes. <var/>  </p></statement><setup><var><condition string="^\s*([Cc][Hh][Aa][Rr]|[Cc][Hh][Aa][Rr][Aa][Cc][Tt][Ee][Rr])\s*$"><feedback><p>Correct!</p></feedback></condition><condition string="^\s*.*\s*$"><feedback><p>Try again!</p></feedback></condition></var></setup></exercise>
+    <p>Q-1: A <var/> value is a single letter, number, or punctuation enclosed in single quotes.</p></statement>
+    <setup>
+	<var>
+        <condition string="char|character"><feedback><p>Correct!</p></feedback></condition>
+        <condition string="^\s*.*\s*$"><feedback><p>Try again!</p></feedback></condition>
+    </var>
+    </setup>
+</exercise>
+
 <exercise label="values2.0">
     <statement><p>Click on all integer VALUES.</p></statement>
 <feedback><p>Try again!</p></feedback>

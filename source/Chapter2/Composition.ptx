@@ -170,9 +170,9 @@ int main () {
     <p>Q-5: The left-hand side of an assignment statement has to be a <var/> name, not an expression.</p></statement>
 
     <setup>
-       <var>
-          <condition string="^\s*[Vv][Aa][Rr][Ii][Aa][Bb][Ll][Ee]\s*$"><feedback><p>Correct!</p></feedback></condition>
-          <condition string="^\s*.*\s*$"><feedback><p>Hint: Begins with "v".</p></feedback></condition>
+       <var case="insensitive">
+          <condition string="variable"><feedback><p>Correct!</p></feedback></condition>
+          <condition string=".*"><feedback><p>Hint: Begins with "v".</p></feedback></condition>
         </var>
     </setup>
 </exercise>
@@ -182,8 +182,8 @@ int main () {
     <p>Q-6: In programming, another word for <term>combine</term> is <var/>. </p></statement>
     <setup>
         <var>
-            <condition string="^\s*([Cc][Oo][Mm][Pp][Oo][Ss]([Ee]|([Ii][Tt][Ii][Oo][Nn])))\s*$"><feedback><p>Correct!</p></feedback></condition>
-            <condition string="^\s*.*\s*$"><feedback><p>Hint: Begins with "c".</p></feedback></condition>
+            <condition string="compose|composition"><feedback><p>Correct!</p></feedback></condition>
+            <condition string=".*"><feedback><p>Hint: Begins with "c".</p></feedback></condition>
         </var>
     </setup>
 </exercise>

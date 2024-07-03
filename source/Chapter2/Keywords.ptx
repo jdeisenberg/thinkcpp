@@ -29,7 +29,15 @@
 
         <exercise label="keywords_1">
             <statement>
-    <p>Q-1: Words that are reserved in C++ because they are used by the compiler to parse the structure of your program are called <BlankNode/>. <var/>  </p></statement><setup><var><condition string="^\s*[Kk][Ee][Yy][Ww][Oo][Rr][Dd][Ss]\s*$"><feedback><p>Correct!</p></feedback></condition><condition string="^\s*.*\s*$"><feedback><p>Try again!</p></feedback></condition></var></setup></exercise>
+    <p>Q-1: Words that are reserved in C++ because they are used by the compiler to parse the structure of your program are called <var/>. </p></statement>
+<setup>
+    <var>
+        <condition string="keywords"><feedback><p>Correct!</p></feedback></condition>
+        <condition string=".*"><feedback><p>Try again!</p></feedback></condition>
+    </var>
+</setup>
+</exercise>
+
     <exercise label="keywords_2">
         <statement>
 

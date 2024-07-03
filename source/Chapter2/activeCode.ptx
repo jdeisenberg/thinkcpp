@@ -145,7 +145,7 @@ int main () {
             </solution></exercise>
 
         <exercise xml:id="ch2_ex4"><statement>
-                <p>Write code that prints &#8220;Eat&#8221;, &#8220;More&#8221;, and &#8220;Chicken&#8221; on 3 consecutive lines. Be sure to inclue any necessary headers.</p>
+                <p>Write code that prints &#8220;Eat&#8221;, &#8220;More&#8221;, and &#8220;Veggies&#8221; on 3 consecutive lines. Be sure to inclue any necessary headers.</p>
 
     </statement><program interactive="activecode" language="cpp" xml:id="VARS_a7q_editor">
 
@@ -175,7 +175,7 @@ using namespace std;
 int main () {
     cout &lt;&lt; "Eat" &lt;&lt; endl;
     cout &lt;&lt; "More" &lt;&lt; endl;
-    cout &lt;&lt; "Chicken" &lt;&lt; endl;
+    cout &lt;&lt; "Veggies" &lt;&lt; endl;
 }
         </input>
 <tests>
