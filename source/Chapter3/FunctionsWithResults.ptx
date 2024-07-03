@@ -29,12 +29,13 @@
 
         <exercise label="fuwresults_1">
             <statement>
-    <p>Q-1: What will be <term>printed</term> when the following code runs? <BlankNode/> <var/>  </p></statement><setup><var><program language="cpp"><input>
+    <p>Q-1: What will be <term>printed</term> when the following code runs?  <var/>  </p>
+<program language="cpp"><input>
 #include &lt;iostream&gt;
 using namespace std;
 
-void multiply (int x, int y) {
-  cout &lt;&lt; x*y;
+void multiply(int x, int y) {
+  cout &lt;&lt; x * y;
 }
 
 int main() {
@@ -42,8 +43,14 @@ int main() {
   int y = 4;
   multiply(x,y);
 }
-</input></program><condition number="[8, 8]"><feedback><p>Yes! 2*4=8 so that will be printed but not returned</p></feedback></condition></var></setup></exercise>
-    <exercise label="fuwresults_2">
+</input></program>
+</statement>
+<setup><var>
+<condition number="8"><feedback><p>Yes! 2*4=8 so that will be printed but not returned</p></feedback></condition>
+<condition string=".*"><feedback><p>What does the <c>multiply</c> function do?</p></feedback></condition></var>
+</setup></exercise>
+
+<exercise label="fuwresults_2">
         <statement>
 
         <p>Q-2: Will the following code compile?</p>
@@ -51,7 +58,7 @@ int main() {
 #include &lt;iostream&gt;
 using namespace std;
 
-void multiply (int x, int y) {
+void multiply(int x, int y) {
   cout &lt;&lt; x * y &lt;&lt; endl;
 }
 

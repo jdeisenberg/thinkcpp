@@ -32,9 +32,9 @@
 using namespace std;
 
 int main () {
-    double result = log (17.0);
+    double result = log(17.0);
     double angle = 1.5;
-    double height = sin (angle);
+    double height = sin(angle);
     cout &lt;&lt; result &lt;&lt; endl;
     cout &lt;&lt; angle &lt;&lt; endl;
     cout &lt;&lt; height &lt;&lt; endl;

@@ -5,7 +5,7 @@
             seen one function definition: <c>main</c>. The function named <c>main</c> is special
             because it indicates where the execution of the program begins, but the
             syntax for <c>main</c> is the same as for any other function definition:</p>
-        <pre>void NAME ( LIST OF PARAMETERS ) {
+        <pre>void NAME(LIST OF PARAMETERS) {
   STATEMENTS
 }</pre>
         
@@ -30,7 +30,7 @@
             <term>string</term> returns a string;</p>
         <p>In <c>main</c> we can call this new function using syntax that is similar to
             the way we call the built-in C++ commands:</p>
-        <pre>int main () {
+        <pre>int main() {
   cout &lt;&lt; "First Line." &lt;&lt; endl;
   newLine ();
   cout &lt;&lt; "Second Line." &lt;&lt; endl;
@@ -42,11 +42,11 @@
 Second line.</pre>
         <p>Notice the extra space between the two lines. What if we wanted more
             space between the lines? We could call the same function repeatedly:</p>
-        <pre>int main () {
+        <pre>int main() {
   cout &lt;&lt; "First Line." &lt;&lt; endl;
-  newLine ();
-  newLine ();
-  newLine ();
+  newLine();
+  newLine();
+  newLine();
   cout &lt;&lt; "Second Line." &lt;&lt; endl;
   return 0;
 }</pre>
@@ -66,17 +66,19 @@ Second line.</pre>
 #include &lt;iostream&gt;
 using namespace std;
 
-void newLine () {
+void newLine() {
     cout &lt;&lt; '*' &lt;&lt; endl;
 }
 
-void threeLine () {
-    newLine ();  newLine ();  newLine ();
+void threeLine() {
+    newLine();
+    newLine();
+    newLine();
 }
 
-int main () {
+int main() {
     cout &lt;&lt; "First Line." &lt;&lt; endl;
-    threeLine ();
+    threeLine();
     cout &lt;&lt; "Second Line." &lt;&lt; endl;
     return 0;
 }

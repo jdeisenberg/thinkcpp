@@ -18,7 +18,7 @@ void printArea(int r) {
     cout &lt;&lt; area;
 }
 
-int main () {
+int main() {
     // DO NOT MODIFY ANYTHING BELOW THIS LINE
     cout &lt;&lt; "Testing with radius = 5..." &lt;&lt; endl;
     cout &lt;&lt; "    Your function had area = "; printArea(5); cout &lt;&lt; endl;
@@ -61,16 +61,16 @@ void printArea(double r) {
 #include &lt;iostream&gt;
 using namespace std;
 
-void divide (int a, int b) {
+void divide(int a, int b) {
     cout &lt;&lt; a / b;
 }
 
-int main () {
+int main() {
     int a = 8;
     int b = 12;
 
     // DO NOT MODIFY ANYTHING BELOW THIS LINE
-    cout &lt;&lt; b &lt;&lt; " / " &lt;&lt; a &lt;&lt; " = "; divide (b, a);
+    cout &lt;&lt; b &lt;&lt; " / " &lt;&lt; a &lt;&lt; " = "; divide(b, a);
 }
         </input>
 
@@ -86,14 +86,14 @@ int main () {
 #include &lt;iostream&gt;
 using namespace std;
 
-void divide (double a, double b) {
+void divide(double a, double b) {
     cout &lt;&lt; a / b;
 }
 
-int main () {
+int main() {
     int a = 8;
     int b = 12;
-    cout &lt;&lt; b &lt;&lt; " / " &lt;&lt; a &lt;&lt; " = "; divide (b, a);
+    cout &lt;&lt; b &lt;&lt; " / " &lt;&lt; a &lt;&lt; " = "; divide(b, a);
 }
         </input>
 <tests>
@@ -115,11 +115,11 @@ int main () {
 #include &lt;iostream&gt;
 using namespace std;
 
-void border () {
+void border() {
     cout &lt;&lt; "------------" &lt;&lt; endl;
 }
 
-int main () {
+int main() {
     // Write some code below to call the function appropriately
 
 }
@@ -140,11 +140,11 @@ int main () {
 #include &lt;iostream&gt;
 using namespace std;
 
-void border () {
+void border() {
     cout &lt;&lt; "------------" &lt;&lt; endl;
 }
 
-int main () {
+int main() {
     cout &lt;&lt; "First Line." &lt;&lt; endl;
     border();
     cout &lt;&lt; "Second Line." &lt;&lt; endl;
@@ -163,11 +163,11 @@ int main () {
 #include &lt;iostream&gt;
 #include &lt;cmath&gt;
 using namespace std;
-void gpaBoost () {
+void gpaBoost() {
 
 }
 
-int main () {
+int main() {
     // DO NOT MODIFY ANYTHING BELOW THIS LINE
     cout &lt;&lt; "Testing with GPA = 2.513..." &lt;&lt; endl;
     cout &lt;&lt; "    Your solution rounded the GPA to "; gpaBoost(2.513);
@@ -193,7 +193,7 @@ int main () {
 #include &lt;cmath&gt;
 using namespace std;
 
-void gpaBoost (double GPA) {
+void gpaBoost(double GPA) {
     int betterGPA = ceil(GPA);
     cout &lt;&lt; betterGPA &lt;&lt; ".000";
 }
@@ -218,11 +218,11 @@ void gpaBoost (double GPA) {
 #include &lt;iostream&gt;
 #include &lt;cmath&gt;
 using namespace std;
-void tanDegrees () {
+void tanDegrees() {
 
 }
 
-int main () {
+int main() {
     // DO NOT MODIFY ANYTHING BELOW THIS LINE
     cout &lt;&lt; "Testing with degrees = 45..." &lt;&lt; endl;
     cout &lt;&lt; "    Your solution calculated a tangent of "; tanDegrees(45);
@@ -246,7 +246,7 @@ int main () {
 #include &lt;cmath&gt;
 using namespace std;
 
-void tanDegrees (double degrees) {
+void tanDegrees(double degrees) {
     double radians = degrees * (2 * 3.14) / 360.0;
     double tangent = tan(radians);
     cout &lt;&lt; tangent;

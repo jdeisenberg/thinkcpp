@@ -18,13 +18,13 @@
 #include &lt;iostream&gt;
 using namespace std;
 
-void printTwice (char phil) {
+void printTwice(char phil) {
     cout &lt;&lt; phil &lt;&lt; phil &lt;&lt; endl;
 }
 
-int main () {
+int main() {
     char argument = 'b';
-    printTwice (argument);
+    printTwice(argument);
     return 0;
 }
         </input>
@@ -61,11 +61,11 @@ int main () {
         <statement>
 
         <p>Q-2: How many local variables and parameters does <c>main</c> have?</p>
-        <pre>void printHelloName (string name) {
+        <pre>void printHelloName(string name) {
   cout &lt;&lt; "Hello " &lt;&lt; name &lt;&lt; "!";
 }
 
-int main () {
+int main() {
   string name1 = "Phil";
   printHelloName(name1);
   string name2 = "Joe";
@@ -119,11 +119,11 @@ int main () {
         <statement>
 
         <p>Q-3: How many local variables and parameters does <c>printHelloName</c> have?</p>
-        <pre>void printHelloName (string name) {
+        <pre>void printHelloName(string name) {
   cout &lt;&lt; "Hello " &lt;&lt; name &lt;&lt; "!";
 }
 
-int main () {
+int main() {
   string name1 = "Phil";
   printHelloName(name1);
   string name2 = "Joe";
@@ -175,8 +175,15 @@ int main () {
 
         <exercise label="locals_3">
             <statement>
-    <p>Q-4: Whenever we make a function call, we create a(n) <BlankNode/> of that function,
-which contains the parameters and local variables for that function. <var/>  </p></statement><setup><var><condition string="^\s*[Ii][Nn][Ss][Tt][Aa][Nn][Cc][Ee]\s*$"><feedback><p>You could create many instances of one function, each with their own parameters and local variables if you wanted!</p></feedback></condition><condition string="^\s*.*\s*$"><feedback><p>Try again!</p></feedback></condition></var></setup></exercise>
+    <p>Q-4: Whenever we make a function call, we create a(n) <var/> of that function,
+which contains the parameters and local variables for that function. </p></statement>
+<setup>
+    <var case="insensitive">
+        <condition string="instance"><feedback><p>You could create many instances of one function, each with their own parameters and local variables if you wanted!</p></feedback></condition>
+        <condition string=".*"><feedback><p>Try again!</p></feedback></condition>
+    </var>
+</setup>
+</exercise>
     <exercise label="locals_4">
         <statement>
 
@@ -191,7 +198,7 @@ void printGreeting(){
   hi();
 }
 
-int main () {
+int main() {
   hi();
   printGreeting();
   hi();
@@ -206,7 +213,7 @@ int main () {
                     <p>1 call</p>
                 </statement>
                 <feedback>
-                    <p>hi( ) is called from multiple functions.</p>
+                    <p><c>hi()</c> is called from multiple functions.</p>
                 </feedback>
             </choice>
 
@@ -224,7 +231,7 @@ int main () {
                     <p>2 calls</p>
                 </statement>
                 <feedback>
-                    <p>hi( ) is called from multiple functions.</p>
+                    <p><c>hi()</c> is called from multiple functions.</p>
                 </feedback>
             </choice>
 
@@ -233,7 +240,7 @@ int main () {
                     <p>3 calls</p>
                 </statement>
                 <feedback>
-                    <p>Two calls from one function are indeed two seperate calls.</p>
+                    <p>Two calls from one function are indeed two separate calls.</p>
                 </feedback>
             </choice>
 </choices>

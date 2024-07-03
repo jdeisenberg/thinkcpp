@@ -121,24 +121,24 @@ int main() {
 
         <p>Q-4: <term>Multiple Response</term> Which of the following would work as a function header
             (first line of a function).</p>
-</statement><choices><choice><statement id="functions_mc4_opt_a">        <p><c>printHelloWorld () {</c></p>
+</statement><choices><choice><statement id="functions_mc4_opt_a">        <p><c>printHelloWorld() {</c></p>
 </statement><feedback id="functions_mc4_opt_a">
         <p>This function header is missing a type.</p>
-</feedback></choice><choice><statement id="functions_mc4_opt_b">        <p><c>string palindrome (word) {</c></p>
+</feedback></choice><choice><statement id="functions_mc4_opt_b">        <p><c>string palindrome(word) {</c></p>
 </statement><feedback id="functions_mc4_opt_b">
         <p>The function&#8217;s parameter is missing a type.</p>
-</feedback></choice><choice correct="yes"><statement id="functions_mc4_opt_c">        <p><c>int mult (int a, int b) {</c></p>
+</feedback></choice><choice correct="yes"><statement id="functions_mc4_opt_c">        <p><c>int mult(int a, int b) {</c></p>
 </statement><feedback id="functions_mc4_opt_c">
         <p>Correct! The function header has a type, empty parentheses, and
             a squiggly bracket.</p>
-</feedback></choice><choice><statement id="functions_mc4_opt_d">        <p><c>char shiftThree (char letter)</c></p>
+</feedback></choice><choice><statement id="functions_mc4_opt_d">        <p><c>char shiftThree(char letter)</c></p>
 </statement><feedback id="functions_mc4_opt_d">
         <p>This function header is missing a squiggly bracket <c>{</c>.</p>
-</feedback></choice><choice correct="yes"><statement id="functions_mc4_opt_e">        <p><c>void giveCompliment () {</c></p>
+</feedback></choice><choice correct="yes"><statement id="functions_mc4_opt_e">        <p><c>void giveCompliment() {</c></p>
 </statement><feedback id="functions_mc4_opt_e">
         <p>Correct! The function header has a type, empty parentheses, and
             a squiggly bracket.</p>
-</feedback></choice><choice><statement id="functions_mc4_opt_f">        <p><c>string friend (string name) {</c></p>
+</feedback></choice><choice><statement id="functions_mc4_opt_f">        <p><c>string friend(string name) {</c></p>
 </statement><feedback id="functions_mc4_opt_f">
         <p><c>friend</c> is a reserved keyword in C++.</p>
 </feedback></choice></choices>
@@ -151,21 +151,21 @@ int main() {
         <pre>#include &lt;iostream&gt;
 using namespace std;
 
-void giveCompliment () {
+void giveCompliment() {
     cout &lt;&lt; "You are awesome!";
 }
 
-void giveInsult () {
-    insult = "You suck!";
+void giveInsult() {
+    insult = "You are a terrible person!";
 }
 
-int main () {
-    giveInsult ();
+int main() {
+    giveInsult();
 }</pre>
 </statement><choices><choice><statement id="functions_mc5_opt_a">        <p><c>"You are awesome!"</c></p>
 </statement><feedback id="functions_mc5_opt_a">
         <p>The <c>giveCompliment</c> function is not called in <c>main</c>.</p>
-</feedback></choice><choice><statement id="functions_mc5_opt_b">        <p><c>"You suck!"</c></p>
+</feedback></choice><choice><statement id="functions_mc5_opt_b">        <p><c>"You are a terrible person!"</c></p>
 </statement><feedback id="functions_mc5_opt_b">
         <p>The <c>giveInsult</c> function doesn&#8217;t <c>cout</c> anything.</p>
 </feedback></choice><choice><statement id="functions_mc5_opt_c">        <p>Nothing is printed.</p>
@@ -187,11 +187,11 @@ int main () {
         <pre>#include &lt;iostream&gt;
 using namespace std;
 
-void bestFriends (string a, string b) {
+void bestFriends(string a, string b) {
     cout &lt;&lt; a &lt;&lt; " is best friends with " &lt;&lt; b;
 }
 
-int main () {
+int main() {
     string a = "Rachel";
     string b = "Monica";
     bestFriends(b, a);
@@ -225,28 +225,28 @@ friends with " &lt;&lt; b</c>, we call the function with variable <c>b</c>
         <pre>#include &lt;iostream&gt;
 using namespace std;
 
-void greeting (string name) {
+void greeting(string name) {
     cout &lt;&lt; "hello, " &lt;&lt; name &lt;&lt; "!";
 }
 
-void goodbye (string name) {
-    greeting (name);
+void goodbye(string name) {
+    greeting(name);
     cout &lt;&lt; "!!";
 }
 
-int main () {
+int main() {
     string hannah = "Hannah";
     string anna = "Anna";
     string louise = hannah;
     hannah = anna;
     anna = louise;
-    goodbye (anna);
+    goodbye(anna);
 }</pre>
 </statement><choices><choice correct="yes"><statement id="functions_mc7_opt_a">        <p><c>hello, Hannah!!!</c></p>
 </statement><feedback id="functions_mc7_opt_a">
         <p>Correct!  The string &#8220;Hannah&#8221; is assigned to the variable <c>louise</c>,
             then the value of <c>louise</c> is assigned to the variable <c>anna</c>.  When
-            <c>goodbye (anna)</c> runs, <c>anna</c> has the value &#8220;Hannah&#8221;.</p>
+            <c>goodbye(anna)</c> runs, <c>anna</c> has the value &#8220;Hannah&#8221;.</p>
 </feedback></choice><choice><statement id="functions_mc7_opt_b">        <p><c>hello, anna!!!</c></p>
 </statement><feedback id="functions_mc7_opt_b">
         <p>The function <c>couts</c> the <em>value</em> of the variable <c>anna</c> not
@@ -275,11 +275,11 @@ int main () {
         <pre>#include &lt;iostream&gt;
 using namespace std;
 
-void orderFood (string food, int quantity) {
+void orderFood(string food, int quantity) {
     cout &lt;&lt; "I'll have " &lt;&lt; quantity &lt;&lt; " " &lt;&lt; food;
 }
 
-int main () {
+int main() {
     string a = "wings";
     string b = "sliders";
     int c = 3;
@@ -313,13 +313,13 @@ int main () {
         <pre>#include &lt;iostream&gt;
 using namespace std;
 
-void printWord (string w) {
+void printWord(string w) {
     cout &lt;&lt; w &lt;&lt; w;
 }
 
-int main () {
+int main() {
     char a = 'a' + 5;
-    printWord (a);
+    printWord(a);
 }</pre>
 </statement><choices><choice><statement id="functions_mc9_opt_a">        <p><c>a</c></p>
 </statement><feedback id="functions_mc9_opt_a">
@@ -345,7 +345,7 @@ int main () {
         <statement>
 
         <p>Q-10: How many local variables and parameters does <c>mult</c> have?</p>
-        <pre>void mult (int a, int b, int c) {
+        <pre>void mult(int a, int b, int c) {
     int d = 7;
     cout &lt;&lt; a * b * c * d;
 }</pre>

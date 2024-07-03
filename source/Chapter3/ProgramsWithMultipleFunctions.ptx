@@ -29,8 +29,8 @@
 
 <exercise label="multiple_functions_AC_1">
     <statement>
-        <p>This program calls the multiplyTwo and addTwo functions in the
-            main.  See if you can follow the order of execution.</p>
+        <p>This program calls the <c>multiplyTwo</c> and <c>addTwo</c> functions in the
+            <c>main</c>.  See if you can follow the order of execution.</p>
 
     </statement>
     <program xml:id="multiple_functions_AC_1_editor" interactive="activecode" language="cpp">
@@ -39,22 +39,22 @@
 #include &lt;iostream&gt;
 using namespace std;
 
-void printTotal (int x) {
+void printTotal(int x) {
     cout &lt;&lt; x &lt;&lt; endl;
 }
 
-int multiplyTwo (int x) {
+int multiplyTwo(int x) {
     int total = x * 2;
     printTotal(total);
     return total;
 }
 
-int addTwo (int x) {
+int addTwo(int x) {
     int total = x + 2;
     return total;
 }
 
-int main () {
+int main() {
     int num = 3;
     int newNum = multiplyTwo(num);
     int newerNum = addTwo(newNum);
@@ -69,7 +69,7 @@ int main () {
 
     </program>
 </exercise>
-        <p>What&#8217;s the moral of this sordid tale? When you read a program, don&#8217;t
+        <p>What&#8217;s the moral of this tale with its twists and turns? When you read a program, don&#8217;t
             read from top to bottom. Instead, <term>follow the flow of execution</term>.</p>
 
 <exercise label="multiple_fun_1">
@@ -81,21 +81,23 @@ int main () {
 
         <p>Q-3: Consider the following C++ code. Note that line numbers are included
             on the left.</p>
-        <program language="cpp"><input>
+        <program language="cpp" line-numbers="yes"><input>
 #include &lt;iostream&gt;
 using namespace std;
 
-void newLine () {
+void newLine() {
   cout &lt;&lt; endl;
 }
 
-void threeLine () {
-  newLine ();  newLine ();  newLine ();
+void threeLine() {
+  newLine();
+  newLine();
+  newLine();
 }
 
-int main () {
+int main() {
   cout &lt;&lt; "First Line." &lt;&lt; endl;
-  threeLine ();
+  threeLine();
   cout &lt;&lt; "Second Line." &lt;&lt; endl;
   return 0;
 }
@@ -125,21 +127,23 @@ int main () {
 #include &lt;iostream&gt;
 using namespace std;
 
-void yo () {
+void yo() {
   cout &lt;&lt; "yo, ";
 }
 
-void hello () {
+void hello() {
   cout &lt;&lt; "hello, ";
-  yo(); yo();
+  yo();
+  yo();
 }
 
-void goodbye () {
-  yo(); hello();
+void goodbye() {
+  yo();
+  hello();
   cout &lt;&lt; "goodbye,";
 }
 
-int main () {
+int main() {
   cout &lt;&lt; "welcome, ";
   goodbye();
   return 0;
