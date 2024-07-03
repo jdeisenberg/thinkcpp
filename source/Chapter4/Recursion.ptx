@@ -12,7 +12,7 @@
                 such functions are said to be <term>recursive</term>.</p>
         </note>
         <p>For example, look at the following function:</p>
-        <pre>void countdown (int n) {
+        <pre>void countdown(int n) {
   if (n == 0) {
     cout &lt;&lt; "Blastoff!" &lt;&lt; endl;
   }
@@ -39,7 +39,7 @@
 #include &lt;cmath&gt;
 using namespace std;
 
-void countdown (int n) {
+void countdown(int n) {
     if (n == 0) {
         cout &lt;&lt; "Blastoff!" &lt;&lt; endl;
     }
@@ -49,8 +49,8 @@ void countdown (int n) {
     }
 }
 
-int main () {
-    countdown (3);
+int main() {
+    countdown(3);
     return 0;
 }
         </input>
@@ -89,22 +89,24 @@ int main () {
 Blastoff!</pre>
         <p>As a second example, let&#8217;s look again at the functions <c>newLine</c> and
             <c>threeLine</c>.</p>
-        <pre>void newLine () {
+        <pre>void newLine() {
   cout &lt;&lt; endl;
 }
 
-void threeLine () {
-  newLine ();  newLine ();  newLine ();
+void threeLine() {
+  newLine();
+  newLine();
+  newLine();
 }</pre>
-        <p>Although these work, they would not be much help if I wanted to output 2
-            newlines, or 4 newlines. A better alternative would be</p>
-        <pre>void nLines (int n) {
+        <p>Although these work, they would not be much help if I wanted to output two
+            newlines, or four newlines. A better alternative would be</p>
+        <pre>void nLines(int n) {
   if (n &gt; 0) {
     cout &lt;&lt; endl;
-    nLines (n - 1);
+    nLines(n - 1);
   }
 }</pre>
-        <p>This program is similar to countdown; as long as n is greater than zero,
+        <p>This program is similar to countdown; as long as <c>n</c> is greater than zero,
             it outputs one newline, and then calls itself to output <c>n-1</c> additional
             newlines. Thus, the total number of newlines is <c>1 + (n - 1)</c>, which usually
             comes out to roughly n.</p>
@@ -123,7 +125,7 @@ void threeLine () {
 using namespace std;
 
 void guessTheNumber(int num) {
-    cout &lt;&lt; "Enter your guess!";
+    cout &lt;&lt; "Enter your guess (1-10) > ";
     int guess;
     cin &gt;&gt; guess;
     cout &lt;&lt; "Your guess " &lt;&lt; guess &lt;&lt; ". ";
@@ -141,6 +143,8 @@ void guessTheNumber(int num) {
 }
 
 int main() {
+    // These lines generate a random number from
+    // 1 to 10 (inclusive)
     srand((unsigned) time(0));
     int randomNumber = (rand() % 10) + 1;
     guessTheNumber(randomNumber);
@@ -164,11 +168,11 @@ using namespace std;
 void exclamationPoint(int n) {
   if (n &gt; 0) {
     cout &lt;&lt; "!";
-    exclamationPoint (n-1);
+    exclamationPoint(n - 1);
   }
 }
 
-int main () {
+int main() {
   exclamationPoint(3);
 }</pre>
 
@@ -198,7 +202,7 @@ int main () {
                     <p>!!!</p>
                 </statement>
                 <feedback>
-                    <p>Correct! First, the program enters the if statement within exclamationPoint because n is greater than 0. Then the function prints a "!" and calls itself again, but with n-1, which is 2. This repeats until n is 0, which is when the program exits the function.</p>
+                    <p>Correct! First, the program enters the <c>if</c> statement within <c>exclamationPoint</c> because <c>n</c> is greater than 0. Then the function prints a "!" and calls itself again, but with <c>n&#160;-&#160;1</c>, which is 2. This repeats until <c>n</c> is 0, which is when the program exits the function.</p>
                 </feedback>
             </choice>
 
@@ -207,7 +211,7 @@ int main () {
                     <p>!!!!</p>
                 </statement>
                 <feedback>
-                    <p>The function keeps executing while n is greater than 0. Therefore, when n is 0, it will not print a "!"</p>
+                    <p>The function keeps executing while <c>n</c> is greater than 0. Therefore, when <c>n</c> is 0, it will not print a "!"</p>
                 </feedback>
             </choice>
 </choices>
@@ -224,7 +228,7 @@ using namespace std;
 void exclamationPoint(int n) {
   if (n &gt; 0) {
     cout &lt;&lt; "!";
-    exclamationPoint (n-1);
+    exclamationPoint(n - 1);
   }
 }
 
@@ -267,7 +271,7 @@ int main () {
                     <p>Nothing prints.</p>
                 </statement>
                 <feedback>
-                    <p>Correct! The program never enters the "if" statement within the function because n is never greater than 0.</p>
+                    <p>Correct! The program never enters the <c>if</c> statement within the function because <c>n</c> is never greater than 0.</p>
                 </feedback>
             </choice>
 </choices>
@@ -276,5 +280,13 @@ int main () {
 
         <exercise label="recursion_3">
             <statement>
-    <p>Q-5: A function that calls itself is said to be <BlankNode/>. <var/>  </p></statement><setup><var><condition string="^\s*[Rr][Ee][Cc][Uu][Rr][Ss][Ii][Vv][Ee]\s*$"><feedback><p>And the process by which a function calls itself is called recursion.</p></feedback></condition><condition string="^\s*.*\s*$"><feedback><p>Try again!</p></feedback></condition></var></setup></exercise>    </section>
+    <p>Q-5: A function that calls itself is said to be <var/>.</p></statement>
+    <setup>
+        <var case="insensitive">
+        <condition string="recursive"><feedback><p>Correct! (And the process by which a function calls itself is called recursion.)</p></feedback></condition>
+        <condition string=".*"><feedback><p>Try again!</p></feedback></condition>
+        </var>
+    </setup>
+</exercise>
+</section>
 

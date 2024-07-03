@@ -19,7 +19,7 @@
 #include &lt;iostream&gt;
 using namespace std;
 
-int main () {
+int main() {
     int x = -4;
     if (x &gt; 0) {
         cout &lt;&lt; "x is positive" &lt;&lt; endl;
@@ -62,7 +62,7 @@ int main () {
         <pre>#include &lt;iostream&gt;
 using namespace std;
 
-int main () {
+int main() {
   int x = 10;
   if (x &gt; 8) {
     cout &lt;&lt; "One! ";
@@ -125,7 +125,7 @@ int main () {
         <pre>#include &lt;iostream&gt;
 using namespace std;
 
-int main () {
+int main() {
   int x = 10;
   if (x &gt; 8) {
     cout &lt;&lt; "One! " ;
@@ -188,7 +188,7 @@ int main () {
         <pre>#include &lt;iostream&gt;
 using namespace std;
 
-int main () {
+int main() {
   int x = 7;
   if (x &gt; 8) {
     cout &lt;&lt; "One! " ;
@@ -251,7 +251,7 @@ int main () {
         <pre>#include &lt;iostream&gt;
 using namespace std;
 
-int main () {
+int main() {
   int x = 7;
   if (x &gt; 8) {
     cout &lt;&lt; "One! " ;

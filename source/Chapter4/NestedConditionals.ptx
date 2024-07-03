@@ -18,7 +18,7 @@
 #include &lt;iostream&gt;
 using namespace std;
 
-int main () {
+int main() {
     int x = 9;
     if (x == 0) {
         cout &lt;&lt; "x is zero" &lt;&lt; endl;
@@ -65,7 +65,7 @@ int main () {
         <pre>#include &lt;iostream&gt;
 using namespace std;
 
-int main () {
+int main() {
   int x = 0;
   if (x == 0) {
     cout &lt;&lt; "Hey!" &lt;&lt; endl;
@@ -130,7 +130,7 @@ int main () {
         <pre>#include &lt;iostream&gt;
 using namespace std;
 
-int main () {
+int main() {
   int x = -4;
   if (x == 0) {
     cout &lt;&lt; "Hey!" &lt;&lt; endl;
@@ -193,10 +193,10 @@ int main () {
 
         <p>Q-4: Your school uses a system to arrange students in a large stadium using
             their initials.  Look at the function definition below.  Where would a
-            student with the initials &#8220;MZ&#8221; be seated?</p>
+            student with the first initial &#8220;M&#8221; and last initial &#8220;Z&#8221; be seated?</p>
         <pre>string seatingArrangement(char first, char last) {
-  if (last &gt; m) {
-    if (first &gt; m) {
+  if (last &gt; 'M') {
+    if (first &gt; 'M') {
       return "Back Left!";
     }
     else {
@@ -204,7 +204,7 @@ int main () {
     }
   }
   else {
-    if (first &gt; m) {
+    if (first &gt; 'M') {
       return "Front Left!";
     }
     else {
@@ -230,7 +230,7 @@ int main () {
                     <p>Back Right!</p>
                 </statement>
                 <feedback>
-                    <p>z &gt; m is true, and m &gt; m is false, so a student with these initials would be seated in the back right.</p>
+                    <p><c>'Z' &gt; 'M'</c> is true, and <c>'M' &gt; M'</c> is false, so a student with these initials would be seated in the back right.</p>
                 </feedback>
             </choice>
 
@@ -239,7 +239,7 @@ int main () {
                     <p>Front Left!</p>
                 </statement>
                 <feedback>
-                    <p>z &gt; m is true because z comes after m.  Also, the &gt; opearator is not inclusive.</p>
+                    <p><c>'Z' &gt; 'M'</c> is true because Z comes after M.  Also, the &gt; opearator is not inclusive.</p>
                 </feedback>
             </choice>
 
@@ -248,7 +248,7 @@ int main () {
                     <p>Front Right!</p>
                 </statement>
                 <feedback>
-                    <p>z &gt; m is true because z comes after m.</p>
+                    <p><c>'Z' &gt; 'M'</c> is true because Z comes after M.</p>
                 </feedback>
             </choice>
 

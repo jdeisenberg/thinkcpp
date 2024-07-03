@@ -20,7 +20,7 @@
 #include &lt;cmath&gt;
 using namespace std;
 
-void printLogarithm (double x) {
+void printLogarithm(double x) {
     if (x &lt;= 0.0) {
         cout &lt;&lt; "Positive numbers only, please." &lt;&lt; endl;
         return;
@@ -61,7 +61,7 @@ void printLogarithm (double x) {
         <pre>#include &lt;iostream&gt;
 using namespace std;
 
-int main () {
+int main() {
   int x = 8;
   if (x &gt; 8) {
     cout &lt;&lt; "One! ";
@@ -133,7 +133,7 @@ int main () {
         <pre>#include &lt;iostream&gt;
 using namespace std;
 
-int main () {
+int main() {
   int x = 8;
   if (x &gt; 8) {
     cout &lt;&lt; "One! ";

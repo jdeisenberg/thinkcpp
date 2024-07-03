@@ -239,7 +239,7 @@ It's Hot!</pre>
         <statement>
 
         <p>Q-7: Suppose you have defined the following function:</p>
-        <pre>void theThing (int m, int n, bool b) {
+        <pre>void theThing(int m, int n, bool b) {
     if (b) {
         if (m % 4 == 0) {
             cout &lt;&lt; m;
@@ -263,7 +263,7 @@ It's Hot!</pre>
     cout &lt;&lt; -1;
 }</pre>
         <p>What is printed when we run the following code?</p>
-        <pre>theThing (5, 10, false);</pre>
+        <pre>theThing(5, 10, false);</pre>
 </statement><choices><choice><statement id="cond_rec_mc7_opt_a">        <p>5</p>
 </statement><feedback id="cond_rec_mc7_opt_a">
         <p>The outer <c>if</c> condition is not met, the block does not execute.</p>
@@ -286,7 +286,7 @@ It's Hot!</pre>
         <statement>
 
         <p>Q-8: Suppose you have defined the following function:</p>
-        <pre>void theThing (int m, int n, bool b) {
+        <pre>void theThing(int m, int n, bool b) {
     if (b) {
         if (m % 4 == 0) {
             cout &lt;&lt; m;
@@ -310,7 +310,7 @@ It's Hot!</pre>
     cout &lt;&lt; -1;
 }</pre>
         <p>What is printed when we run the following code?</p>
-        <pre>theThing (6, 4, true);</pre>
+        <pre>theThing(6, 4, true);</pre>
 </statement><choices><choice><statement id="cond_rec_mc8_opt_a">        <p>6</p>
 </statement><feedback id="cond_rec_mc8_opt_a">
         <p><c>5 % 4 != 0</c> in the <c>if</c> block, so the function doesn&#8217;t print 6.</p>
@@ -333,18 +333,18 @@ It's Hot!</pre>
         <statement>
 
         <p>Q-9: Suppose you have defined the following function:</p>
-        <pre>void moo (int m, int n) {
+        <pre>void moo(int m, int n) {
     if (m != n) {
         m += 2;
         cout &lt;&lt; "Moo!";
-        moo (m, n);
+        moo(m, n);
     }
     else {
         cout &lt;&lt; "Got Milk?";
     }
 }</pre>
         <p>How many times does &#8220;Moo!&#8221; print when we run the following?</p>
-        <pre>moo (4, 8);</pre>
+        <pre>moo(4, 8);</pre>
 </statement><choices><choice><statement id="cond_rec_mc9_opt_a">        <p>0</p>
 </statement><feedback id="cond_rec_mc9_opt_a">
         <p>When we call the function <c>4 != 8</c>, so &#8220;Moo!&#8221; is printed at least
@@ -370,7 +370,7 @@ It's Hot!</pre>
         <statement>
 
         <p>Q-10: Suppose you have defined the following function:</p>
-        <pre>void moo (int m, int n) {
+        <pre>void moo(int m, int n) {
     if (m != n) {
         m += 2;
         cout &lt;&lt; "Moo!";
@@ -381,7 +381,7 @@ It's Hot!</pre>
     }
 }</pre>
         <p>How many times does &#8220;Moo!&#8221; print when we run the following?</p>
-        <pre>moo (5, 10);</pre>
+        <pre>moo(5, 10);</pre>
 </statement><choices><choice><statement id="cond_rec_mc10_opt_a">        <p>0</p>
 </statement><feedback id="cond_rec_mc10_opt_a">
         <p>When we call the function <c>5 != 10</c>, so &#8220;Moo!&#8221; is printed at least

@@ -43,8 +43,20 @@ int main() {
 
         <exercise label="unbounded_recursion_1">
             <statement>
-    <p>Q-1: If a recursive function never reaches its <BlankNode/> <BlankNode/>, then the function
-will continue executing indefinitely.  This is called <BlankNode/> <BlankNode/>. <var/>  <var/>  <var/>  <var/>  </p></statement><setup><var><condition string="^\s*[Bb][Aa][Ss][Ee]\s*$"><feedback><p>Correct!</p></feedback></condition><condition string="^\s*x\s*$"><feedback><p>Try again!</p></feedback></condition></var><var><condition string="^\s*[Cc][Aa][Ss][Ee]\s*$"><feedback><p>Correct!</p></feedback></condition><condition string="^\s*x\s*$"><feedback><p>Try again!</p></feedback></condition></var><var><condition string="^\s*[Ii][Nn][Ff][Ii][Nn][Ii][Tt][Ee]\s*$"><feedback><p>Correct!</p></feedback></condition><condition string="^\s*.*\s*$"><feedback><p>Try again!</p></feedback></condition></var><var><condition string="^\s*[Rr][Ee][Cc][Uu][Rr][Ss][Ii][Oo][Nn]\s*$"><feedback><p>Correct!</p></feedback></condition><condition string="^\s*.*\s*$"><feedback><p>Try again!</p></feedback></condition></var></setup></exercise>
+    <p>Q-1: If a recursive function never reaches its <var/>, then the function
+will continue executing indefinitely.  This is called <var/> recursion.</p></statement>
+    <setup>
+        <var case="insensitive">
+            <condition string="base\s+case"><feedback><p>Correct!</p></feedback></condition>
+            <condition string=".*"><feedback><p>Try again!</p></feedback></condition>
+        </var>
+        <var>
+            <condition string="infinite"><feedback><p>Correct!</p></feedback></condition>
+            <condition string="^\s*.*\s*$"><feedback><p>Try again!</p></feedback></condition>
+        </var>
+    </setup>
+    </exercise>
+
     <exercise label="unbounded_recursion_2">
         <statement>
 
@@ -231,5 +243,5 @@ int main() {
 </choices>
 
     </exercise>
-    </section>
+</section>
 

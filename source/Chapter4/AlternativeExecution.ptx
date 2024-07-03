@@ -16,7 +16,7 @@ else {
         <p>As an aside, if you think you might want to check the parity (evenness
             or oddness) of numbers often, you might want to &#8220;wrap&#8221; this code up in a
             function, as follows:</p>
-        <pre>void printParity (int x) {
+        <pre>void printParity(int x) {
   if (x % 2 == 0) {
     cout &lt;&lt; "x is even" &lt;&lt; endl;
   }
@@ -27,12 +27,12 @@ else {
         <p>Now you have a function named <c>printParity</c> that will display an
             appropriate message for any integer you care to provide. In main you
             would call this function as follows:</p>
-        <pre>printParity (17);</pre>
+        <pre>printParity(17);</pre>
         <p>Always remember that when you <em>call</em> a function, you do not have to
             declare the types of the arguments you provide. C++ can figure out what
             type they are. You should resist the temptation to write things like:</p>
         <pre>int number = 17;
-printParity (int number);         // WRONG!!!</pre>
+printParity(int number);         // WRONG!!!</pre>
 
 <exercise label="alt_execution_AC_1">
     <statement>
@@ -47,7 +47,7 @@ printParity (int number);         // WRONG!!!</pre>
 #include &lt;iostream&gt;
 using namespace std;
 
-void printParity (int x) {
+void printParity(int x) {
     if (x % 2 == 0) {
         cout &lt;&lt; "x is even" &lt;&lt; endl;
     }
@@ -56,7 +56,7 @@ void printParity (int x) {
     }
 }
 
-int main () {
+int main() {
     int number = 17;
     printParity(number);
     int otherNumber = 18;
