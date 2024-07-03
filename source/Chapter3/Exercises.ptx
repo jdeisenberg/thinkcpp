@@ -147,25 +147,25 @@ int main() {
     <exercise label="functions_mc5">
         <statement>
 
-        <p>Q-5: What is printed when the following code runs?  Are there any errors?</p>
+        <p>Q-5: What is printed when the following Shakespearean code runs?  Are there any errors?</p>
         <pre>#include &lt;iostream&gt;
 using namespace std;
 
 void giveCompliment() {
-    cout &lt;&lt; "You are awesome!";
+    cout &lt;&lt; "Thou art perfection!";
 }
 
 void giveInsult() {
-    insult = "You are a terrible person!";
+    insult = "Ye scurvy rapscallion!";
 }
 
 int main() {
     giveInsult();
 }</pre>
-</statement><choices><choice><statement id="functions_mc5_opt_a">        <p><c>"You are awesome!"</c></p>
+</statement><choices><choice><statement id="functions_mc5_opt_a">        <p><c>"Thou art perfection!"</c></p>
 </statement><feedback id="functions_mc5_opt_a">
         <p>The <c>giveCompliment</c> function is not called in <c>main</c>.</p>
-</feedback></choice><choice><statement id="functions_mc5_opt_b">        <p><c>"You are a terrible person!"</c></p>
+</feedback></choice><choice><statement id="functions_mc5_opt_b">        <p><c>"Ye scurvy rapscallion!"</c></p>
 </statement><feedback id="functions_mc5_opt_b">
         <p>The <c>giveInsult</c> function doesn&#8217;t <c>cout</c> anything.</p>
 </feedback></choice><choice><statement id="functions_mc5_opt_c">        <p>Nothing is printed.</p>
