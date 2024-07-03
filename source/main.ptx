@@ -2,8 +2,8 @@
 <pretext xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
   <xi:include href="./bookinfo.ptx"/>
   <book xml:id="thinkcpp" permid="tcp">
-    <title>How to Think Like a Computer Scientist</title>
-    <subtitle>Interactive C++ Edition</subtitle>
+    <title>How to Think Like a Computer Scientist: C++</title>
+    <subtitle>Interactive Edition</subtitle>
     <frontmatter>
     <titlepage>
     <author>
@@ -40,7 +40,7 @@
     </p>
 
 
-    <p>The PreTeXt version of this book was constructed by J. David Eisenberg for the Computer Science 76 course at
+    <p>The PreTeXt version of this book was constructed by J. David Eisenberg for the Computer Science 41 course at
       Evergreen Valley College in San Jose, CA. Any mistakes in the book are entirely his.</p>
 
     </acknowledgement>
