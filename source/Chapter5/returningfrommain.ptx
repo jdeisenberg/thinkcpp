@@ -3,24 +3,24 @@
         <p>Now that we have functions that return values, I can let you in on a
             secret. main is not really supposed to be a void function. It&#8217;s supposed
             to return an integer:</p>
-        <pre>int main () {
+        <pre>int main() {
   return 0;
 }</pre>
-        <p>The usual return value from main is 0, which indicates that the program
+        <p>The usual return value from <c>main</c> is 0, which indicates that the program
             succeeded at whatever it was supposed to do. If something goes wrong, it
             is common to return -1, or some other value that indicates what kind of
             error occurred.</p>
         <p>Of course, you might wonder who this value gets returned to, since we
-            never call main ourselves. It turns out that when the system executes a
-            program, it starts by calling main in pretty much the same way it calls
+            never call <c>main</c> ourselves. It turns out that when the system executes a
+            program, it starts by calling <c>main</c> in pretty much the same way it calls
             all the other functions.</p>
-        <p>There are even some parameters that are passed to main by the system,
+        <p>There are even some parameters that are passed to <c>main</c> by the system,
             but we are not going to deal with them for a little while.</p>
 
     <exercise label="return_main_mc_1">
         <statement>
 
-        <p>Q-1: What data type is the main function supposed to return?</p>
+        <p>Q-1: What data type is the <c>main</c> function supposed to return?</p>
 
         </statement>
 <choices>
@@ -30,7 +30,7 @@
                     <p>string</p>
                 </statement>
                 <feedback>
-                    <p>Look at the function definition for main.</p>
+                    <p>Look at the function definition for <c>main</c>.</p>
                 </feedback>
             </choice>
 
@@ -48,7 +48,7 @@
                     <p>nothing</p>
                 </statement>
                 <feedback>
-                    <p>Main is supposed to return something!</p>
+                    <p><c>main</c> is supposed to return something!</p>
                 </feedback>
             </choice>
 
@@ -57,7 +57,7 @@
                     <p>anything</p>
                 </statement>
                 <feedback>
-                    <p>Main has a return type, check its function definition.</p>
+                    <p><c>main</c> has a return type; check its function definition.</p>
                 </feedback>
             </choice>
 </choices>
@@ -66,20 +66,32 @@
 
         <exercise label="fitb_return_main_2">
             <statement>
-    <p>Q-2: Usually, we return <BlankNode/> to exit main.  However, if there are
-any errors that we catch, we might return <BlankNode/>. <var/>  <var/>  </p></statement><setup><var><condition string="^\s*[0]\s*$"><feedback><p>Correct!</p></feedback></condition><condition string="^\s*x\s*$"><feedback><p>Try again!</p></feedback></condition></var><var><condition number="[-1, -1]"><feedback><p>Correct!</p></feedback></condition><condition string="^\s*.*\s*$"><feedback><p>Try again!</p></feedback></condition></var></setup></exercise>
+    <p>Q-2: Usually, we return <var/> to exit main.  However, if there are
+any errors that we catch, we might return <var/>. </p></statement>
+<setup>
+    <var>
+        <condition number="0"><feedback><p>Correct!</p></feedback></condition>
+        <condition string=".*"><feedback><p>Try again!</p></feedback></condition>
+    </var>
+    <var>
+        <condition number="-1"><feedback><p>Correct!</p></feedback></condition>
+        <condition string=".*"><feedback><p>Hint: it's usually a negative value.</p></feedback></condition>
+    </var>
+</setup>
+</exercise>
+
     <exercise label="return_main_mc_2">
         <statement>
 
         <p>Q-3: What gets printed when the following code runs?</p>
         <pre>int main() {
-    bool sun_set=true;
-    if(sun_set) {
-        cout &lt;&lt; "its night time ";
-        sun_set=false;
+    bool sunSet=true;
+    if (sunSet) {
+        cout &lt;&lt; "it's night time ";
+        sunSet=false;
         return 0;
     }
-    if(!sun_set) {
+    if (!sunSet) {
         cout &lt;&lt; "Day time ";
     }
     else {
@@ -92,19 +104,19 @@ any errors that we catch, we might return <BlankNode/>. <var/>  <var/>  </p></st
 
             <choice>
                 <statement>
-                    <p>"its night time Day time"</p>
+                    <p>"it's night time Day time"</p>
                 </statement>
                 <feedback>
-                    <p>a return statement if encountered before reaching the second ``if``.</p>
+                    <p>a <c>return</c> statement is encountered before reaching the second <c>if</c>.</p>
                 </feedback>
             </choice>
 
             <choice>
                 <statement>
-                    <p>"its night time afternoon"</p>
+                    <p>"it's night time afternoon"</p>
                 </statement>
                 <feedback>
-                    <p>a return statement is encountered before and ``sun_set`` is false.</p>
+                    <p>a <c>return</c> statement is encountered before the second <c>if</c> is reached.</p>
                 </feedback>
             </choice>
 
@@ -113,16 +125,16 @@ any errors that we catch, we might return <BlankNode/>. <var/>  <var/>  </p></st
                     <p>nothing is printed</p>
                 </statement>
                 <feedback>
-                    <p>``sun_set`` is true so the "its night time" gets printed</p>
+                    <p><c>sunSet</c> is true, so the "it's night time" gets printed</p>
                 </feedback>
             </choice>
 
             <choice correct="yes">
                 <statement>
-                    <p>"its night time"</p>
+                    <p>"it's night time"</p>
                 </statement>
                 <feedback>
-                    <p>Correct! Once the ``return`` statement is encountered nothing else is printed</p>
+                    <p>Correct! Once the <c>return</c> statement is encountered, nothing else is printed</p>
                 </feedback>
             </choice>
 </choices>

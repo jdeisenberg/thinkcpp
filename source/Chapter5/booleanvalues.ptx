@@ -25,8 +25,27 @@
 
         <exercise label="bool_vals_1">
             <statement>
-    <p>Q-1: The boolean type has two values <BlankNode/> and <BlankNode/>.  The <BlankNode/>
-operator is used to check if two boolean values are equal. <var/>  <var/>  <var/>  </p></statement><setup><var><condition string="^\s*([Tt][Rr][Uu][Ee]|[Ff][Aa][Ll][Ss][Ee])\s*$"><feedback><p>Correct!</p></feedback></condition><condition string="^\s*.*\s*$"><feedback><p>Try again!</p></feedback></condition></var><var><condition string="^\s*([Tt][Rr][Uu][Ee]|[Ff][Aa][Ll][Ss][Ee])\s*$"><feedback><p>Correct!</p></feedback></condition><condition string="^\s*.*\s*$"><feedback><p>Try again!</p></feedback></condition></var><var><condition string="^\s*==\s*$"><feedback><p>Correct!</p></feedback></condition><condition string="^\s*.*\s*$"><feedback><p>Try again!</p></feedback></condition></var></setup></exercise><exercise label="bool_vals_2" indentation="hide" language="python"><statement>
+    <p>Q-1: The boolean type has two values <var/> and <var/>.  The <var/>
+operator is used to check if two boolean values are equal.</p></statement>
+
+<setup>
+    <var>
+        <condition string="(true|false)"><feedback><p>Correct!</p></feedback></condition>
+        <condition string=".*"><feedback><p>Try again!</p></feedback></condition>
+    </var>
+    <var>
+        <condition string="(true|false)"><feedback><p>Correct!</p></feedback></condition>
+        <condition string=".*"><feedback><p>Try again!</p></feedback></condition>
+    </var>
+    <var>
+        <condition string="=="><feedback><p>Correct!</p></feedback></condition>
+        <condition string="="><feedback><p>That is the assignment operator.</p></feedback></condition>
+        <condition string=".*"><feedback><p>Try again!</p></feedback></condition>
+    </var>
+</setup>
+</exercise>
+
+<exercise label="bool_vals_2" indentation="hide" language="python"><statement>
         <p>Put the following blocks in order of how large the set is.  Put the largest
             set at the top.</p>
 </statement>

@@ -8,7 +8,7 @@
 #include &lt;iostream&gt;
 using namespace std;
 
-double calculator (double first, double second, char operation) {
+double calculator(double first, double second, char operation) {
     // Write your implementation here.
 }
 </input>
@@ -48,7 +48,7 @@ TEST_CASE("calculator function: division") {
 #include &lt;iostream&gt;
 using namespace std;
 
-double calculator (double first, double second, char operation) {
+double calculator(double first, double second, char operation) {
     if (operation == '+') {
         return first + second;
     }
@@ -79,7 +79,7 @@ double calculator (double first, double second, char operation) {
 #include &lt;iostream&gt;
 using namespace std;
 
-double calculateIntAngle (int numSides) {
+double calculateIntAngle(int numSides) {
     // Write your implementation here.
 }
         </input>
@@ -107,7 +107,7 @@ TEST_CASE("calculateIntAngle function") {
 #include &lt;iostream&gt;
 using namespace std;
 
-double calculateIntAngle (int numSides) {
+double calculateIntAngle(int numSides) {
     return (numSides - 2) * 180.0 / numSides;
 }
         </input>
@@ -116,24 +116,19 @@ double calculateIntAngle (int numSides) {
 
             </solution></exercise>
 
-        <exercise xml:id="cp_5_AC_5q"><statement/><program interactive="" language="" xml:id="ch5_prog5"/><solution>
-                Below is one way to implement the program. We can use a conditional to
-                    check to see if the dog is one year old. If it is older than one, then
-                    we can use the formula to return the correct age in human years.
+        <exercise xml:id="cp_5_AC_5q"><statement>
+<p>Dog owners will know that figuring out a dog's age is more complicated than just counting age directly. Dogs mature faster than humans do, so to get a more accurate calculation of a dog’s age, write the <c>dogToHumanYears</c> function, which takes an integer <c>dogAge</c> as a parameter. <c>dogToHumanYears</c> converts and returns the dog’s age to human years. A one year old dog is 15 years old in human years; a two year old dog is 24 years old in human years. Each year after the second year counts as 4 additional human years. For example, a dog that is 3 years old is actually 28 years old in human years. Run and test your code!</p>
+        </statement>
 
-    <program xml:id="cp_5_AC_5a" language="cpp">
-    
+        <program interactive="activecode" language="cpp" xml:id="ch5_prog5">
         <input>
 #include &lt;iostream&gt;
 using namespace std;
 
-int dogToHumanYears (int dogAge) {
-    if (dogAge == 1) {
-        return 15;
-    }
-    return 24 + (dogAge - 2) * 4;
+int dogToHumanYears(int dogAge) {
+    // Write your implementation here.
 }
-        </input>
+</input>
 <tests>
 #define CATCH_CONFIG_MAIN
 #include &lt;catch.hpp&gt;
@@ -149,46 +144,45 @@ TEST_CASE("dogToHumanYears function for &gt;1") {
 }
 </tests>
 
-    </program>
-            
-                <p>Below is one way to implement the program. We can use a conditional to
+</program>
+
+
+        <solution>
+                Below is one way to implement the program. We can use a conditional to
                     check to see if the dog is one year old. If it is older than one, then
-                    we can use the formula to return the correct age in human years.</p>
+                    we can use the formula to return the correct age in human years.
 
-    
-            </solution></exercise>
-        <raw format="html" xml:space="preserve">
-&lt;div class="runestone sqcontainer %(optclass)s"&gt;
-&lt;div data-component="selectquestion" id=cp_5_AC_6q_sq data-questionlist='cp_5_AC_6q, cp_5_AC_6q_pp'         data-toggleoptions="toggle, lock" data-togglelabels="togglelabels:" data-limit-basecourse=true&gt;
-    &lt;p&gt;Loading a dynamic question ...&lt;br/&gt;Selecting from: cp_5_AC_6q, cp_5_AC_6q_pp&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-</raw>
-        <exercise xml:id="cp_5_AC_7q"><statement/><program interactive="" language="" xml:id="ch5_prog7"/><solution>
-                Below is one way to implement the program. We can use conditionals in this
-                    order to efficiently determine whether or not a given year is a leap year.
-
-    <program xml:id="cp_5_AC_7a" language="cpp">
+    <program xml:id="cp_5_AC_5a" language="cpp">
     
         <input>
 #include &lt;iostream&gt;
 using namespace std;
 
-bool isLeapYear (int year) {
-    if (year % 400 == 0) {
-        return true;
+int dogToHumanYears(int dogAge) {
+    if (dogAge == 1) {
+        return 15;
     }
-    else if (year % 100 == 0) {
-        return false;
-    }
-    else if (year % 4 == 0) {
-        return true;
-    }
-    else {
-        return false;
-    }
+    return 24 + (dogAge - 2) * 4;
 }
         </input>
+
+    </program>
+
+            </solution></exercise>
+
+<exercise xml:id="cp_5_AC_7q"><statement>
+<p>If a year is divisible by 4, then it is a leap year. However, if it is also divisible by 100, then it is not a leap year. However, if it is also divisible by 400, then it is a leap year. Thus, 2001 is not a leap year, 2004 is a leap year, 2100 is not a leap year, and 2000 is a leap year. Write the boolean function <c>isLeapYear</c>, which takes a <c>year</c> as a parameter and returns true if the year is a leap year and false otherwise. Run and test your code!</p>
+</statement>
+
+<program interactive="activecode" language="cpp" xml:id="ch5_prog7">
+<input>
+#include &lt;iostream&gt;
+using namespace std;
+
+bool isLeapYear (int year) {
+    // Write your implementation here.
+}
+</input>
 <tests>
 #define CATCH_CONFIG_MAIN
 #include &lt;catch.hpp&gt;
@@ -213,42 +207,54 @@ TEST_CASE("isLeapYear divisible by 400") {
     REQUIRE(isLeapYear (2400) == 1);
 }
 </tests>
+</program>
 
-    </program>
-            
-                <p>Below is one way to implement the program. We can use conditionals in this
-                    order to efficiently determine whether or not a given year is a leap year.</p>
+<solution>
+                Below is one way to implement the program. We can use conditionals in this
+                    order to efficiently determine whether or not a given year is a leap year.
 
-    
-            </solution></exercise>
-        <raw format="html" xml:space="preserve">
-&lt;div class="runestone sqcontainer %(optclass)s"&gt;
-&lt;div data-component="selectquestion" id=cp_5_AC_8q_sq data-questionlist='cp_5_AC_8q, cp_5_AC_8q_pp'         data-toggleoptions="toggle, lock" data-togglelabels="togglelabels:" data-limit-basecourse=true&gt;
-    &lt;p&gt;Loading a dynamic question ...&lt;br/&gt;Selecting from: cp_5_AC_8q, cp_5_AC_8q_pp&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-</raw>
-        <exercise xml:id="cp_5_AC_9q"><statement/><program interactive="" language="cpp" xml:id="ch5_prog9"/><solution>
-                Below is one way to implement the program. We can use conditionals to
-                    separate the base case and recursive cases. Our base case is when n
-                    is 1, and in that case we return 1. Otherwise, we recursively
-                    call triangularNum on n-1.
-
-    <program xml:id="cp_5_AC_9a" language="cpp">
+    <program xml:id="cp_5_AC_7a" language="cpp">
     
         <input>
 #include &lt;iostream&gt;
 using namespace std;
 
-int triangularNum (int n) {
-    if (n == 1) {
-        return 1;
+bool isLeapYea(int year) {
+    if (year % 400 == 0) {
+        return true;
+    }
+    else if (year % 100 == 0) {
+        return false;
+    }
+    else if (year % 4 == 0) {
+        return true;
     }
     else {
-        return n + triangularNum(n - 1);
+        return false;
     }
 }
         </input>
+
+
+    </program>
+            </solution>
+            </exercise>
+
+        <exercise xml:id="cp_5_AC_9q">
+        <statement>
+        <p>
+        We know that a factorial is the product of an integer and all the integers below it. For example, four factorial (4!) is 24. A <em>triangular number</em> is the same as a factorial, except you add all the numbers instead of multiplying. For example, the 1st triangular number is 1, the 2nd is 3, the 3rd is 6, the 4th is 10, the 5th is 15, etc. You can imagine rows of dots, where each successive row has one more dot, thus forming a triangular shape. Write the <c>triangularNum</c> function, which takes an int <c>n</c> as a parameter and returns the n<sup>th</sup> triangular number. Use recursion. Run and test your code!</p>
+        </statement>
+
+        <program interactive="activecode" language="cpp" xml:id="ch5_prog9">
+<input>
+#include &lt;iostream&gt;
+using namespace std;
+
+int triangularNum(int n) {
+    // Write your implementation here.
+}
+</input>
 <tests>
 #define CATCH_CONFIG_MAIN
 #include &lt;catch.hpp&gt;
@@ -260,22 +266,34 @@ TEST_CASE("triangularNum function") {
     REQUIRE(triangularNum (17) == 153);
 }
 </tests>
+        </program>
+        <solution>
+                Below is one way to implement the program. We can use conditionals to
+                    separate the base case and recursive cases. Our base case is when n
+                    is 1, and in that case we return 1. Otherwise, we recursively
+                    call triangularNum on n-1.
+
+    <program xml:id="cp_5_AC_9a" language="cpp">
+    
+        <input>
+#include &lt;iostream&gt;
+using namespace std;
+
+int triangularNum(int n) {
+    if (n == 1) {
+        return 1;
+    }
+    else {
+        return n + triangularNum(n - 1);
+    }
+}
+        </input>
+
 
     </program>
             
-                <p>Below is one way to implement the program. We can use conditionals to
-                    separate the base case and recursive cases. Our base case is when <c>n</c>
-                    is 1, and in that case we return 1. Otherwise, we recursively
-                    call <c>triangularNum</c> on <c>n-1</c>.</p>
 
-    
             </solution></exercise>
-        <raw format="html" xml:space="preserve">
-&lt;div class="runestone sqcontainer %(optclass)s"&gt;
-&lt;div data-component="selectquestion" id=cp_5_AC_10q_sq data-questionlist='cp_5_AC_10q, cp_5_AC_10q_pp'         data-toggleoptions="toggle, lock" data-togglelabels="togglelabels:" data-limit-basecourse=true&gt;
-    &lt;p&gt;Loading a dynamic question ...&lt;br/&gt;Selecting from: cp_5_AC_10q, cp_5_AC_10q_pp&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-</raw>
+
     </section>
 

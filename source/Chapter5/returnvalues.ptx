@@ -4,21 +4,21 @@
             have produced results. That is, the effect of calling the function is to
             generate a new value, which we usually assign to a variable or use as
             part of an expression. For example:</p>
-        <pre>double e = exp (1.0);
-double height = radius * sin (angle);</pre>
+        <pre>double e = exp(1.0);
+double height = radius * sin(angle);</pre>
         <p>But so far all the functions we have written have been <c>void</c>
             functions; that is, functions that return no value. When you call a <c>void</c>
             function, it is typically on a line by itself, with no assignment:</p>
-        <pre>nLines (3);
-countdown (n-1);</pre>
+        <pre>nLines(3);
+countdown(n-1);</pre>
         
         
         <p>In this chapter, we are going to write functions that return things,
             which I will refer to as <term>fruitful</term> functions, for want of a better
             name. The first example is area, which takes a double as a parameter,
             and returns the area of a circle with the given radius:</p>
-        <pre>double area (double radius) {
-  double pi = acos (-1.0);
+        <pre>double area(double radius) {
+  double pi = acos(-1.0);
   double area = pi * radius * radius;
   return area;
 }</pre>
@@ -35,7 +35,7 @@ countdown (n-1);</pre>
             immediately from this function and use the following expression as a
             return value.&#8221; The expression you provide can be arbitrarily
             complicated, so we could have written this function more concisely:</p>
-        <pre>double area (double radius) {
+        <pre>double area(double radius) {
   return acos(-1.0) * radius * radius;
 }</pre>
         
@@ -49,7 +49,7 @@ countdown (n-1);</pre>
             compiler will take you to task.</p>
         <p>Sometimes it is useful to have multiple return statements, one in each
             branch of a conditional:</p>
-        <pre>double absoluteValue (double x) {
+        <pre>double absoluteValue(double x) {
   if (x &lt; 0) {
     return -x;
   }
@@ -86,7 +86,7 @@ countdown (n-1);</pre>
 #include &lt;iostream&gt;
 using namespace std;
 
-double absoluteValue (double x) {
+double absoluteValue(double x) {
     if (x &lt; 0) {
         return -x;
     }
@@ -95,7 +95,7 @@ double absoluteValue (double x) {
     }                          // WRONG!!
 }
 
-int main () {
+int main() {
     cout &lt;&lt; absoluteValue(0);
     return 0;
 }
@@ -143,7 +143,7 @@ int main () {
 #include &lt;iostream&gt;
 using namespace std;
 
-double absoluteValue (double x) {
+double absoluteValue(double x) {
     if (x &lt; 0) {
         return -x;
     }
@@ -153,7 +153,7 @@ double absoluteValue (double x) {
     return x;                      // WRONG!!
 }
 
-int main () {
+int main() {
    cout &lt;&lt; absoluteValue(0);
    return 0;
 }
@@ -173,7 +173,7 @@ int main () {
         <statement>
 
         <p>Q-3: What should the return type of the below function be?</p>
-        <pre>________ weather (int temp) {
+        <pre>________ weather(int temp) {
  string outside = "";
  if (temp &lt; 50) {
    outside = "cold";
@@ -239,7 +239,7 @@ int timesTwo(int x) {
   y = y * 2;
 }
 
-int main () {
+int main() {
   int i = 2;
   cout &lt;&lt; timesTwo(i);
   return 0;
@@ -307,7 +307,7 @@ double ticket_price(int age) {
    return 0.0; //to avoid compiler error
 }
 
-int main () {
+int main() {
   int years = 5;
   double price = ticket_price(5);
   return 0;
@@ -357,5 +357,13 @@ int main () {
 
         <exercise label="return_vals_3">
             <statement>
-    <p>Q-6: A variable that exists only inside a function, is called a <BlankNode/> variable. <var/>  </p></statement><setup><var><condition string="^\s*[Tt][Ee][Mm][Pp][Oo][Rr][Aa][Rr][Yy]\s*$"><feedback><p>Temporary variables are useful for calculating and returning values inside functions since they are short-lived.</p></feedback></condition><condition string="^\s*.*\s*$"><feedback><p>Try again!</p></feedback></condition></var></setup></exercise>    </section>
+    <p>Q-6: A variable that exists only inside a function, is called a <var/> variable. </p></statement>
+    <setup>
+        <var>
+            <condition string="temporary"><feedback><p>Temporary variables are useful for calculating and returning values inside functions since they are short-lived.</p></feedback></condition>
+            <condition string=".*"><feedback><p>Hint: not permanent, but ___. Try again.</p></feedback></condition>
+        </var>
+    </setup>
+</exercise>
+</section>
 

@@ -11,17 +11,17 @@
         <p>Having more than one function with the same name, which is called
             <term>overloading</term>, is legal in C++ <em>as long as each version takes
                 different parameters</em>. So we can go ahead and rename <c>fred</c>:</p>
-        <pre>double area (double xc, double yc, double xp, double yp) {
-  return area (distance (xc, yc, xp, yp));
+        <pre>double area(double xc, double yc, double xp, double yp) {
+  return area(distance(xc, yc, xp, yp));
 }</pre>
         <p>This looks like a recursive function, but it is not. Actually, this
             version of <c>area</c> is calling the other version. When you call an
             overloaded function, C++ knows which version you want by looking at the
             arguments that you provide. If you write:</p>
-        <pre>double x = area (3.0);</pre>
+        <pre>double x = area(3.0);</pre>
         <p>C++ goes looking for a function named <c>area</c> that takes a double as an
             argument, and so it uses the first version. If you write</p>
-        <pre>double x = area (1.0, 2.0, 4.0, 6.0);</pre>
+        <pre>double x = area(1.0, 2.0, 4.0, 6.0);</pre>
         <p>C++ uses the second version of <c>area</c>.</p>
         <p>Many of the built-in C++ commands are overloaded, meaning that there are
             different versions that accept different numbers or types of parameters.</p>
@@ -32,8 +32,8 @@
                 one.</p>
         </warning>
         <p>Actually, that reminds me of one of the cardinal rules of debugging:
-            <term>make sure that the version of the program you are looking at is the
-                version of the program that is running!</term> Some time you may find
+            <em>make sure that the version of the program you are looking at is the
+                version of the program that is running!</em> Some time you may find
             yourself making one change after another in your program, and seeing the
             same thing every time you run it. This is a warning sign that for one
             reason or another you are not running the version of the program you

@@ -7,7 +7,7 @@
             them. I am going to suggest one technique that I call <term>incremental
                 development</term>.</p>
         <p>As an example, imagine you want to find the distance between two points,
-            given by the coordinates <math>(x_1, y_1)</math> and <math>(x_2, y_2)</math>. By
+            given by the coordinates <m>(x_1, y_1)</m> and <m>(x_2, y_2)</m>. By
             the usual definition,</p>
         <me>distance = \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}</me>
         <p>The first step is to consider what a distance function should look like
@@ -17,7 +17,7 @@
             represent them using four doubles. The return value is the distance,
             which will have type double.</p>
         <p>Already we can write an outline of the function:</p>
-        <pre>double distance (double x1, double y1, double x2, double y2) {
+        <pre>double distance(double x1, double y1, double x2, double y2) {
   return 0.0;
 }</pre>
         <p>The return statement is a placekeeper so that the function will compile
@@ -27,7 +27,7 @@
             more complicated.</p>
         <p>In order to test the new function, we have to call it with sample
             values. Somewhere in main I would add:</p>
-        <pre>double dist = distance (1.0, 2.0, 4.0, 6.0);
+        <pre>double dist = distance(1.0, 2.0, 4.0, 6.0);
 cout &lt;&lt; dist &lt;&lt; endl;</pre>
         <p>I chose these values so that the horizontal distance is 3 and the
             vertical distance is 4; that way, the result will be 5 (the hypotenuse
@@ -38,9 +38,9 @@ cout &lt;&lt; dist &lt;&lt; endl;</pre>
             recompile and run the program. That way, at any point we know exactly
             where the error must be&#8212;in the last line we added.</p>
         <p>The next step in the computation is to find the differences
-            <math>x_2 - x_1</math> and <math>y_2 - y_1</math>. I will store those values in
+            <m>x_2 - x_1</m> and <m>y_2 - y_1</m>. I will store those values in
             temporary variables named dx and dy.</p>
-        <pre>double distance (double x1, double y1, double x2, double y2) {
+        <pre>double distance(double x1, double y1, double x2, double y2) {
   double dx = x2 - x1;
   double dy = y2 - y1;
   cout &lt;&lt; "dx is " &lt;&lt; dx &lt;&lt; endl;
@@ -65,7 +65,7 @@ cout &lt;&lt; dist &lt;&lt; endl;</pre>
         <p>The next step in the development is to square dx and dy. We could use
             the pow function, but it is simpler and faster to just multiply each
             term by itself.</p>
-        <pre>double distance (double x1, double y1, double x2, double y2) {
+        <pre>double distance(double x1, double y1, double x2, double y2) {
   double dx = x2 - x1;
   double dy = y2 - y1;
   double dsquared = dx*dx + dy*dy;
@@ -75,11 +75,11 @@ cout &lt;&lt; dist &lt;&lt; endl;</pre>
         <p>Again, I would compile and run the program at this stage and check the
             intermediate value (which should be 25.0).</p>
         <p>Finally, we can use the sqrt function to compute and return the result.</p>
-        <pre>double distance (double x1, double y1, double x2, double y2) {
+        <pre>double distance(double x1, double y1, double x2, double y2) {
   double dx = x2 - x1;
   double dy = y2 - y1;
   double dsquared = dx*dx + dy*dy;
-  double result = sqrt (dsquared);
+  double result = sqrt(dsquared);
   return result;
 }</pre>
         <p>Then in main, we should output and check the value of the result.</p>
@@ -97,16 +97,16 @@ cout &lt;&lt; dist &lt;&lt; endl;</pre>
 #include &lt;cmath&gt;
 using namespace std;
 
-double distance (double x1, double y1, double x2, double y2) {
+double distance(double x1, double y1, double x2, double y2) {
     double dx = x2 - x1;
     double dy = y2 - y1;
     double dsquared = dx*dx + dy*dy;
-    double result = sqrt (dsquared);
+    double result = sqrt(dsquared);
     return result;
 }
 
-int main () {
-    double dist = distance (1.0, 2.0, 4.0, 6.0);
+int main() {
+    double dist = distance(1.0, 2.0, 4.0, 6.0);
     cout &lt;&lt; dist &lt;&lt; endl;
    return 0;
 }
@@ -241,7 +241,7 @@ int main () {
         <pre>#include &lt;iostream&gt;
 using namespace std;
 
-double distance (double x1, double y1, double x2, double y2) {
+double distance(double x1, double y1, double x2, double y2) {
   double dx = x2 - x1;
   double dy = y2 - y1;
   cout &lt;&lt; "dx is " &lt;&lt; dx &lt;&lt; endl;

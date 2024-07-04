@@ -5,9 +5,9 @@
         <p>As usual, for every type of value, there is a corresponding type of
             variable. In C++ the boolean type is called <term>bool</term>. Boolean variables
             work just like the other types:</p>
-        <pre>bool fred;
-fred = true;
-bool testResult = false;</pre>
+        <pre>bool validAge;
+validAge = true;
+bool passedTest = false;</pre>
         <p>The first line is a simple variable declaration; the second line is an
             assignment, and the third line is a combination of a declaration and as
             assignment, called an initialization.</p>
@@ -105,44 +105,45 @@ if (plusFlag) {
         <statement>
 
         <p>Q-4: What will print?</p>
-        <pre>bool low_battery=true;
-bool power_outage=true;
+        <pre>bool lowBattery=true;
+bool powerOutage=true;
 
-if(low_battery){
+if (lowBattery) {
 
-  if(power_outage){
-      power_outage=!power_outage;
+  if (powerOutage) {
+      powerOutage = !powerOutage;
   }
-  else{
-      low_battery=false;
+  else {
+      lowBattery=false;
   }
 
-  if(!power_outage){
+  if (!powerOutage) {
 
-    if(low_battery){
+    if (lowBattery) {
         cout&lt;&lt;"Charging your phone"&lt;&lt;endl;
     }
-    else{
+    else {
         cout&lt;&lt;"Battery is charged"&lt;&lt;endl;
     }
 
   }
-  else{
+  else {
     cout&lt;&lt;"There is no power"&lt;&lt;endl&gt;&gt;;
   }
 }</pre>
-</statement><choices><choice><statement id="bool_var_4_opt_a">        <p>nothing will print</p>
+</statement>
+<choices><choice><statement id="bool_var_4_opt_a">        <p>nothing will print</p>
 </statement><feedback id="bool_var_4_opt_a">
-        <p>The value of <c>low_battery</c> is true so we enter the first <c>if</c> block.</p>
+        <p>The value of <c>lowBattery</c> is <c>true</c> so we enter the first <c>if</c> block.</p>
 </feedback></choice><choice correct="yes"><statement id="bool_var_4_opt_b">        <p>&#8220;Charging your phone&#8221;</p>
 </statement><feedback id="bool_var_4_opt_b">
-        <p>correct! <c>low_battery</c> stays true and we set <c>power_outage</c> to false.</p>
+        <p>correct! <c>lowBattery</c> stays <c>true</c> and we set <c>powerOutage</c> to <c>false</c>.</p>
 </feedback></choice><choice><statement id="bool_var_4_opt_c">        <p>&#8220;Battery is charged&#8221;</p>
 </statement><feedback id="bool_var_4_opt_c">
-        <p><c>low_battery</c> is true so we don&#8217;t reach this <c>else</c>.</p>
+        <p><c>lowBattery</c> is <c>true</c> so we don&#8217;t reach this <c>else</c>.</p>
 </feedback></choice><choice><statement id="bool_var_4_opt_d">        <p>&#8220;There is no power&#8221;</p>
 </statement><feedback id="bool_var_4_opt_d">
-        <p>We change the value of <c>power_outage</c> to false before hand.</p>
+        <p>We change the value of <c>powerOutage</c> to <c>false</c> before hand.</p>
 </feedback></choice></choices>
     </exercise>
     </section>
