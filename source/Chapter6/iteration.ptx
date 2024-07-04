@@ -5,7 +5,7 @@
             errors is something that computers do well and people do poorly.</p>
         
         
-        <p xml:id="chapter6_index-0">We have seen programs that use recursion to perform repetition, such as
+        <p>We have seen programs that use recursion to perform repetition, such as
             <c>nLines</c> and <c>countdown</c>. This type of repetition is called
             <term>iteration</term>, and C++ provides several language features that make it
             easier to write iterative programs.</p>

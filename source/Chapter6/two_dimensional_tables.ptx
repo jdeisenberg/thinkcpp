@@ -38,7 +38,7 @@ int main() {
 </exercise>
         
         
-        <p xml:id="chapter6_index-0">The first line initializes a variable named <c>i</c>, which is going to act
+        <p>The first line initializes a variable named <c>i</c>, which is going to act
             as a counter, or <term>loop variable</term>. As the loop executes, the value of
             <c>i</c> increases from 1 to 6, and then when <c>i</c> is 7, the loop
             terminates. Each time through the loop, we print the value <c>2*i</c>
@@ -48,7 +48,7 @@ int main() {
         <pre>2   4   6   8   10   12</pre>
         
         
-        <p xml:id="chapter6_index-1">So far, so good. The next step is to <term>encapsulate</term> and <term>generalize</term>.</p>
+        <p>So far, so good. The next step is to <term>encapsulate</term> and <term>generalize</term>.</p>
 
     <exercise label="2D_tables_1">
         <statement>

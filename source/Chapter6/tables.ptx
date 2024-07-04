@@ -51,13 +51,13 @@ int main() {
 </exercise>
         
         
-        <p xml:id="chapter6_index-0">The sequence <c>\t</c> represents a <term>tab</term> character. The sequence <c>\n</c>
+        <p>The sequence <c>\t</c> represents a <term>tab</term> character. The sequence <c>\n</c>
             represents a newline character. These sequences can be included anywhere
             in a string, although in these examples the sequence is the whole
             string.</p>
         
         
-        <p xml:id="chapter6_index-1">A tab character causes the cursor to shift to the right until it reaches
+        <p>A tab character causes the cursor to shift to the right until it reaches
             one of the <term>tab stops</term>, which are normally every eight characters. As
             we will see in a minute, tabs are useful for making columns of text line
             up.</p>
@@ -79,9 +79,8 @@ int main() {
             <m>e</m>. Since powers of two are so important in computer science, we
             often want to find logarithms with respect to base 2. To do that, we can
             use the following formula:</p>
-        <math_block docname="Chapter6/tables" label="True" nowrap="False" number="True" xml:space="preserve">\log_2 x = \frac {log_e x}{log_e 2}
+        <me>\log_2 x = \frac {log_e x}{log_e 2}</me>
 
-</math_block>
         <p>Changing the output statement to</p>
         <pre>cout &lt;&lt; x &lt;&lt; "\t" &lt;&lt; log(x) / log(2.0) &lt;&lt; endl;</pre>
         <p>yields</p>
@@ -128,7 +127,7 @@ int main() {
 </exercise>
         
         
-        <p xml:id="chapter6_index-2">Now instead of adding something to <c>x</c> each time through the loop,
+        <p>Now instead of adding something to <c>x</c> each time through the loop,
             which yields an arithmetic sequence, we multiply <c>x</c> by something,
             yielding a <term>geometric</term> sequence. The result is:</p>
         <pre>1      0
@@ -200,7 +199,7 @@ int main() {
     <p>Q-5: What is the equivalent of endl, and typically used at the end of a string? <var/>  </p></statement><setup><var><condition string="^\s*(?:(?:\\n)|(?:(?:n|N)ewline\s(?:c|C)haracter))\s*$"><feedback><p>Is the correct answer!</p></feedback></condition><condition string="^\s*.*\s*$"><feedback><p>Try again!</p></feedback></condition></var></setup></exercise>
         <exercise label="tables_3">
             <statement>
-    <p>Q-6: How would you write a tab character? <var/>  </p></statement><setup><var><condition string="^\s*(?:\\t)\s*$"><feedback><p>Correct!</p></feedback></condition><condition string="^\s*.*\s*$"><feedback><p>Try again!</p></feedback></condition></var></setup></exercise>
+    <p>Q-6: How would you write a tab character? <var/>  </p></statement><setup><var><condition string="(\\t)"><feedback><p>Correct!</p></feedback></condition><condition string=".*"><feedback><p>Hint: the word “tab” begins with the letter “t”. Try again!</p></feedback></condition></var></setup></exercise>
     <exercise label="tables_4">
         <statement>
 

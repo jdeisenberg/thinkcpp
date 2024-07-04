@@ -45,10 +45,10 @@ int main () {
 #include &lt;iostream&gt;
 using namespace std;
 
-int main () {
-    int fred = 5;
-    fred = 7;
-    cout &lt;&lt; fred;
+int main() {
+    int number = 5;
+    number = 7;
+    cout &lt;&lt; number;
     return 0;
 }
         </input>
@@ -59,14 +59,14 @@ int main () {
 
     </program>
 </exercise>
-        <p>However, if we do not print <c>fred</c> the first time, the output is only 7 because
-            the value of <c>fred</c> is just 7 when it is printed.</p>
+        <p>However, if we do not print <c>number</c> the first time, the output is only 7 because
+            the value of <c>number</c> is just 7 when it is printed.</p>
         
         
-        <p xml:id="chapter6_index-0">This kind of <term>multiple assignment</term> is the reason I described variables
-            as a <em>container</em> for values. When you assign a value to a variable, you
+        <p>This kind of <term>multiple assignment</term> is the reason I described variables
+            as <em>containers</em> for values. When you assign a value to a variable, you
             change the contents of the container, as shown in the figure:</p>
-        <figure align="center" xml:id=""><image source="Chapter6/Images/6.1image.png" width="50%" alt="image"/></figure>
+        <figure align="center" xml:id="image_6_1_multiple_assignment"><image source="Chapter6/Images/6.1image.png" width="50%" alt="image"/></figure>
         <p>When there are multiple assignments to a variable, it is especially
             important to distinguish between an assignment statement and a statement
             of equality. Because C++ uses the <c>=</c> symbol for assignment, it is
@@ -109,7 +109,7 @@ a = 3;         // a and b are no longer equal</pre>
 #include &lt;iostream&gt;
 using namespace std;
 
-int main () {
+int main() {
   int x = 10;
   cout &lt;&lt; x &lt;&lt; "!";
   x = 1;
@@ -168,7 +168,7 @@ int main () {
 #include &lt;iostream&gt;
 using namespace std;
 
-int main () {
+int main() {
   int x = 0;
   x = 5;
   int y = x;

@@ -2,7 +2,7 @@
         <title>Local variables</title>
         
         
-        <p xml:id="chapter6_index-0">About this time, you might be wondering how we can use the same variable
+        <p>About this time, you might be wondering how we can use the same variable
             <c>i</c> in both <c>printMultiples</c> and <c>printMultTable</c>. Didn&#8217;t I say
             that you can only declare a variable once? And doesn&#8217;t it cause problems
             when one of the functions changes the value of the variable?</p>
@@ -20,7 +20,7 @@
         <p>The stack diagram for this program shows clearly that the two variables
             named <c>i</c> are not in the same storage location. They can have
             different values, and changing one does not affect the other.</p>
-        <figure align="center" xml:id=""><image source="Chapter6/Images/6.9stackdiagram.png" width="50%" alt="image"/></figure>
+        <figure align="center" xml:id="image_6_9_stackdiagram"><image source="Chapter6/Images/6.9stackdiagram.png" width="50%" alt="image"/></figure>
         <p>Notice that the value of the parameter <c>n</c> in <c>printMultiples</c> has
             to be the same as the value of <c>i</c> in <c>printMultTable</c>. On the other
             hand, the value of <c>i</c> in <c>printMultiples</c> goes from 1 up to <c>n</c>.
